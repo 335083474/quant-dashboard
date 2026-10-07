@@ -1,8 +1,12 @@
 {
-  "version": "4e3f3ea15b5cb83d7ab00e11554705abb2f2af77f8d459325552ee4a2c76b3b4",
-  "publishedAt": "2026-10-07T23:28:19.313Z",
+  "version": "0cb90f0581879f07ade2c9e786e9bbc8cf8ff9faa6b805fa9d83865030321abe",
+  "publishedAt": "2026-10-07T23:39:40.520Z",
   "snapshotGeneratedAt": "2026-10-08T00:12:22+08:00",
   "marketDataThrough": "20260930",
   "strategies": 12,
-  "mode": "public-read-only-local-results"
+  "mode": "public-read-only-local-results",
+  "visibleStrategies": 11,
+  "hiddenStrategies": [
+    "cb_multifactor_expanded1189_ic5_ir5_r20_paper_v1"
+  ]
 }
