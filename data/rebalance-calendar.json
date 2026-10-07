@@ -1,5 +1,5 @@
 {
-  "snapshotGeneratedAt": "2026-10-07T22:16:43+08:00",
+  "snapshotGeneratedAt": "2026-10-07T22:39:57+08:00",
   "marketDataThrough": "20260930",
   "events": [
     {
@@ -303,25 +303,25 @@
       "conditional": true
     },
     {
-      "id": "bt2e_st_gao_v2c_ma20timing_alla_paper_v1:2026-09-30:review:原规则复盘数据截至",
+      "id": "bt2e_st_gao_v2c_ma20timing_alla_paper_v1:2026-09-30:signal:收盘策略名单已生成",
       "strategyId": "bt2e_st_gao_v2c_ma20timing_alla_paper_v1",
       "date": "2026-09-30",
-      "kind": "review",
-      "title": "原规则复盘数据截至",
+      "kind": "signal",
+      "title": "收盘策略名单已生成",
       "time": "收盘后",
-      "note": "2026空仓复跑已核对；这不是新交易名单。",
+      "note": "新空仓账户10只入场名单；原模拟账户卖出浙商银行。执行检查尚未完成。",
       "source": "paper_strategies/bt2e_st_gao_v2c_ma20timing_alla_paper_v1/PAPER_STARTUP_SCHEDULE.json",
       "usesLatestPlan": false,
-      "conditional": false
+      "conditional": true
     },
     {
-      "id": "bt2e_st_gao_v2c_ma20timing_alla_paper_v1:2026-10-08:review:后续数据与信号检查",
+      "id": "bt2e_st_gao_v2c_ma20timing_alla_paper_v1:2026-10-08:review:名单执行前检查",
       "strategyId": "bt2e_st_gao_v2c_ma20timing_alla_paper_v1",
       "date": "2026-10-08",
       "kind": "review",
-      "title": "后续数据与信号检查",
+      "title": "名单执行前检查",
       "time": "开盘前检查",
-      "note": "公司事件与每日因子、连续参考组合尚未验证齐全；没有可执行买卖单。",
+      "note": "核查ST、停牌、公司行动及真实价格；计划名单已生成不等于订单已放行。",
       "source": "paper_strategies/bt2e_st_gao_v2c_ma20timing_alla_paper_v1/PAPER_STARTUP_SCHEDULE.json",
       "usesLatestPlan": false,
       "conditional": true

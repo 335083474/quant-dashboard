@@ -1,7 +1,7 @@
 {
-  "version": "3492d59822f5c90fcd6edc2a7c1f6a5cfdba01b8e36b42e317beaf75bc6e96b1",
-  "publishedAt": "2026-10-07T14:16:46.181Z",
-  "snapshotGeneratedAt": "2026-10-07T22:16:43+08:00",
+  "version": "9fe751b6e40ad70f917151366da0817839cdbbf656f6a8856778eacdb0771f14",
+  "publishedAt": "2026-10-07T14:40:24.249Z",
+  "snapshotGeneratedAt": "2026-10-07T22:39:57+08:00",
   "marketDataThrough": "20260930",
   "strategies": 11,
   "mode": "public-read-only-local-results"
