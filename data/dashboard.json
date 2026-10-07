@@ -298,6 +298,18 @@
         "label": "股票｜高氏低波动修复｜两周确认·最多10只·账户回撤控制原历史重新回测",
         "status": "PASS",
         "detail": "接入代码已从原历史首日重新运行并通过一致性验证。"
+      },
+      {
+        "id": "strategy_preflight_shuoshi_image_rules_v40",
+        "label": "股票｜小碎步支撑重启｜V43风险对齐·最多5只·每日检查接入检查",
+        "status": "FAIL",
+        "detail": "100万元日线模拟已从1月空仓跑至9月30日；属于事后重跑，不是当时每日在线运行。；当前新开仓和原账户均暂不开仓：全A指数低于60日均线。；盘中7%止损执行未接入，自动在线交易保持关闭；没有券商连接。；行业成分历史首次发布时间未认证，两期都已探索，历史期仍亏损。"
+      },
+      {
+        "id": "history_parity_shuoshi_image_rules_v40",
+        "label": "股票｜小碎步支撑重启｜V43风险对齐·最多5只·每日检查原历史重新回测",
+        "status": "PASS",
+        "detail": "接入代码已从原历史首日重新运行并通过一致性验证。"
       }
     ]
   },
@@ -321233,6 +321245,6046 @@
       "displayParameters": "不涨比例≥80%·最多2只·退出5自然日",
       "assetClass": "股票",
       "sourceVersion": "V7"
+    },
+    {
+      "id": "shuoshi_v43_aligned_paper_v1",
+      "name": "股票｜小碎步支撑重启｜V43风险对齐·最多5只·每日检查",
+      "status": "waiting",
+      "accountType": "paper",
+      "currentValue": 1023886.6966199998,
+      "initialValue": 1000000,
+      "returnRate": 2.388669661999976,
+      "sharpeRatio": 0.6081956752157369,
+      "maxDrawdown": -3.5535959347412494,
+      "volatility": 0,
+      "winRate": 0,
+      "totalTrades": 18,
+      "dailyPnL": 0,
+      "startDate": "20260105",
+      "asOf": "20260930",
+      "equity": [
+        {
+          "timestamp": "2026-01-05T00:00:00",
+          "date": "2026-01-05",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-01-06T00:00:00",
+          "date": "2026-01-06",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-01-07T00:00:00",
+          "date": "2026-01-07",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-01-08T00:00:00",
+          "date": "2026-01-08",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-01-09T00:00:00",
+          "date": "2026-01-09",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-01-12T00:00:00",
+          "date": "2026-01-12",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-01-13T00:00:00",
+          "date": "2026-01-13",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-01-14T00:00:00",
+          "date": "2026-01-14",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-01-15T00:00:00",
+          "date": "2026-01-15",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-01-16T00:00:00",
+          "date": "2026-01-16",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-01-19T00:00:00",
+          "date": "2026-01-19",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-01-20T00:00:00",
+          "date": "2026-01-20",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-01-21T00:00:00",
+          "date": "2026-01-21",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-01-22T00:00:00",
+          "date": "2026-01-22",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-01-23T00:00:00",
+          "date": "2026-01-23",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-01-26T00:00:00",
+          "date": "2026-01-26",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-01-27T00:00:00",
+          "date": "2026-01-27",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-01-28T00:00:00",
+          "date": "2026-01-28",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-01-29T00:00:00",
+          "date": "2026-01-29",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-01-30T00:00:00",
+          "date": "2026-01-30",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-02-02T00:00:00",
+          "date": "2026-02-02",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-02-03T00:00:00",
+          "date": "2026-02-03",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-02-04T00:00:00",
+          "date": "2026-02-04",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-02-05T00:00:00",
+          "date": "2026-02-05",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-02-06T00:00:00",
+          "date": "2026-02-06",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-02-09T00:00:00",
+          "date": "2026-02-09",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-02-10T00:00:00",
+          "date": "2026-02-10",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-02-11T00:00:00",
+          "date": "2026-02-11",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-02-12T00:00:00",
+          "date": "2026-02-12",
+          "value": 1001457.28272,
+          "backtestValue": null,
+          "paperValue": 1001457.28272,
+          "accountValue": 1001457.28272,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-02-13T00:00:00",
+          "date": "2026-02-13",
+          "value": 995307.5252,
+          "backtestValue": null,
+          "paperValue": 995307.5252,
+          "accountValue": 995307.5252,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-02-24T00:00:00",
+          "date": "2026-02-24",
+          "value": 999059.21208,
+          "backtestValue": null,
+          "paperValue": 999059.21208,
+          "accountValue": 999059.21208,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-02-25T00:00:00",
+          "date": "2026-02-25",
+          "value": 1000510.13142,
+          "backtestValue": null,
+          "paperValue": 1000510.13142,
+          "accountValue": 1000510.13142,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-02-26T00:00:00",
+          "date": "2026-02-26",
+          "value": 1004229.13142,
+          "backtestValue": null,
+          "paperValue": 1004229.13142,
+          "accountValue": 1004229.13142,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-02-27T00:00:00",
+          "date": "2026-02-27",
+          "value": 1006738.13142,
+          "backtestValue": null,
+          "paperValue": 1006738.13142,
+          "accountValue": 1006738.13142,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-03-02T00:00:00",
+          "date": "2026-03-02",
+          "value": 1020209.13142,
+          "backtestValue": null,
+          "paperValue": 1020209.13142,
+          "accountValue": 1020209.13142,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-03-03T00:00:00",
+          "date": "2026-03-03",
+          "value": 1004582.13142,
+          "backtestValue": null,
+          "paperValue": 1004582.13142,
+          "accountValue": 1004582.13142,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-03-04T00:00:00",
+          "date": "2026-03-04",
+          "value": 1001903.13142,
+          "backtestValue": null,
+          "paperValue": 1001903.13142,
+          "accountValue": 1001903.13142,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-03-05T00:00:00",
+          "date": "2026-03-05",
+          "value": 1003444.93621,
+          "backtestValue": null,
+          "paperValue": 1003444.93621,
+          "accountValue": 1003444.93621,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-03-06T00:00:00",
+          "date": "2026-03-06",
+          "value": 1003260.93621,
+          "backtestValue": null,
+          "paperValue": 1003260.93621,
+          "accountValue": 1003260.93621,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-03-09T00:00:00",
+          "date": "2026-03-09",
+          "value": 997124.93621,
+          "backtestValue": null,
+          "paperValue": 997124.93621,
+          "accountValue": 997124.93621,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-03-10T00:00:00",
+          "date": "2026-03-10",
+          "value": 1003988.93621,
+          "backtestValue": null,
+          "paperValue": 1003988.93621,
+          "accountValue": 1003988.93621,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-03-11T00:00:00",
+          "date": "2026-03-11",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-03-12T00:00:00",
+          "date": "2026-03-12",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-03-13T00:00:00",
+          "date": "2026-03-13",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-03-16T00:00:00",
+          "date": "2026-03-16",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-03-17T00:00:00",
+          "date": "2026-03-17",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-03-18T00:00:00",
+          "date": "2026-03-18",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-03-19T00:00:00",
+          "date": "2026-03-19",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-03-20T00:00:00",
+          "date": "2026-03-20",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-03-23T00:00:00",
+          "date": "2026-03-23",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-03-24T00:00:00",
+          "date": "2026-03-24",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-03-25T00:00:00",
+          "date": "2026-03-25",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-03-26T00:00:00",
+          "date": "2026-03-26",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-03-27T00:00:00",
+          "date": "2026-03-27",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-03-30T00:00:00",
+          "date": "2026-03-30",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-03-31T00:00:00",
+          "date": "2026-03-31",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-04-01T00:00:00",
+          "date": "2026-04-01",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-04-02T00:00:00",
+          "date": "2026-04-02",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-04-03T00:00:00",
+          "date": "2026-04-03",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-04-07T00:00:00",
+          "date": "2026-04-07",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-04-08T00:00:00",
+          "date": "2026-04-08",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-04-09T00:00:00",
+          "date": "2026-04-09",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-04-10T00:00:00",
+          "date": "2026-04-10",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-04-13T00:00:00",
+          "date": "2026-04-13",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-04-14T00:00:00",
+          "date": "2026-04-14",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-04-15T00:00:00",
+          "date": "2026-04-15",
+          "value": 1002281.2675699999,
+          "backtestValue": null,
+          "paperValue": 1002281.2675699999,
+          "accountValue": 1002281.2675699999,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-04-16T00:00:00",
+          "date": "2026-04-16",
+          "value": 991987.0812899999,
+          "backtestValue": null,
+          "paperValue": 991987.0812899999,
+          "accountValue": 991987.0812899999,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-04-17T00:00:00",
+          "date": "2026-04-17",
+          "value": 991987.0812899999,
+          "backtestValue": null,
+          "paperValue": 991987.0812899999,
+          "accountValue": 991987.0812899999,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-04-20T00:00:00",
+          "date": "2026-04-20",
+          "value": 993449.0731699999,
+          "backtestValue": null,
+          "paperValue": 993449.0731699999,
+          "accountValue": 993449.0731699999,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-04-21T00:00:00",
+          "date": "2026-04-21",
+          "value": 992453.0731699999,
+          "backtestValue": null,
+          "paperValue": 992453.0731699999,
+          "accountValue": 992453.0731699999,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-04-22T00:00:00",
+          "date": "2026-04-22",
+          "value": 991623.0731699999,
+          "backtestValue": null,
+          "paperValue": 991623.0731699999,
+          "accountValue": 991623.0731699999,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-04-23T00:00:00",
+          "date": "2026-04-23",
+          "value": 993117.0731699999,
+          "backtestValue": null,
+          "paperValue": 993117.0731699999,
+          "accountValue": 993117.0731699999,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-04-24T00:00:00",
+          "date": "2026-04-24",
+          "value": 993449.0731699999,
+          "backtestValue": null,
+          "paperValue": 993449.0731699999,
+          "accountValue": 993449.0731699999,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-04-27T00:00:00",
+          "date": "2026-04-27",
+          "value": 996437.0731699999,
+          "backtestValue": null,
+          "paperValue": 996437.0731699999,
+          "accountValue": 996437.0731699999,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-04-28T00:00:00",
+          "date": "2026-04-28",
+          "value": 1002911.0731699999,
+          "backtestValue": null,
+          "paperValue": 1002911.0731699999,
+          "accountValue": 1002911.0731699999,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-04-29T00:00:00",
+          "date": "2026-04-29",
+          "value": 1000753.0731699999,
+          "backtestValue": null,
+          "paperValue": 1000753.0731699999,
+          "accountValue": 1000753.0731699999,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-04-30T00:00:00",
+          "date": "2026-04-30",
+          "value": 996105.0731699999,
+          "backtestValue": null,
+          "paperValue": 996105.0731699999,
+          "accountValue": 996105.0731699999,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-05-06T00:00:00",
+          "date": "2026-05-06",
+          "value": 997433.0731699999,
+          "backtestValue": null,
+          "paperValue": 997433.0731699999,
+          "accountValue": 997433.0731699999,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-05-07T00:00:00",
+          "date": "2026-05-07",
+          "value": 999923.0731699999,
+          "backtestValue": null,
+          "paperValue": 999923.0731699999,
+          "accountValue": 999923.0731699999,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-05-08T00:00:00",
+          "date": "2026-05-08",
+          "value": 1003569.8062599999,
+          "backtestValue": null,
+          "paperValue": 1003569.8062599999,
+          "accountValue": 1003569.8062599999,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-05-11T00:00:00",
+          "date": "2026-05-11",
+          "value": 1003369.8062599999,
+          "backtestValue": null,
+          "paperValue": 1003369.8062599999,
+          "accountValue": 1003369.8062599999,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-05-12T00:00:00",
+          "date": "2026-05-12",
+          "value": 999624.8062599999,
+          "backtestValue": null,
+          "paperValue": 999624.8062599999,
+          "accountValue": 999624.8062599999,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-05-13T00:00:00",
+          "date": "2026-05-13",
+          "value": 1001086.8860999999,
+          "backtestValue": null,
+          "paperValue": 1001086.8860999999,
+          "accountValue": 1001086.8860999999,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-05-14T00:00:00",
+          "date": "2026-05-14",
+          "value": 998784.8860999999,
+          "backtestValue": null,
+          "paperValue": 998784.8860999999,
+          "accountValue": 998784.8860999999,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-05-15T00:00:00",
+          "date": "2026-05-15",
+          "value": 994872.8860999999,
+          "backtestValue": null,
+          "paperValue": 994872.8860999999,
+          "accountValue": 994872.8860999999,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-05-18T00:00:00",
+          "date": "2026-05-18",
+          "value": 997493.0100999998,
+          "backtestValue": null,
+          "paperValue": 997493.0100999998,
+          "accountValue": 997493.0100999998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-05-19T00:00:00",
+          "date": "2026-05-19",
+          "value": 996824.0211999998,
+          "backtestValue": null,
+          "paperValue": 996824.0211999998,
+          "accountValue": 996824.0211999998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-05-20T00:00:00",
+          "date": "2026-05-20",
+          "value": 995809.0211999998,
+          "backtestValue": null,
+          "paperValue": 995809.0211999998,
+          "accountValue": 995809.0211999998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-05-21T00:00:00",
+          "date": "2026-05-21",
+          "value": 983955.0211999998,
+          "backtestValue": null,
+          "paperValue": 983955.0211999998,
+          "accountValue": 983955.0211999998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-05-22T00:00:00",
+          "date": "2026-05-22",
+          "value": 987991.0211999998,
+          "backtestValue": null,
+          "paperValue": 987991.0211999998,
+          "accountValue": 987991.0211999998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-05-25T00:00:00",
+          "date": "2026-05-25",
+          "value": 1001187.0211999998,
+          "backtestValue": null,
+          "paperValue": 1001187.0211999998,
+          "accountValue": 1001187.0211999998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-05-26T00:00:00",
+          "date": "2026-05-26",
+          "value": 1008062.0211999998,
+          "backtestValue": null,
+          "paperValue": 1008062.0211999998,
+          "accountValue": 1008062.0211999998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-05-27T00:00:00",
+          "date": "2026-05-27",
+          "value": 1026250.0211999998,
+          "backtestValue": null,
+          "paperValue": 1026250.0211999998,
+          "accountValue": 1026250.0211999998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-05-28T00:00:00",
+          "date": "2026-05-28",
+          "value": 1038774.0211999998,
+          "backtestValue": null,
+          "paperValue": 1038774.0211999998,
+          "accountValue": 1038774.0211999998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-05-29T00:00:00",
+          "date": "2026-05-29",
+          "value": 1035983.0211999998,
+          "backtestValue": null,
+          "paperValue": 1035983.0211999998,
+          "accountValue": 1035983.0211999998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-06-01T00:00:00",
+          "date": "2026-06-01",
+          "value": 1038435.0211999998,
+          "backtestValue": null,
+          "paperValue": 1038435.0211999998,
+          "accountValue": 1038435.0211999998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-06-02T00:00:00",
+          "date": "2026-06-02",
+          "value": 1056113.0211999998,
+          "backtestValue": null,
+          "paperValue": 1056113.0211999998,
+          "accountValue": 1056113.0211999998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-06-03T00:00:00",
+          "date": "2026-06-03",
+          "value": 1053249.0211999998,
+          "backtestValue": null,
+          "paperValue": 1053249.0211999998,
+          "accountValue": 1053249.0211999998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-06-04T00:00:00",
+          "date": "2026-06-04",
+          "value": 1048055.1437399999,
+          "backtestValue": null,
+          "paperValue": 1048055.1437399999,
+          "accountValue": 1048055.1437399999,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-06-05T00:00:00",
+          "date": "2026-06-05",
+          "value": 1036835.1437399999,
+          "backtestValue": null,
+          "paperValue": 1036835.1437399999,
+          "accountValue": 1036835.1437399999,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-06-08T00:00:00",
+          "date": "2026-06-08",
+          "value": 1031742.4809399998,
+          "backtestValue": null,
+          "paperValue": 1031742.4809399998,
+          "accountValue": 1031742.4809399998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-06-09T00:00:00",
+          "date": "2026-06-09",
+          "value": 1031742.4809399998,
+          "backtestValue": null,
+          "paperValue": 1031742.4809399998,
+          "accountValue": 1031742.4809399998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-06-10T00:00:00",
+          "date": "2026-06-10",
+          "value": 1031742.4809399998,
+          "backtestValue": null,
+          "paperValue": 1031742.4809399998,
+          "accountValue": 1031742.4809399998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-06-11T00:00:00",
+          "date": "2026-06-11",
+          "value": 1031742.4809399998,
+          "backtestValue": null,
+          "paperValue": 1031742.4809399998,
+          "accountValue": 1031742.4809399998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-06-12T00:00:00",
+          "date": "2026-06-12",
+          "value": 1031742.4809399998,
+          "backtestValue": null,
+          "paperValue": 1031742.4809399998,
+          "accountValue": 1031742.4809399998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-06-15T00:00:00",
+          "date": "2026-06-15",
+          "value": 1031742.4809399998,
+          "backtestValue": null,
+          "paperValue": 1031742.4809399998,
+          "accountValue": 1031742.4809399998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-06-16T00:00:00",
+          "date": "2026-06-16",
+          "value": 1031742.4809399998,
+          "backtestValue": null,
+          "paperValue": 1031742.4809399998,
+          "accountValue": 1031742.4809399998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-06-17T00:00:00",
+          "date": "2026-06-17",
+          "value": 1031742.4809399998,
+          "backtestValue": null,
+          "paperValue": 1031742.4809399998,
+          "accountValue": 1031742.4809399998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-06-18T00:00:00",
+          "date": "2026-06-18",
+          "value": 1031742.4809399998,
+          "backtestValue": null,
+          "paperValue": 1031742.4809399998,
+          "accountValue": 1031742.4809399998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-06-22T00:00:00",
+          "date": "2026-06-22",
+          "value": 1031742.4809399998,
+          "backtestValue": null,
+          "paperValue": 1031742.4809399998,
+          "accountValue": 1031742.4809399998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-06-23T00:00:00",
+          "date": "2026-06-23",
+          "value": 1031742.4809399998,
+          "backtestValue": null,
+          "paperValue": 1031742.4809399998,
+          "accountValue": 1031742.4809399998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-06-24T00:00:00",
+          "date": "2026-06-24",
+          "value": 1031742.4809399998,
+          "backtestValue": null,
+          "paperValue": 1031742.4809399998,
+          "accountValue": 1031742.4809399998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-06-25T00:00:00",
+          "date": "2026-06-25",
+          "value": 1035549.8044599998,
+          "backtestValue": null,
+          "paperValue": 1035549.8044599998,
+          "accountValue": 1035549.8044599998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-06-26T00:00:00",
+          "date": "2026-06-26",
+          "value": 1024765.8044599998,
+          "backtestValue": null,
+          "paperValue": 1024765.8044599998,
+          "accountValue": 1024765.8044599998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-06-29T00:00:00",
+          "date": "2026-06-29",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-06-30T00:00:00",
+          "date": "2026-06-30",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-01T00:00:00",
+          "date": "2026-07-01",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-02T00:00:00",
+          "date": "2026-07-02",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-03T00:00:00",
+          "date": "2026-07-03",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-06T00:00:00",
+          "date": "2026-07-06",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-07T00:00:00",
+          "date": "2026-07-07",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-08T00:00:00",
+          "date": "2026-07-08",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-09T00:00:00",
+          "date": "2026-07-09",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-10T00:00:00",
+          "date": "2026-07-10",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-13T00:00:00",
+          "date": "2026-07-13",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-14T00:00:00",
+          "date": "2026-07-14",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-15T00:00:00",
+          "date": "2026-07-15",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-16T00:00:00",
+          "date": "2026-07-16",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-17T00:00:00",
+          "date": "2026-07-17",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-20T00:00:00",
+          "date": "2026-07-20",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-21T00:00:00",
+          "date": "2026-07-21",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-22T00:00:00",
+          "date": "2026-07-22",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-23T00:00:00",
+          "date": "2026-07-23",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-24T00:00:00",
+          "date": "2026-07-24",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-27T00:00:00",
+          "date": "2026-07-27",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-28T00:00:00",
+          "date": "2026-07-28",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-29T00:00:00",
+          "date": "2026-07-29",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-30T00:00:00",
+          "date": "2026-07-30",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-31T00:00:00",
+          "date": "2026-07-31",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-08-03T00:00:00",
+          "date": "2026-08-03",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-08-04T00:00:00",
+          "date": "2026-08-04",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-08-05T00:00:00",
+          "date": "2026-08-05",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-08-06T00:00:00",
+          "date": "2026-08-06",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-08-07T00:00:00",
+          "date": "2026-08-07",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-08-10T00:00:00",
+          "date": "2026-08-10",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-08-11T00:00:00",
+          "date": "2026-08-11",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-08-12T00:00:00",
+          "date": "2026-08-12",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-08-13T00:00:00",
+          "date": "2026-08-13",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-08-14T00:00:00",
+          "date": "2026-08-14",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-08-17T00:00:00",
+          "date": "2026-08-17",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-08-18T00:00:00",
+          "date": "2026-08-18",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-08-19T00:00:00",
+          "date": "2026-08-19",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-08-20T00:00:00",
+          "date": "2026-08-20",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-08-21T00:00:00",
+          "date": "2026-08-21",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-08-24T00:00:00",
+          "date": "2026-08-24",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-08-25T00:00:00",
+          "date": "2026-08-25",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-08-26T00:00:00",
+          "date": "2026-08-26",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-08-27T00:00:00",
+          "date": "2026-08-27",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-08-28T00:00:00",
+          "date": "2026-08-28",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-08-31T00:00:00",
+          "date": "2026-08-31",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-09-01T00:00:00",
+          "date": "2026-09-01",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-09-02T00:00:00",
+          "date": "2026-09-02",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-09-03T00:00:00",
+          "date": "2026-09-03",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-09-04T00:00:00",
+          "date": "2026-09-04",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-09-07T00:00:00",
+          "date": "2026-09-07",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-09-08T00:00:00",
+          "date": "2026-09-08",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-09-09T00:00:00",
+          "date": "2026-09-09",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-09-10T00:00:00",
+          "date": "2026-09-10",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-09-11T00:00:00",
+          "date": "2026-09-11",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-09-14T00:00:00",
+          "date": "2026-09-14",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-09-15T00:00:00",
+          "date": "2026-09-15",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-09-16T00:00:00",
+          "date": "2026-09-16",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-09-17T00:00:00",
+          "date": "2026-09-17",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-09-18T00:00:00",
+          "date": "2026-09-18",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-09-21T00:00:00",
+          "date": "2026-09-21",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-09-22T00:00:00",
+          "date": "2026-09-22",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-09-23T00:00:00",
+          "date": "2026-09-23",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-09-24T00:00:00",
+          "date": "2026-09-24",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-09-28T00:00:00",
+          "date": "2026-09-28",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-09-29T00:00:00",
+          "date": "2026-09-29",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-09-30T00:00:00",
+          "date": "2026-09-30",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        }
+      ],
+      "comparisonEquity": [
+        {
+          "timestamp": "2026-01-05T00:00:00",
+          "date": "2026-01-05",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-01-06T00:00:00",
+          "date": "2026-01-06",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-01-07T00:00:00",
+          "date": "2026-01-07",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-01-08T00:00:00",
+          "date": "2026-01-08",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-01-09T00:00:00",
+          "date": "2026-01-09",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-01-12T00:00:00",
+          "date": "2026-01-12",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-01-13T00:00:00",
+          "date": "2026-01-13",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-01-14T00:00:00",
+          "date": "2026-01-14",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-01-15T00:00:00",
+          "date": "2026-01-15",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-01-16T00:00:00",
+          "date": "2026-01-16",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-01-19T00:00:00",
+          "date": "2026-01-19",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-01-20T00:00:00",
+          "date": "2026-01-20",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-01-21T00:00:00",
+          "date": "2026-01-21",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-01-22T00:00:00",
+          "date": "2026-01-22",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-01-23T00:00:00",
+          "date": "2026-01-23",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-01-26T00:00:00",
+          "date": "2026-01-26",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-01-27T00:00:00",
+          "date": "2026-01-27",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-01-28T00:00:00",
+          "date": "2026-01-28",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-01-29T00:00:00",
+          "date": "2026-01-29",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-01-30T00:00:00",
+          "date": "2026-01-30",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-02-02T00:00:00",
+          "date": "2026-02-02",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-02-03T00:00:00",
+          "date": "2026-02-03",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-02-04T00:00:00",
+          "date": "2026-02-04",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-02-05T00:00:00",
+          "date": "2026-02-05",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-02-06T00:00:00",
+          "date": "2026-02-06",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-02-09T00:00:00",
+          "date": "2026-02-09",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-02-10T00:00:00",
+          "date": "2026-02-10",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-02-11T00:00:00",
+          "date": "2026-02-11",
+          "value": 1000000,
+          "backtestValue": null,
+          "paperValue": 1000000,
+          "accountValue": 1000000,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-02-12T00:00:00",
+          "date": "2026-02-12",
+          "value": 1001457.28272,
+          "backtestValue": null,
+          "paperValue": 1001457.28272,
+          "accountValue": 1001457.28272,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-02-13T00:00:00",
+          "date": "2026-02-13",
+          "value": 995307.5252,
+          "backtestValue": null,
+          "paperValue": 995307.5252,
+          "accountValue": 995307.5252,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-02-24T00:00:00",
+          "date": "2026-02-24",
+          "value": 999059.21208,
+          "backtestValue": null,
+          "paperValue": 999059.21208,
+          "accountValue": 999059.21208,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-02-25T00:00:00",
+          "date": "2026-02-25",
+          "value": 1000510.13142,
+          "backtestValue": null,
+          "paperValue": 1000510.13142,
+          "accountValue": 1000510.13142,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-02-26T00:00:00",
+          "date": "2026-02-26",
+          "value": 1004229.13142,
+          "backtestValue": null,
+          "paperValue": 1004229.13142,
+          "accountValue": 1004229.13142,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-02-27T00:00:00",
+          "date": "2026-02-27",
+          "value": 1006738.13142,
+          "backtestValue": null,
+          "paperValue": 1006738.13142,
+          "accountValue": 1006738.13142,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-03-02T00:00:00",
+          "date": "2026-03-02",
+          "value": 1020209.13142,
+          "backtestValue": null,
+          "paperValue": 1020209.13142,
+          "accountValue": 1020209.13142,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-03-03T00:00:00",
+          "date": "2026-03-03",
+          "value": 1004582.13142,
+          "backtestValue": null,
+          "paperValue": 1004582.13142,
+          "accountValue": 1004582.13142,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-03-04T00:00:00",
+          "date": "2026-03-04",
+          "value": 1001903.13142,
+          "backtestValue": null,
+          "paperValue": 1001903.13142,
+          "accountValue": 1001903.13142,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-03-05T00:00:00",
+          "date": "2026-03-05",
+          "value": 1003444.93621,
+          "backtestValue": null,
+          "paperValue": 1003444.93621,
+          "accountValue": 1003444.93621,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-03-06T00:00:00",
+          "date": "2026-03-06",
+          "value": 1003260.93621,
+          "backtestValue": null,
+          "paperValue": 1003260.93621,
+          "accountValue": 1003260.93621,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-03-09T00:00:00",
+          "date": "2026-03-09",
+          "value": 997124.93621,
+          "backtestValue": null,
+          "paperValue": 997124.93621,
+          "accountValue": 997124.93621,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-03-10T00:00:00",
+          "date": "2026-03-10",
+          "value": 1003988.93621,
+          "backtestValue": null,
+          "paperValue": 1003988.93621,
+          "accountValue": 1003988.93621,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-03-11T00:00:00",
+          "date": "2026-03-11",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-03-12T00:00:00",
+          "date": "2026-03-12",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-03-13T00:00:00",
+          "date": "2026-03-13",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-03-16T00:00:00",
+          "date": "2026-03-16",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-03-17T00:00:00",
+          "date": "2026-03-17",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-03-18T00:00:00",
+          "date": "2026-03-18",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-03-19T00:00:00",
+          "date": "2026-03-19",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-03-20T00:00:00",
+          "date": "2026-03-20",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-03-23T00:00:00",
+          "date": "2026-03-23",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-03-24T00:00:00",
+          "date": "2026-03-24",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-03-25T00:00:00",
+          "date": "2026-03-25",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-03-26T00:00:00",
+          "date": "2026-03-26",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-03-27T00:00:00",
+          "date": "2026-03-27",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-03-30T00:00:00",
+          "date": "2026-03-30",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-03-31T00:00:00",
+          "date": "2026-03-31",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-04-01T00:00:00",
+          "date": "2026-04-01",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-04-02T00:00:00",
+          "date": "2026-04-02",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-04-03T00:00:00",
+          "date": "2026-04-03",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-04-07T00:00:00",
+          "date": "2026-04-07",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-04-08T00:00:00",
+          "date": "2026-04-08",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-04-09T00:00:00",
+          "date": "2026-04-09",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-04-10T00:00:00",
+          "date": "2026-04-10",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-04-13T00:00:00",
+          "date": "2026-04-13",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-04-14T00:00:00",
+          "date": "2026-04-14",
+          "value": 1003769.27941,
+          "backtestValue": null,
+          "paperValue": 1003769.27941,
+          "accountValue": 1003769.27941,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-04-15T00:00:00",
+          "date": "2026-04-15",
+          "value": 1002281.2675699999,
+          "backtestValue": null,
+          "paperValue": 1002281.2675699999,
+          "accountValue": 1002281.2675699999,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-04-16T00:00:00",
+          "date": "2026-04-16",
+          "value": 991987.0812899999,
+          "backtestValue": null,
+          "paperValue": 991987.0812899999,
+          "accountValue": 991987.0812899999,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-04-17T00:00:00",
+          "date": "2026-04-17",
+          "value": 991987.0812899999,
+          "backtestValue": null,
+          "paperValue": 991987.0812899999,
+          "accountValue": 991987.0812899999,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-04-20T00:00:00",
+          "date": "2026-04-20",
+          "value": 993449.0731699999,
+          "backtestValue": null,
+          "paperValue": 993449.0731699999,
+          "accountValue": 993449.0731699999,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-04-21T00:00:00",
+          "date": "2026-04-21",
+          "value": 992453.0731699999,
+          "backtestValue": null,
+          "paperValue": 992453.0731699999,
+          "accountValue": 992453.0731699999,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-04-22T00:00:00",
+          "date": "2026-04-22",
+          "value": 991623.0731699999,
+          "backtestValue": null,
+          "paperValue": 991623.0731699999,
+          "accountValue": 991623.0731699999,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-04-23T00:00:00",
+          "date": "2026-04-23",
+          "value": 993117.0731699999,
+          "backtestValue": null,
+          "paperValue": 993117.0731699999,
+          "accountValue": 993117.0731699999,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-04-24T00:00:00",
+          "date": "2026-04-24",
+          "value": 993449.0731699999,
+          "backtestValue": null,
+          "paperValue": 993449.0731699999,
+          "accountValue": 993449.0731699999,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-04-27T00:00:00",
+          "date": "2026-04-27",
+          "value": 996437.0731699999,
+          "backtestValue": null,
+          "paperValue": 996437.0731699999,
+          "accountValue": 996437.0731699999,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-04-28T00:00:00",
+          "date": "2026-04-28",
+          "value": 1002911.0731699999,
+          "backtestValue": null,
+          "paperValue": 1002911.0731699999,
+          "accountValue": 1002911.0731699999,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-04-29T00:00:00",
+          "date": "2026-04-29",
+          "value": 1000753.0731699999,
+          "backtestValue": null,
+          "paperValue": 1000753.0731699999,
+          "accountValue": 1000753.0731699999,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-04-30T00:00:00",
+          "date": "2026-04-30",
+          "value": 996105.0731699999,
+          "backtestValue": null,
+          "paperValue": 996105.0731699999,
+          "accountValue": 996105.0731699999,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-05-06T00:00:00",
+          "date": "2026-05-06",
+          "value": 997433.0731699999,
+          "backtestValue": null,
+          "paperValue": 997433.0731699999,
+          "accountValue": 997433.0731699999,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-05-07T00:00:00",
+          "date": "2026-05-07",
+          "value": 999923.0731699999,
+          "backtestValue": null,
+          "paperValue": 999923.0731699999,
+          "accountValue": 999923.0731699999,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-05-08T00:00:00",
+          "date": "2026-05-08",
+          "value": 1003569.8062599999,
+          "backtestValue": null,
+          "paperValue": 1003569.8062599999,
+          "accountValue": 1003569.8062599999,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-05-11T00:00:00",
+          "date": "2026-05-11",
+          "value": 1003369.8062599999,
+          "backtestValue": null,
+          "paperValue": 1003369.8062599999,
+          "accountValue": 1003369.8062599999,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-05-12T00:00:00",
+          "date": "2026-05-12",
+          "value": 999624.8062599999,
+          "backtestValue": null,
+          "paperValue": 999624.8062599999,
+          "accountValue": 999624.8062599999,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-05-13T00:00:00",
+          "date": "2026-05-13",
+          "value": 1001086.8860999999,
+          "backtestValue": null,
+          "paperValue": 1001086.8860999999,
+          "accountValue": 1001086.8860999999,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-05-14T00:00:00",
+          "date": "2026-05-14",
+          "value": 998784.8860999999,
+          "backtestValue": null,
+          "paperValue": 998784.8860999999,
+          "accountValue": 998784.8860999999,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-05-15T00:00:00",
+          "date": "2026-05-15",
+          "value": 994872.8860999999,
+          "backtestValue": null,
+          "paperValue": 994872.8860999999,
+          "accountValue": 994872.8860999999,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-05-18T00:00:00",
+          "date": "2026-05-18",
+          "value": 997493.0100999998,
+          "backtestValue": null,
+          "paperValue": 997493.0100999998,
+          "accountValue": 997493.0100999998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-05-19T00:00:00",
+          "date": "2026-05-19",
+          "value": 996824.0211999998,
+          "backtestValue": null,
+          "paperValue": 996824.0211999998,
+          "accountValue": 996824.0211999998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-05-20T00:00:00",
+          "date": "2026-05-20",
+          "value": 995809.0211999998,
+          "backtestValue": null,
+          "paperValue": 995809.0211999998,
+          "accountValue": 995809.0211999998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-05-21T00:00:00",
+          "date": "2026-05-21",
+          "value": 983955.0211999998,
+          "backtestValue": null,
+          "paperValue": 983955.0211999998,
+          "accountValue": 983955.0211999998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-05-22T00:00:00",
+          "date": "2026-05-22",
+          "value": 987991.0211999998,
+          "backtestValue": null,
+          "paperValue": 987991.0211999998,
+          "accountValue": 987991.0211999998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-05-25T00:00:00",
+          "date": "2026-05-25",
+          "value": 1001187.0211999998,
+          "backtestValue": null,
+          "paperValue": 1001187.0211999998,
+          "accountValue": 1001187.0211999998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-05-26T00:00:00",
+          "date": "2026-05-26",
+          "value": 1008062.0211999998,
+          "backtestValue": null,
+          "paperValue": 1008062.0211999998,
+          "accountValue": 1008062.0211999998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-05-27T00:00:00",
+          "date": "2026-05-27",
+          "value": 1026250.0211999998,
+          "backtestValue": null,
+          "paperValue": 1026250.0211999998,
+          "accountValue": 1026250.0211999998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-05-28T00:00:00",
+          "date": "2026-05-28",
+          "value": 1038774.0211999998,
+          "backtestValue": null,
+          "paperValue": 1038774.0211999998,
+          "accountValue": 1038774.0211999998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-05-29T00:00:00",
+          "date": "2026-05-29",
+          "value": 1035983.0211999998,
+          "backtestValue": null,
+          "paperValue": 1035983.0211999998,
+          "accountValue": 1035983.0211999998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-06-01T00:00:00",
+          "date": "2026-06-01",
+          "value": 1038435.0211999998,
+          "backtestValue": null,
+          "paperValue": 1038435.0211999998,
+          "accountValue": 1038435.0211999998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-06-02T00:00:00",
+          "date": "2026-06-02",
+          "value": 1056113.0211999998,
+          "backtestValue": null,
+          "paperValue": 1056113.0211999998,
+          "accountValue": 1056113.0211999998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-06-03T00:00:00",
+          "date": "2026-06-03",
+          "value": 1053249.0211999998,
+          "backtestValue": null,
+          "paperValue": 1053249.0211999998,
+          "accountValue": 1053249.0211999998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-06-04T00:00:00",
+          "date": "2026-06-04",
+          "value": 1048055.1437399999,
+          "backtestValue": null,
+          "paperValue": 1048055.1437399999,
+          "accountValue": 1048055.1437399999,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-06-05T00:00:00",
+          "date": "2026-06-05",
+          "value": 1036835.1437399999,
+          "backtestValue": null,
+          "paperValue": 1036835.1437399999,
+          "accountValue": 1036835.1437399999,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-06-08T00:00:00",
+          "date": "2026-06-08",
+          "value": 1031742.4809399998,
+          "backtestValue": null,
+          "paperValue": 1031742.4809399998,
+          "accountValue": 1031742.4809399998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-06-09T00:00:00",
+          "date": "2026-06-09",
+          "value": 1031742.4809399998,
+          "backtestValue": null,
+          "paperValue": 1031742.4809399998,
+          "accountValue": 1031742.4809399998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-06-10T00:00:00",
+          "date": "2026-06-10",
+          "value": 1031742.4809399998,
+          "backtestValue": null,
+          "paperValue": 1031742.4809399998,
+          "accountValue": 1031742.4809399998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-06-11T00:00:00",
+          "date": "2026-06-11",
+          "value": 1031742.4809399998,
+          "backtestValue": null,
+          "paperValue": 1031742.4809399998,
+          "accountValue": 1031742.4809399998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-06-12T00:00:00",
+          "date": "2026-06-12",
+          "value": 1031742.4809399998,
+          "backtestValue": null,
+          "paperValue": 1031742.4809399998,
+          "accountValue": 1031742.4809399998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-06-15T00:00:00",
+          "date": "2026-06-15",
+          "value": 1031742.4809399998,
+          "backtestValue": null,
+          "paperValue": 1031742.4809399998,
+          "accountValue": 1031742.4809399998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-06-16T00:00:00",
+          "date": "2026-06-16",
+          "value": 1031742.4809399998,
+          "backtestValue": null,
+          "paperValue": 1031742.4809399998,
+          "accountValue": 1031742.4809399998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-06-17T00:00:00",
+          "date": "2026-06-17",
+          "value": 1031742.4809399998,
+          "backtestValue": null,
+          "paperValue": 1031742.4809399998,
+          "accountValue": 1031742.4809399998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-06-18T00:00:00",
+          "date": "2026-06-18",
+          "value": 1031742.4809399998,
+          "backtestValue": null,
+          "paperValue": 1031742.4809399998,
+          "accountValue": 1031742.4809399998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-06-22T00:00:00",
+          "date": "2026-06-22",
+          "value": 1031742.4809399998,
+          "backtestValue": null,
+          "paperValue": 1031742.4809399998,
+          "accountValue": 1031742.4809399998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-06-23T00:00:00",
+          "date": "2026-06-23",
+          "value": 1031742.4809399998,
+          "backtestValue": null,
+          "paperValue": 1031742.4809399998,
+          "accountValue": 1031742.4809399998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-06-24T00:00:00",
+          "date": "2026-06-24",
+          "value": 1031742.4809399998,
+          "backtestValue": null,
+          "paperValue": 1031742.4809399998,
+          "accountValue": 1031742.4809399998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-06-25T00:00:00",
+          "date": "2026-06-25",
+          "value": 1035549.8044599998,
+          "backtestValue": null,
+          "paperValue": 1035549.8044599998,
+          "accountValue": 1035549.8044599998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-06-26T00:00:00",
+          "date": "2026-06-26",
+          "value": 1024765.8044599998,
+          "backtestValue": null,
+          "paperValue": 1024765.8044599998,
+          "accountValue": 1024765.8044599998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-06-29T00:00:00",
+          "date": "2026-06-29",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-06-30T00:00:00",
+          "date": "2026-06-30",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-01T00:00:00",
+          "date": "2026-07-01",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-02T00:00:00",
+          "date": "2026-07-02",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-03T00:00:00",
+          "date": "2026-07-03",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-06T00:00:00",
+          "date": "2026-07-06",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-07T00:00:00",
+          "date": "2026-07-07",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-08T00:00:00",
+          "date": "2026-07-08",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-09T00:00:00",
+          "date": "2026-07-09",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-10T00:00:00",
+          "date": "2026-07-10",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-13T00:00:00",
+          "date": "2026-07-13",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-14T00:00:00",
+          "date": "2026-07-14",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-15T00:00:00",
+          "date": "2026-07-15",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-16T00:00:00",
+          "date": "2026-07-16",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-17T00:00:00",
+          "date": "2026-07-17",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-20T00:00:00",
+          "date": "2026-07-20",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-21T00:00:00",
+          "date": "2026-07-21",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-22T00:00:00",
+          "date": "2026-07-22",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-23T00:00:00",
+          "date": "2026-07-23",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-24T00:00:00",
+          "date": "2026-07-24",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-27T00:00:00",
+          "date": "2026-07-27",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-28T00:00:00",
+          "date": "2026-07-28",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-29T00:00:00",
+          "date": "2026-07-29",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-30T00:00:00",
+          "date": "2026-07-30",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-07-31T00:00:00",
+          "date": "2026-07-31",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-08-03T00:00:00",
+          "date": "2026-08-03",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-08-04T00:00:00",
+          "date": "2026-08-04",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-08-05T00:00:00",
+          "date": "2026-08-05",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-08-06T00:00:00",
+          "date": "2026-08-06",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-08-07T00:00:00",
+          "date": "2026-08-07",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-08-10T00:00:00",
+          "date": "2026-08-10",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-08-11T00:00:00",
+          "date": "2026-08-11",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-08-12T00:00:00",
+          "date": "2026-08-12",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-08-13T00:00:00",
+          "date": "2026-08-13",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-08-14T00:00:00",
+          "date": "2026-08-14",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-08-17T00:00:00",
+          "date": "2026-08-17",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-08-18T00:00:00",
+          "date": "2026-08-18",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-08-19T00:00:00",
+          "date": "2026-08-19",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-08-20T00:00:00",
+          "date": "2026-08-20",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-08-21T00:00:00",
+          "date": "2026-08-21",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-08-24T00:00:00",
+          "date": "2026-08-24",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-08-25T00:00:00",
+          "date": "2026-08-25",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-08-26T00:00:00",
+          "date": "2026-08-26",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-08-27T00:00:00",
+          "date": "2026-08-27",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-08-28T00:00:00",
+          "date": "2026-08-28",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-08-31T00:00:00",
+          "date": "2026-08-31",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-09-01T00:00:00",
+          "date": "2026-09-01",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-09-02T00:00:00",
+          "date": "2026-09-02",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-09-03T00:00:00",
+          "date": "2026-09-03",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-09-04T00:00:00",
+          "date": "2026-09-04",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-09-07T00:00:00",
+          "date": "2026-09-07",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-09-08T00:00:00",
+          "date": "2026-09-08",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-09-09T00:00:00",
+          "date": "2026-09-09",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-09-10T00:00:00",
+          "date": "2026-09-10",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-09-11T00:00:00",
+          "date": "2026-09-11",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-09-14T00:00:00",
+          "date": "2026-09-14",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-09-15T00:00:00",
+          "date": "2026-09-15",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-09-16T00:00:00",
+          "date": "2026-09-16",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-09-17T00:00:00",
+          "date": "2026-09-17",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-09-18T00:00:00",
+          "date": "2026-09-18",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-09-21T00:00:00",
+          "date": "2026-09-21",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-09-22T00:00:00",
+          "date": "2026-09-22",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-09-23T00:00:00",
+          "date": "2026-09-23",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-09-24T00:00:00",
+          "date": "2026-09-24",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-09-28T00:00:00",
+          "date": "2026-09-28",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-09-29T00:00:00",
+          "date": "2026-09-29",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        },
+        {
+          "timestamp": "2026-09-30T00:00:00",
+          "date": "2026-09-30",
+          "value": 1023886.6966199998,
+          "backtestValue": null,
+          "paperValue": 1023886.6966199998,
+          "accountValue": 1023886.6966199998,
+          "phase": "paper"
+        }
+      ],
+      "backtestEndDate": null,
+      "paperStartDate": "20260105",
+      "curveMode": "INDEPENDENT_FRESH_2026",
+      "integrationSource": "[本地文件]",
+      "onboarding": {
+        "accountComparison": null,
+        "status": "BLOCKED",
+        "codeMounted": true,
+        "dataReady": true,
+        "accountEnabled": false,
+        "hasPaperTrades": false,
+        "marketDataThrough": "20260930",
+        "replayStatus": "PASS_DAILY_RESEARCH_181_SESSIONS",
+        "replayAvailable": true,
+        "replayStart": "20260105",
+        "replayEnd": "20260930",
+        "replayReturn": 0.02388669661999976,
+        "replayMaxDrawdown": -0.035535959347412494,
+        "replayTradeCount": 18,
+        "replaySharpe": 0.6081956752157369,
+        "replayWinRate": null,
+        "replayWinRateLabel": "日胜率",
+        "replayMonthlyWinRate": null,
+        "replayPayoffRatio": null,
+        "replayEndingAssets": 1023886.6966199998,
+        "replayCash": 1023886.6966199998,
+        "replayHoldingCount": 0,
+        "replayCurve": [
+          {
+            "date": "2026-01-05",
+            "strategy": 100,
+            "benchmark": null,
+            "strategyDrawdown": 0,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-01-06",
+            "strategy": 100,
+            "benchmark": null,
+            "strategyDrawdown": 0,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-01-07",
+            "strategy": 100,
+            "benchmark": null,
+            "strategyDrawdown": 0,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-01-08",
+            "strategy": 100,
+            "benchmark": null,
+            "strategyDrawdown": 0,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-01-09",
+            "strategy": 100,
+            "benchmark": null,
+            "strategyDrawdown": 0,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-01-12",
+            "strategy": 100,
+            "benchmark": null,
+            "strategyDrawdown": 0,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-01-13",
+            "strategy": 100,
+            "benchmark": null,
+            "strategyDrawdown": 0,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-01-14",
+            "strategy": 100,
+            "benchmark": null,
+            "strategyDrawdown": 0,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-01-15",
+            "strategy": 100,
+            "benchmark": null,
+            "strategyDrawdown": 0,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-01-16",
+            "strategy": 100,
+            "benchmark": null,
+            "strategyDrawdown": 0,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-01-19",
+            "strategy": 100,
+            "benchmark": null,
+            "strategyDrawdown": 0,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-01-20",
+            "strategy": 100,
+            "benchmark": null,
+            "strategyDrawdown": 0,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-01-21",
+            "strategy": 100,
+            "benchmark": null,
+            "strategyDrawdown": 0,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-01-22",
+            "strategy": 100,
+            "benchmark": null,
+            "strategyDrawdown": 0,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-01-23",
+            "strategy": 100,
+            "benchmark": null,
+            "strategyDrawdown": 0,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-01-26",
+            "strategy": 100,
+            "benchmark": null,
+            "strategyDrawdown": 0,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-01-27",
+            "strategy": 100,
+            "benchmark": null,
+            "strategyDrawdown": 0,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-01-28",
+            "strategy": 100,
+            "benchmark": null,
+            "strategyDrawdown": 0,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-01-29",
+            "strategy": 100,
+            "benchmark": null,
+            "strategyDrawdown": 0,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-01-30",
+            "strategy": 100,
+            "benchmark": null,
+            "strategyDrawdown": 0,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-02-02",
+            "strategy": 100,
+            "benchmark": null,
+            "strategyDrawdown": 0,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-02-03",
+            "strategy": 100,
+            "benchmark": null,
+            "strategyDrawdown": 0,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-02-04",
+            "strategy": 100,
+            "benchmark": null,
+            "strategyDrawdown": 0,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-02-05",
+            "strategy": 100,
+            "benchmark": null,
+            "strategyDrawdown": 0,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-02-06",
+            "strategy": 100,
+            "benchmark": null,
+            "strategyDrawdown": 0,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-02-09",
+            "strategy": 100,
+            "benchmark": null,
+            "strategyDrawdown": 0,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-02-10",
+            "strategy": 100,
+            "benchmark": null,
+            "strategyDrawdown": 0,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-02-11",
+            "strategy": 100,
+            "benchmark": null,
+            "strategyDrawdown": 0,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-02-12",
+            "strategy": 100.14572827200001,
+            "benchmark": null,
+            "strategyDrawdown": 0,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-02-13",
+            "strategy": 99.53075252,
+            "benchmark": null,
+            "strategyDrawdown": -0.006140808625702876,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-02-24",
+            "strategy": 99.905921208,
+            "benchmark": null,
+            "strategyDrawdown": -0.0023945810584019567,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-02-25",
+            "strategy": 100.051013142,
+            "benchmark": null,
+            "strategyDrawdown": -0.0009457730412899545,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-02-26",
+            "strategy": 100.422913142,
+            "benchmark": null,
+            "strategyDrawdown": 0,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-02-27",
+            "strategy": 100.67381314199999,
+            "benchmark": null,
+            "strategyDrawdown": 0,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-03-02",
+            "strategy": 102.020913142,
+            "benchmark": null,
+            "strategyDrawdown": 0,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-03-03",
+            "strategy": 100.458213142,
+            "benchmark": null,
+            "strategyDrawdown": -0.015317447686680863,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-03-04",
+            "strategy": 100.190313142,
+            "benchmark": null,
+            "strategyDrawdown": -0.017943379877927934,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-03-05",
+            "strategy": 100.344493621,
+            "benchmark": null,
+            "strategyDrawdown": -0.01643211640996234,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-03-06",
+            "strategy": 100.326093621,
+            "benchmark": null,
+            "strategyDrawdown": -0.01661247158845791,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-03-09",
+            "strategy": 99.712493621,
+            "benchmark": null,
+            "strategyDrawdown": -0.022626924714807983,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-03-10",
+            "strategy": 100.39889362099998,
+            "benchmark": null,
+            "strategyDrawdown": -0.015898892403975684,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-03-11",
+            "strategy": 100.37692794099999,
+            "benchmark": null,
+            "strategyDrawdown": -0.0161141980636047,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-03-12",
+            "strategy": 100.37692794099999,
+            "benchmark": null,
+            "strategyDrawdown": -0.0161141980636047,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-03-13",
+            "strategy": 100.37692794099999,
+            "benchmark": null,
+            "strategyDrawdown": -0.0161141980636047,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-03-16",
+            "strategy": 100.37692794099999,
+            "benchmark": null,
+            "strategyDrawdown": -0.0161141980636047,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-03-17",
+            "strategy": 100.37692794099999,
+            "benchmark": null,
+            "strategyDrawdown": -0.0161141980636047,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-03-18",
+            "strategy": 100.37692794099999,
+            "benchmark": null,
+            "strategyDrawdown": -0.0161141980636047,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-03-19",
+            "strategy": 100.37692794099999,
+            "benchmark": null,
+            "strategyDrawdown": -0.0161141980636047,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-03-20",
+            "strategy": 100.37692794099999,
+            "benchmark": null,
+            "strategyDrawdown": -0.0161141980636047,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-03-23",
+            "strategy": 100.37692794099999,
+            "benchmark": null,
+            "strategyDrawdown": -0.0161141980636047,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-03-24",
+            "strategy": 100.37692794099999,
+            "benchmark": null,
+            "strategyDrawdown": -0.0161141980636047,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-03-25",
+            "strategy": 100.37692794099999,
+            "benchmark": null,
+            "strategyDrawdown": -0.0161141980636047,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-03-26",
+            "strategy": 100.37692794099999,
+            "benchmark": null,
+            "strategyDrawdown": -0.0161141980636047,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-03-27",
+            "strategy": 100.37692794099999,
+            "benchmark": null,
+            "strategyDrawdown": -0.0161141980636047,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-03-30",
+            "strategy": 100.37692794099999,
+            "benchmark": null,
+            "strategyDrawdown": -0.0161141980636047,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-03-31",
+            "strategy": 100.37692794099999,
+            "benchmark": null,
+            "strategyDrawdown": -0.0161141980636047,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-04-01",
+            "strategy": 100.37692794099999,
+            "benchmark": null,
+            "strategyDrawdown": -0.0161141980636047,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-04-02",
+            "strategy": 100.37692794099999,
+            "benchmark": null,
+            "strategyDrawdown": -0.0161141980636047,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-04-03",
+            "strategy": 100.37692794099999,
+            "benchmark": null,
+            "strategyDrawdown": -0.0161141980636047,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-04-07",
+            "strategy": 100.37692794099999,
+            "benchmark": null,
+            "strategyDrawdown": -0.0161141980636047,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-04-08",
+            "strategy": 100.37692794099999,
+            "benchmark": null,
+            "strategyDrawdown": -0.0161141980636047,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-04-09",
+            "strategy": 100.37692794099999,
+            "benchmark": null,
+            "strategyDrawdown": -0.0161141980636047,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-04-10",
+            "strategy": 100.37692794099999,
+            "benchmark": null,
+            "strategyDrawdown": -0.0161141980636047,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-04-13",
+            "strategy": 100.37692794099999,
+            "benchmark": null,
+            "strategyDrawdown": -0.0161141980636047,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-04-14",
+            "strategy": 100.37692794099999,
+            "benchmark": null,
+            "strategyDrawdown": -0.0161141980636047,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-04-15",
+            "strategy": 100.22812675699998,
+            "benchmark": null,
+            "strategyDrawdown": -0.01757273415603211,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-04-16",
+            "strategy": 99.198708129,
+            "benchmark": null,
+            "strategyDrawdown": -0.027663004829920124,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-04-17",
+            "strategy": 99.198708129,
+            "benchmark": null,
+            "strategyDrawdown": -0.027663004829920124,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-04-20",
+            "strategy": 99.34490731699998,
+            "benchmark": null,
+            "strategyDrawdown": -0.026229973272983265,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-04-21",
+            "strategy": 99.24530731699998,
+            "benchmark": null,
+            "strategyDrawdown": -0.02720624369570901,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-04-22",
+            "strategy": 99.16230731699999,
+            "benchmark": null,
+            "strategyDrawdown": -0.02801980238131374,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-04-23",
+            "strategy": 99.31170731699999,
+            "benchmark": null,
+            "strategyDrawdown": -0.02655539674722518,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-04-24",
+            "strategy": 99.34490731699998,
+            "benchmark": null,
+            "strategyDrawdown": -0.026229973272983265,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-04-27",
+            "strategy": 99.64370731699998,
+            "benchmark": null,
+            "strategyDrawdown": -0.023301162004806253,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-04-28",
+            "strategy": 100.291107317,
+            "benchmark": null,
+            "strategyDrawdown": -0.016955404257089413,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-04-29",
+            "strategy": 100.07530731699998,
+            "benchmark": null,
+            "strategyDrawdown": -0.019070656839661693,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-04-30",
+            "strategy": 99.61050731699999,
+            "benchmark": null,
+            "strategyDrawdown": -0.023626585479048168,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-05-06",
+            "strategy": 99.74330731699999,
+            "benchmark": null,
+            "strategyDrawdown": -0.02232489158208062,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-05-07",
+            "strategy": 99.99230731699998,
+            "benchmark": null,
+            "strategyDrawdown": -0.019884215525266424,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-05-08",
+            "strategy": 100.35698062599998,
+            "benchmark": null,
+            "strategyDrawdown": -0.016309719887372842,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-05-11",
+            "strategy": 100.33698062599998,
+            "benchmark": null,
+            "strategyDrawdown": -0.016505758124867986,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-05-12",
+            "strategy": 99.96248062599999,
+            "benchmark": null,
+            "strategyDrawdown": -0.02017657412196394,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-05-13",
+            "strategy": 100.10868861,
+            "benchmark": null,
+            "strategyDrawdown": -0.01874345634741026,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-05-14",
+            "strategy": 99.87848860999999,
+            "benchmark": null,
+            "strategyDrawdown": -0.020999856460979016,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-05-15",
+            "strategy": 99.48728861,
+            "benchmark": null,
+            "strategyDrawdown": -0.024834364386383534,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-05-18",
+            "strategy": 99.74930100999998,
+            "benchmark": null,
+            "strategyDrawdown": -0.022266141931490346,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-05-19",
+            "strategy": 99.68240211999998,
+            "benchmark": null,
+            "strategyDrawdown": -0.022921878955789232,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-05-20",
+            "strategy": 99.58090211999998,
+            "benchmark": null,
+            "strategyDrawdown": -0.023916773011076975,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-05-21",
+            "strategy": 98.39550211999999,
+            "benchmark": null,
+            "strategyDrawdown": -0.035535959347412494,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-05-22",
+            "strategy": 98.79910211999999,
+            "benchmark": null,
+            "strategyDrawdown": -0.031579907714761046,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-05-25",
+            "strategy": 100.11870211999998,
+            "benchmark": null,
+            "strategyDrawdown": -0.018645304804833285,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-05-26",
+            "strategy": 100.80620211999998,
+            "benchmark": null,
+            "strategyDrawdown": -0.011906490390938718,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-05-27",
+            "strategy": 102.62500211999999,
+            "benchmark": null,
+            "strategyDrawdown": 0,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-05-28",
+            "strategy": 103.87740211999999,
+            "benchmark": null,
+            "strategyDrawdown": 0,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-05-29",
+            "strategy": 103.59830211999999,
+            "benchmark": null,
+            "strategyDrawdown": -0.0026868211401511743,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-06-01",
+            "strategy": 103.84350211999998,
+            "benchmark": null,
+            "strategyDrawdown": -0.0003263462438234388,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-06-02",
+            "strategy": 105.61130211999998,
+            "benchmark": null,
+            "strategyDrawdown": 0,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-06-03",
+            "strategy": 105.32490211999999,
+            "benchmark": null,
+            "strategyDrawdown": -0.002711830971221074,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-06-04",
+            "strategy": 104.80551437399998,
+            "benchmark": null,
+            "strategyDrawdown": -0.007629749182378465,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-06-05",
+            "strategy": 103.68351437399998,
+            "benchmark": null,
+            "strategyDrawdown": -0.018253612135276653,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-06-08",
+            "strategy": 103.17424809399998,
+            "benchmark": null,
+            "strategyDrawdown": -0.023075693387729634,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-06-09",
+            "strategy": 103.17424809399998,
+            "benchmark": null,
+            "strategyDrawdown": -0.023075693387729634,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-06-10",
+            "strategy": 103.17424809399998,
+            "benchmark": null,
+            "strategyDrawdown": -0.023075693387729634,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-06-11",
+            "strategy": 103.17424809399998,
+            "benchmark": null,
+            "strategyDrawdown": -0.023075693387729634,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-06-12",
+            "strategy": 103.17424809399998,
+            "benchmark": null,
+            "strategyDrawdown": -0.023075693387729634,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-06-15",
+            "strategy": 103.17424809399998,
+            "benchmark": null,
+            "strategyDrawdown": -0.023075693387729634,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-06-16",
+            "strategy": 103.17424809399998,
+            "benchmark": null,
+            "strategyDrawdown": -0.023075693387729634,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-06-17",
+            "strategy": 103.17424809399998,
+            "benchmark": null,
+            "strategyDrawdown": -0.023075693387729634,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-06-18",
+            "strategy": 103.17424809399998,
+            "benchmark": null,
+            "strategyDrawdown": -0.023075693387729634,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-06-22",
+            "strategy": 103.17424809399998,
+            "benchmark": null,
+            "strategyDrawdown": -0.023075693387729634,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-06-23",
+            "strategy": 103.17424809399998,
+            "benchmark": null,
+            "strategyDrawdown": -0.023075693387729634,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-06-24",
+            "strategy": 103.17424809399998,
+            "benchmark": null,
+            "strategyDrawdown": -0.023075693387729634,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-06-25",
+            "strategy": 103.55498044599997,
+            "benchmark": null,
+            "strategyDrawdown": -0.01947065922606961,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-06-26",
+            "strategy": 102.47658044599999,
+            "benchmark": null,
+            "strategyDrawdown": -0.029681687575807025,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-06-29",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-06-30",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-07-01",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-07-02",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-07-03",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-07-06",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-07-07",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-07-08",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-07-09",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-07-10",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-07-13",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-07-14",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-07-15",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-07-16",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-07-17",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-07-20",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-07-21",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-07-22",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-07-23",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-07-24",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-07-27",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-07-28",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-07-29",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-07-30",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-07-31",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-08-03",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-08-04",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-08-05",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-08-06",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-08-07",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-08-10",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-08-11",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-08-12",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-08-13",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-08-14",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-08-17",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-08-18",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-08-19",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-08-20",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-08-21",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-08-24",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-08-25",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-08-26",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-08-27",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-08-28",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-08-31",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-09-01",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-09-02",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-09-03",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-09-04",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-09-07",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-09-08",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-09-09",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-09-10",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-09-11",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-09-14",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-09-15",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-09-16",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-09-17",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-09-18",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-09-21",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-09-22",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-09-23",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-09-24",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-09-28",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-09-29",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          },
+          {
+            "date": "2026-09-30",
+            "strategy": 102.38866966199997,
+            "benchmark": null,
+            "strategyDrawdown": -0.030514086970903076,
+            "benchmarkDrawdown": null
+          }
+        ],
+        "benchmarkName": "对应基准",
+        "forwardSignalDate": "20260930",
+        "forwardExecutionDate": "20261008",
+        "forwardTarget": "本期暂不开仓",
+        "gaps": [
+          "100万元日线模拟已从1月空仓跑至9月30日；属于事后重跑，不是当时每日在线运行。",
+          "当前新开仓和原账户均暂不开仓：全A指数低于60日均线。",
+          "盘中7%止损执行未接入，自动在线交易保持关闭；没有券商连接。",
+          "行业成分历史首次发布时间未认证，两期都已探索，历史期仍亏损。"
+        ],
+        "archiveSource": "[本地文件]",
+        "workCopy": "[本地文件]",
+        "accountStateSource": "[本地文件]",
+        "factorSource": null,
+        "positionsSource": "[本地文件]",
+        "holdingSnapshots": [
+          {
+            "date": "2026-01-05",
+            "holdings": []
+          },
+          {
+            "date": "2026-01-06",
+            "holdings": []
+          },
+          {
+            "date": "2026-01-07",
+            "holdings": []
+          },
+          {
+            "date": "2026-01-08",
+            "holdings": []
+          },
+          {
+            "date": "2026-01-09",
+            "holdings": []
+          },
+          {
+            "date": "2026-01-12",
+            "holdings": []
+          },
+          {
+            "date": "2026-01-13",
+            "holdings": []
+          },
+          {
+            "date": "2026-01-14",
+            "holdings": []
+          },
+          {
+            "date": "2026-01-15",
+            "holdings": []
+          },
+          {
+            "date": "2026-01-16",
+            "holdings": []
+          },
+          {
+            "date": "2026-01-19",
+            "holdings": []
+          },
+          {
+            "date": "2026-01-20",
+            "holdings": []
+          },
+          {
+            "date": "2026-01-21",
+            "holdings": []
+          },
+          {
+            "date": "2026-01-22",
+            "holdings": []
+          },
+          {
+            "date": "2026-01-23",
+            "holdings": []
+          },
+          {
+            "date": "2026-01-26",
+            "holdings": []
+          },
+          {
+            "date": "2026-01-27",
+            "holdings": []
+          },
+          {
+            "date": "2026-01-28",
+            "holdings": []
+          },
+          {
+            "date": "2026-01-29",
+            "holdings": []
+          },
+          {
+            "date": "2026-01-30",
+            "holdings": []
+          },
+          {
+            "date": "2026-02-02",
+            "holdings": []
+          },
+          {
+            "date": "2026-02-03",
+            "holdings": []
+          },
+          {
+            "date": "2026-02-04",
+            "holdings": []
+          },
+          {
+            "date": "2026-02-05",
+            "holdings": []
+          },
+          {
+            "date": "2026-02-06",
+            "holdings": []
+          },
+          {
+            "date": "2026-02-09",
+            "holdings": []
+          },
+          {
+            "date": "2026-02-10",
+            "holdings": []
+          },
+          {
+            "date": "2026-02-11",
+            "holdings": []
+          },
+          {
+            "date": "2026-02-12",
+            "holdings": [
+              {
+                "code": "600549.SH",
+                "shares": 1600,
+                "close": 62.86,
+                "marketValue": 100576,
+                "industry": "原版申万行业",
+                "buyDate": "2026-02-12"
+              }
+            ]
+          },
+          {
+            "date": "2026-02-13",
+            "holdings": [
+              {
+                "code": "002851.SZ",
+                "shares": 800,
+                "close": 119.06,
+                "marketValue": 95248,
+                "industry": "原版申万行业",
+                "buyDate": "2026-02-13"
+              },
+              {
+                "code": "600549.SH",
+                "shares": 1600,
+                "close": 59.5,
+                "marketValue": 95200,
+                "industry": "原版申万行业",
+                "buyDate": "2026-02-12"
+              }
+            ]
+          },
+          {
+            "date": "2026-02-24",
+            "holdings": [
+              {
+                "code": "002851.SZ",
+                "shares": 800,
+                "close": 118.91,
+                "marketValue": 95128,
+                "industry": "原版申万行业",
+                "buyDate": "2026-02-13"
+              }
+            ]
+          },
+          {
+            "date": "2026-02-25",
+            "holdings": [
+              {
+                "code": "002851.SZ",
+                "shares": 800,
+                "close": 118.33,
+                "marketValue": 94664,
+                "industry": "原版申万行业",
+                "buyDate": "2026-02-13"
+              },
+              {
+                "code": "600531.SH",
+                "shares": 5900,
+                "close": 17.87,
+                "marketValue": 105433,
+                "industry": "原版申万行业",
+                "buyDate": "2026-02-25"
+              }
+            ]
+          },
+          {
+            "date": "2026-02-26",
+            "holdings": [
+              {
+                "code": "002851.SZ",
+                "shares": 800,
+                "close": 125.56,
+                "marketValue": 100448,
+                "industry": "原版申万行业",
+                "buyDate": "2026-02-13"
+              },
+              {
+                "code": "600531.SH",
+                "shares": 5900,
+                "close": 17.52,
+                "marketValue": 103368,
+                "industry": "原版申万行业",
+                "buyDate": "2026-02-25"
+              }
+            ]
+          },
+          {
+            "date": "2026-02-27",
+            "holdings": [
+              {
+                "code": "002851.SZ",
+                "shares": 800,
+                "close": 124.64,
+                "marketValue": 99712,
+                "industry": "原版申万行业",
+                "buyDate": "2026-02-13"
+              },
+              {
+                "code": "600531.SH",
+                "shares": 5900,
+                "close": 18.07,
+                "marketValue": 106613,
+                "industry": "原版申万行业",
+                "buyDate": "2026-02-25"
+              }
+            ]
+          },
+          {
+            "date": "2026-03-02",
+            "holdings": [
+              {
+                "code": "002851.SZ",
+                "shares": 800,
+                "close": 132.26,
+                "marketValue": 105808,
+                "industry": "原版申万行业",
+                "buyDate": "2026-02-13"
+              },
+              {
+                "code": "600531.SH",
+                "shares": 5900,
+                "close": 19.32,
+                "marketValue": 113988,
+                "industry": "原版申万行业",
+                "buyDate": "2026-02-25"
+              }
+            ]
+          },
+          {
+            "date": "2026-03-03",
+            "holdings": [
+              {
+                "code": "002851.SZ",
+                "shares": 800,
+                "close": 126.96,
+                "marketValue": 101568,
+                "industry": "原版申万行业",
+                "buyDate": "2026-02-13"
+              },
+              {
+                "code": "600531.SH",
+                "shares": 5900,
+                "close": 17.39,
+                "marketValue": 102601,
+                "industry": "原版申万行业",
+                "buyDate": "2026-02-25"
+              }
+            ]
+          },
+          {
+            "date": "2026-03-04",
+            "holdings": [
+              {
+                "code": "002851.SZ",
+                "shares": 800,
+                "close": 128.7,
+                "marketValue": 102959.99999999999,
+                "industry": "原版申万行业",
+                "buyDate": "2026-02-13"
+              },
+              {
+                "code": "600531.SH",
+                "shares": 5900,
+                "close": 16.7,
+                "marketValue": 98530,
+                "industry": "原版申万行业",
+                "buyDate": "2026-02-25"
+              }
+            ]
+          },
+          {
+            "date": "2026-03-05",
+            "holdings": [
+              {
+                "code": "002851.SZ",
+                "shares": 800,
+                "close": 128.59,
+                "marketValue": 102872,
+                "industry": "原版申万行业",
+                "buyDate": "2026-02-13"
+              }
+            ]
+          },
+          {
+            "date": "2026-03-06",
+            "holdings": [
+              {
+                "code": "002851.SZ",
+                "shares": 800,
+                "close": 128.36,
+                "marketValue": 102688.00000000001,
+                "industry": "原版申万行业",
+                "buyDate": "2026-02-13"
+              }
+            ]
+          },
+          {
+            "date": "2026-03-09",
+            "holdings": [
+              {
+                "code": "002851.SZ",
+                "shares": 800,
+                "close": 120.69,
+                "marketValue": 96552,
+                "industry": "原版申万行业",
+                "buyDate": "2026-02-13"
+              }
+            ]
+          },
+          {
+            "date": "2026-03-10",
+            "holdings": [
+              {
+                "code": "002851.SZ",
+                "shares": 800,
+                "close": 129.27,
+                "marketValue": 103416.00000000001,
+                "industry": "原版申万行业",
+                "buyDate": "2026-02-13"
+              }
+            ]
+          },
+          {
+            "date": "2026-03-11",
+            "holdings": []
+          },
+          {
+            "date": "2026-03-12",
+            "holdings": []
+          },
+          {
+            "date": "2026-03-13",
+            "holdings": []
+          },
+          {
+            "date": "2026-03-16",
+            "holdings": []
+          },
+          {
+            "date": "2026-03-17",
+            "holdings": []
+          },
+          {
+            "date": "2026-03-18",
+            "holdings": []
+          },
+          {
+            "date": "2026-03-19",
+            "holdings": []
+          },
+          {
+            "date": "2026-03-20",
+            "holdings": []
+          },
+          {
+            "date": "2026-03-23",
+            "holdings": []
+          },
+          {
+            "date": "2026-03-24",
+            "holdings": []
+          },
+          {
+            "date": "2026-03-25",
+            "holdings": []
+          },
+          {
+            "date": "2026-03-26",
+            "holdings": []
+          },
+          {
+            "date": "2026-03-27",
+            "holdings": []
+          },
+          {
+            "date": "2026-03-30",
+            "holdings": []
+          },
+          {
+            "date": "2026-03-31",
+            "holdings": []
+          },
+          {
+            "date": "2026-04-01",
+            "holdings": []
+          },
+          {
+            "date": "2026-04-02",
+            "holdings": []
+          },
+          {
+            "date": "2026-04-03",
+            "holdings": []
+          },
+          {
+            "date": "2026-04-07",
+            "holdings": []
+          },
+          {
+            "date": "2026-04-08",
+            "holdings": []
+          },
+          {
+            "date": "2026-04-09",
+            "holdings": []
+          },
+          {
+            "date": "2026-04-10",
+            "holdings": []
+          },
+          {
+            "date": "2026-04-13",
+            "holdings": []
+          },
+          {
+            "date": "2026-04-14",
+            "holdings": []
+          },
+          {
+            "date": "2026-04-15",
+            "holdings": [
+              {
+                "code": "300777.SZ",
+                "shares": 2800,
+                "close": 36.36,
+                "marketValue": 101808,
+                "industry": "原版申万行业",
+                "buyDate": "2026-04-15"
+              }
+            ]
+          },
+          {
+            "date": "2026-04-16",
+            "holdings": []
+          },
+          {
+            "date": "2026-04-17",
+            "holdings": []
+          },
+          {
+            "date": "2026-04-20",
+            "holdings": [
+              {
+                "code": "601218.SH",
+                "shares": 16600,
+                "close": 6.31,
+                "marketValue": 104746,
+                "industry": "原版申万行业",
+                "buyDate": "2026-04-20"
+              }
+            ]
+          },
+          {
+            "date": "2026-04-21",
+            "holdings": [
+              {
+                "code": "601218.SH",
+                "shares": 16600,
+                "close": 6.25,
+                "marketValue": 103750,
+                "industry": "原版申万行业",
+                "buyDate": "2026-04-20"
+              }
+            ]
+          },
+          {
+            "date": "2026-04-22",
+            "holdings": [
+              {
+                "code": "601218.SH",
+                "shares": 16600,
+                "close": 6.2,
+                "marketValue": 102920,
+                "industry": "原版申万行业",
+                "buyDate": "2026-04-20"
+              }
+            ]
+          },
+          {
+            "date": "2026-04-23",
+            "holdings": [
+              {
+                "code": "601218.SH",
+                "shares": 16600,
+                "close": 6.29,
+                "marketValue": 104414,
+                "industry": "原版申万行业",
+                "buyDate": "2026-04-20"
+              }
+            ]
+          },
+          {
+            "date": "2026-04-24",
+            "holdings": [
+              {
+                "code": "601218.SH",
+                "shares": 16600,
+                "close": 6.31,
+                "marketValue": 104746,
+                "industry": "原版申万行业",
+                "buyDate": "2026-04-20"
+              }
+            ]
+          },
+          {
+            "date": "2026-04-27",
+            "holdings": [
+              {
+                "code": "601218.SH",
+                "shares": 16600,
+                "close": 6.49,
+                "marketValue": 107734,
+                "industry": "原版申万行业",
+                "buyDate": "2026-04-20"
+              }
+            ]
+          },
+          {
+            "date": "2026-04-28",
+            "holdings": [
+              {
+                "code": "601218.SH",
+                "shares": 16600,
+                "close": 6.88,
+                "marketValue": 114208,
+                "industry": "原版申万行业",
+                "buyDate": "2026-04-20"
+              }
+            ]
+          },
+          {
+            "date": "2026-04-29",
+            "holdings": [
+              {
+                "code": "601218.SH",
+                "shares": 16600,
+                "close": 6.75,
+                "marketValue": 112050,
+                "industry": "原版申万行业",
+                "buyDate": "2026-04-20"
+              }
+            ]
+          },
+          {
+            "date": "2026-04-30",
+            "holdings": [
+              {
+                "code": "601218.SH",
+                "shares": 16600,
+                "close": 6.47,
+                "marketValue": 107402,
+                "industry": "原版申万行业",
+                "buyDate": "2026-04-20"
+              }
+            ]
+          },
+          {
+            "date": "2026-05-06",
+            "holdings": [
+              {
+                "code": "601218.SH",
+                "shares": 16600,
+                "close": 6.55,
+                "marketValue": 108730,
+                "industry": "原版申万行业",
+                "buyDate": "2026-04-20"
+              }
+            ]
+          },
+          {
+            "date": "2026-05-07",
+            "holdings": [
+              {
+                "code": "601218.SH",
+                "shares": 16600,
+                "close": 6.7,
+                "marketValue": 111220,
+                "industry": "原版申万行业",
+                "buyDate": "2026-04-20"
+              }
+            ]
+          },
+          {
+            "date": "2026-05-08",
+            "holdings": [
+              {
+                "code": "002957.SZ",
+                "shares": 2300,
+                "close": 45.29,
+                "marketValue": 104167,
+                "industry": "原版申万行业",
+                "buyDate": "2026-05-08"
+              },
+              {
+                "code": "300620.SZ",
+                "shares": 400,
+                "close": 259.1,
+                "marketValue": 103640.00000000001,
+                "industry": "原版申万行业",
+                "buyDate": "2026-05-08"
+              },
+              {
+                "code": "601218.SH",
+                "shares": 16600,
+                "close": 6.47,
+                "marketValue": 107402,
+                "industry": "原版申万行业",
+                "buyDate": "2026-04-20"
+              }
+            ]
+          },
+          {
+            "date": "2026-05-11",
+            "holdings": [
+              {
+                "code": "002957.SZ",
+                "shares": 2300,
+                "close": 44.57,
+                "marketValue": 102511,
+                "industry": "原版申万行业",
+                "buyDate": "2026-05-08"
+              },
+              {
+                "code": "300620.SZ",
+                "shares": 400,
+                "close": 266.06,
+                "marketValue": 106424,
+                "industry": "原版申万行业",
+                "buyDate": "2026-05-08"
+              },
+              {
+                "code": "601218.SH",
+                "shares": 16600,
+                "close": 6.39,
+                "marketValue": 106074,
+                "industry": "原版申万行业",
+                "buyDate": "2026-04-20"
+              }
+            ]
+          },
+          {
+            "date": "2026-05-12",
+            "holdings": [
+              {
+                "code": "002957.SZ",
+                "shares": 2300,
+                "close": 43.36,
+                "marketValue": 99728,
+                "industry": "原版申万行业",
+                "buyDate": "2026-05-08"
+              },
+              {
+                "code": "300620.SZ",
+                "shares": 400,
+                "close": 261.58,
+                "marketValue": 104632,
+                "industry": "原版申万行业",
+                "buyDate": "2026-05-08"
+              },
+              {
+                "code": "601218.SH",
+                "shares": 16600,
+                "close": 6.44,
+                "marketValue": 106904,
+                "industry": "原版申万行业",
+                "buyDate": "2026-04-20"
+              }
+            ]
+          },
+          {
+            "date": "2026-05-13",
+            "holdings": [
+              {
+                "code": "002957.SZ",
+                "shares": 2300,
+                "close": 44.18,
+                "marketValue": 101614,
+                "industry": "原版申万行业",
+                "buyDate": "2026-05-08"
+              },
+              {
+                "code": "601218.SH",
+                "shares": 16600,
+                "close": 6.63,
+                "marketValue": 110058,
+                "industry": "原版申万行业",
+                "buyDate": "2026-04-20"
+              }
+            ]
+          },
+          {
+            "date": "2026-05-14",
+            "holdings": [
+              {
+                "code": "002957.SZ",
+                "shares": 2300,
+                "close": 45.2,
+                "marketValue": 103960,
+                "industry": "原版申万行业",
+                "buyDate": "2026-05-08"
+              },
+              {
+                "code": "601218.SH",
+                "shares": 16600,
+                "close": 6.35,
+                "marketValue": 105410,
+                "industry": "原版申万行业",
+                "buyDate": "2026-04-20"
+              }
+            ]
+          },
+          {
+            "date": "2026-05-15",
+            "holdings": [
+              {
+                "code": "002957.SZ",
+                "shares": 2300,
+                "close": 45.52,
+                "marketValue": 104696,
+                "industry": "原版申万行业",
+                "buyDate": "2026-05-08"
+              },
+              {
+                "code": "601218.SH",
+                "shares": 16600,
+                "close": 6.07,
+                "marketValue": 100762,
+                "industry": "原版申万行业",
+                "buyDate": "2026-04-20"
+              }
+            ]
+          },
+          {
+            "date": "2026-05-18",
+            "holdings": [
+              {
+                "code": "002957.SZ",
+                "shares": 2300,
+                "close": 47.25,
+                "marketValue": 108675,
+                "industry": "原版申万行业",
+                "buyDate": "2026-05-08"
+              }
+            ]
+          },
+          {
+            "date": "2026-05-19",
+            "holdings": [
+              {
+                "code": "001299.SZ",
+                "shares": 8500,
+                "close": 12.13,
+                "marketValue": 103105,
+                "industry": "原版申万行业",
+                "buyDate": "2026-05-19"
+              },
+              {
+                "code": "002957.SZ",
+                "shares": 2300,
+                "close": 47.01,
+                "marketValue": 108123,
+                "industry": "原版申万行业",
+                "buyDate": "2026-05-08"
+              }
+            ]
+          },
+          {
+            "date": "2026-05-20",
+            "holdings": [
+              {
+                "code": "001299.SZ",
+                "shares": 8500,
+                "close": 12.2,
+                "marketValue": 103700,
+                "industry": "原版申万行业",
+                "buyDate": "2026-05-19"
+              },
+              {
+                "code": "002957.SZ",
+                "shares": 2300,
+                "close": 46.31,
+                "marketValue": 106513,
+                "industry": "原版申万行业",
+                "buyDate": "2026-05-08"
+              }
+            ]
+          },
+          {
+            "date": "2026-05-21",
+            "holdings": [
+              {
+                "code": "001299.SZ",
+                "shares": 8500,
+                "close": 11.95,
+                "marketValue": 101575,
+                "industry": "原版申万行业",
+                "buyDate": "2026-05-19"
+              },
+              {
+                "code": "002957.SZ",
+                "shares": 2300,
+                "close": 42.08,
+                "marketValue": 96784,
+                "industry": "原版申万行业",
+                "buyDate": "2026-05-08"
+              }
+            ]
+          },
+          {
+            "date": "2026-05-22",
+            "holdings": [
+              {
+                "code": "001299.SZ",
+                "shares": 8500,
+                "close": 12,
+                "marketValue": 102000,
+                "industry": "原版申万行业",
+                "buyDate": "2026-05-19"
+              },
+              {
+                "code": "002957.SZ",
+                "shares": 2300,
+                "close": 43.65,
+                "marketValue": 100395,
+                "industry": "原版申万行业",
+                "buyDate": "2026-05-08"
+              }
+            ]
+          },
+          {
+            "date": "2026-05-25",
+            "holdings": [
+              {
+                "code": "001299.SZ",
+                "shares": 8500,
+                "close": 12.37,
+                "marketValue": 105145,
+                "industry": "原版申万行业",
+                "buyDate": "2026-05-19"
+              },
+              {
+                "code": "002957.SZ",
+                "shares": 2300,
+                "close": 48.02,
+                "marketValue": 110446,
+                "industry": "原版申万行业",
+                "buyDate": "2026-05-08"
+              }
+            ]
+          },
+          {
+            "date": "2026-05-26",
+            "holdings": [
+              {
+                "code": "001299.SZ",
+                "shares": 8500,
+                "close": 11.88,
+                "marketValue": 100980,
+                "industry": "原版申万行业",
+                "buyDate": "2026-05-19"
+              },
+              {
+                "code": "002957.SZ",
+                "shares": 2300,
+                "close": 52.82,
+                "marketValue": 121486,
+                "industry": "原版申万行业",
+                "buyDate": "2026-05-08"
+              }
+            ]
+          },
+          {
+            "date": "2026-05-27",
+            "holdings": [
+              {
+                "code": "001299.SZ",
+                "shares": 8500,
+                "close": 13.07,
+                "marketValue": 111095,
+                "industry": "原版申万行业",
+                "buyDate": "2026-05-19"
+              },
+              {
+                "code": "002957.SZ",
+                "shares": 2300,
+                "close": 56.33,
+                "marketValue": 129559,
+                "industry": "原版申万行业",
+                "buyDate": "2026-05-08"
+              }
+            ]
+          },
+          {
+            "date": "2026-05-28",
+            "holdings": [
+              {
+                "code": "001299.SZ",
+                "shares": 8500,
+                "close": 13.02,
+                "marketValue": 110670,
+                "industry": "原版申万行业",
+                "buyDate": "2026-05-19"
+              },
+              {
+                "code": "002957.SZ",
+                "shares": 2300,
+                "close": 61.96,
+                "marketValue": 142508,
+                "industry": "原版申万行业",
+                "buyDate": "2026-05-08"
+              }
+            ]
+          },
+          {
+            "date": "2026-05-29",
+            "holdings": [
+              {
+                "code": "001299.SZ",
+                "shares": 8500,
+                "close": 12.67,
+                "marketValue": 107695,
+                "industry": "原版申万行业",
+                "buyDate": "2026-05-19"
+              },
+              {
+                "code": "002957.SZ",
+                "shares": 2300,
+                "close": 62.04,
+                "marketValue": 142692,
+                "industry": "原版申万行业",
+                "buyDate": "2026-05-08"
+              }
+            ]
+          },
+          {
+            "date": "2026-06-01",
+            "holdings": [
+              {
+                "code": "001299.SZ",
+                "shares": 8500,
+                "close": 13.34,
+                "marketValue": 113390,
+                "industry": "原版申万行业",
+                "buyDate": "2026-05-19"
+              },
+              {
+                "code": "002957.SZ",
+                "shares": 2300,
+                "close": 60.63,
+                "marketValue": 139449,
+                "industry": "原版申万行业",
+                "buyDate": "2026-05-08"
+              }
+            ]
+          },
+          {
+            "date": "2026-06-02",
+            "holdings": [
+              {
+                "code": "001299.SZ",
+                "shares": 8500,
+                "close": 13.78,
+                "marketValue": 117130,
+                "industry": "原版申万行业",
+                "buyDate": "2026-05-19"
+              },
+              {
+                "code": "002957.SZ",
+                "shares": 2300,
+                "close": 66.69,
+                "marketValue": 153387,
+                "industry": "原版申万行业",
+                "buyDate": "2026-05-08"
+              }
+            ]
+          },
+          {
+            "date": "2026-06-03",
+            "holdings": [
+              {
+                "code": "001299.SZ",
+                "shares": 8500,
+                "close": 13.6,
+                "marketValue": 115600,
+                "industry": "原版申万行业",
+                "buyDate": "2026-05-19"
+              },
+              {
+                "code": "002957.SZ",
+                "shares": 2300,
+                "close": 66.11,
+                "marketValue": 152053,
+                "industry": "原版申万行业",
+                "buyDate": "2026-05-08"
+              }
+            ]
+          },
+          {
+            "date": "2026-06-04",
+            "holdings": [
+              {
+                "code": "001299.SZ",
+                "shares": 8500,
+                "close": 13.19,
+                "marketValue": 112115,
+                "industry": "原版申万行业",
+                "buyDate": "2026-05-19"
+              }
+            ]
+          },
+          {
+            "date": "2026-06-05",
+            "holdings": [
+              {
+                "code": "001299.SZ",
+                "shares": 8500,
+                "close": 11.87,
+                "marketValue": 100895,
+                "industry": "原版申万行业",
+                "buyDate": "2026-05-19"
+              }
+            ]
+          },
+          {
+            "date": "2026-06-08",
+            "holdings": []
+          },
+          {
+            "date": "2026-06-09",
+            "holdings": []
+          },
+          {
+            "date": "2026-06-10",
+            "holdings": []
+          },
+          {
+            "date": "2026-06-11",
+            "holdings": []
+          },
+          {
+            "date": "2026-06-12",
+            "holdings": []
+          },
+          {
+            "date": "2026-06-15",
+            "holdings": []
+          },
+          {
+            "date": "2026-06-16",
+            "holdings": []
+          },
+          {
+            "date": "2026-06-17",
+            "holdings": []
+          },
+          {
+            "date": "2026-06-18",
+            "holdings": []
+          },
+          {
+            "date": "2026-06-22",
+            "holdings": []
+          },
+          {
+            "date": "2026-06-23",
+            "holdings": []
+          },
+          {
+            "date": "2026-06-24",
+            "holdings": []
+          },
+          {
+            "date": "2026-06-25",
+            "holdings": [
+              {
+                "code": "000062.SZ",
+                "shares": 3200,
+                "close": 34.14,
+                "marketValue": 109248,
+                "industry": "原版申万行业",
+                "buyDate": "2026-06-25"
+              }
+            ]
+          },
+          {
+            "date": "2026-06-26",
+            "holdings": [
+              {
+                "code": "000062.SZ",
+                "shares": 3200,
+                "close": 30.77,
+                "marketValue": 98464,
+                "industry": "原版申万行业",
+                "buyDate": "2026-06-25"
+              }
+            ]
+          },
+          {
+            "date": "2026-06-29",
+            "holdings": []
+          },
+          {
+            "date": "2026-06-30",
+            "holdings": []
+          },
+          {
+            "date": "2026-07-01",
+            "holdings": []
+          },
+          {
+            "date": "2026-07-02",
+            "holdings": []
+          },
+          {
+            "date": "2026-07-03",
+            "holdings": []
+          },
+          {
+            "date": "2026-07-06",
+            "holdings": []
+          },
+          {
+            "date": "2026-07-07",
+            "holdings": []
+          },
+          {
+            "date": "2026-07-08",
+            "holdings": []
+          },
+          {
+            "date": "2026-07-09",
+            "holdings": []
+          },
+          {
+            "date": "2026-07-10",
+            "holdings": []
+          },
+          {
+            "date": "2026-07-13",
+            "holdings": []
+          },
+          {
+            "date": "2026-07-14",
+            "holdings": []
+          },
+          {
+            "date": "2026-07-15",
+            "holdings": []
+          },
+          {
+            "date": "2026-07-16",
+            "holdings": []
+          },
+          {
+            "date": "2026-07-17",
+            "holdings": []
+          },
+          {
+            "date": "2026-07-20",
+            "holdings": []
+          },
+          {
+            "date": "2026-07-21",
+            "holdings": []
+          },
+          {
+            "date": "2026-07-22",
+            "holdings": []
+          },
+          {
+            "date": "2026-07-23",
+            "holdings": []
+          },
+          {
+            "date": "2026-07-24",
+            "holdings": []
+          },
+          {
+            "date": "2026-07-27",
+            "holdings": []
+          },
+          {
+            "date": "2026-07-28",
+            "holdings": []
+          },
+          {
+            "date": "2026-07-29",
+            "holdings": []
+          },
+          {
+            "date": "2026-07-30",
+            "holdings": []
+          },
+          {
+            "date": "2026-07-31",
+            "holdings": []
+          },
+          {
+            "date": "2026-08-03",
+            "holdings": []
+          },
+          {
+            "date": "2026-08-04",
+            "holdings": []
+          },
+          {
+            "date": "2026-08-05",
+            "holdings": []
+          },
+          {
+            "date": "2026-08-06",
+            "holdings": []
+          },
+          {
+            "date": "2026-08-07",
+            "holdings": []
+          },
+          {
+            "date": "2026-08-10",
+            "holdings": []
+          },
+          {
+            "date": "2026-08-11",
+            "holdings": []
+          },
+          {
+            "date": "2026-08-12",
+            "holdings": []
+          },
+          {
+            "date": "2026-08-13",
+            "holdings": []
+          },
+          {
+            "date": "2026-08-14",
+            "holdings": []
+          },
+          {
+            "date": "2026-08-17",
+            "holdings": []
+          },
+          {
+            "date": "2026-08-18",
+            "holdings": []
+          },
+          {
+            "date": "2026-08-19",
+            "holdings": []
+          },
+          {
+            "date": "2026-08-20",
+            "holdings": []
+          },
+          {
+            "date": "2026-08-21",
+            "holdings": []
+          },
+          {
+            "date": "2026-08-24",
+            "holdings": []
+          },
+          {
+            "date": "2026-08-25",
+            "holdings": []
+          },
+          {
+            "date": "2026-08-26",
+            "holdings": []
+          },
+          {
+            "date": "2026-08-27",
+            "holdings": []
+          },
+          {
+            "date": "2026-08-28",
+            "holdings": []
+          },
+          {
+            "date": "2026-08-31",
+            "holdings": []
+          },
+          {
+            "date": "2026-09-01",
+            "holdings": []
+          },
+          {
+            "date": "2026-09-02",
+            "holdings": []
+          },
+          {
+            "date": "2026-09-03",
+            "holdings": []
+          },
+          {
+            "date": "2026-09-04",
+            "holdings": []
+          },
+          {
+            "date": "2026-09-07",
+            "holdings": []
+          },
+          {
+            "date": "2026-09-08",
+            "holdings": []
+          },
+          {
+            "date": "2026-09-09",
+            "holdings": []
+          },
+          {
+            "date": "2026-09-10",
+            "holdings": []
+          },
+          {
+            "date": "2026-09-11",
+            "holdings": []
+          },
+          {
+            "date": "2026-09-14",
+            "holdings": []
+          },
+          {
+            "date": "2026-09-15",
+            "holdings": []
+          },
+          {
+            "date": "2026-09-16",
+            "holdings": []
+          },
+          {
+            "date": "2026-09-17",
+            "holdings": []
+          },
+          {
+            "date": "2026-09-18",
+            "holdings": []
+          },
+          {
+            "date": "2026-09-21",
+            "holdings": []
+          },
+          {
+            "date": "2026-09-22",
+            "holdings": []
+          },
+          {
+            "date": "2026-09-23",
+            "holdings": []
+          },
+          {
+            "date": "2026-09-24",
+            "holdings": []
+          },
+          {
+            "date": "2026-09-28",
+            "holdings": []
+          },
+          {
+            "date": "2026-09-29",
+            "holdings": []
+          },
+          {
+            "date": "2026-09-30",
+            "holdings": []
+          }
+        ],
+        "historicalReference": {
+          "annualizedReturn": null,
+          "maxDrawdown": null,
+          "start": "2018-01-02",
+          "end": "2026-08-04",
+          "initialCash": 8500000,
+          "stage": "原版账户核对通过；首次财报口径另行重跑",
+          "reason": "850万元独立两期原版精确复现。首次披露口径：2018—2023收益-3.83%、回撤16.04%；2024—2026-08-04收益19.97%、回撤4.71%。两期各自空仓起跑，不能拼接。",
+          "experiment": null,
+          "mirrorStatus": null,
+          "mirrorSummary": {},
+          "mirrorCurve": [],
+          "mirrorSource": null
+        }
+      },
+      "launchStages": {
+        "initialCash": 1000000,
+        "startDate": "2026-01-05",
+        "asOf": "2026-09-30",
+        "earliestExecutionDate": "2026-10-08",
+        "history": {
+          "status": "PASS",
+          "label": "原版两期账户已逐项核对；首次披露财报口径另行重跑"
+        },
+        "simulation": {
+          "status": "PASS_DAILY_RESEARCH",
+          "label": "181个交易日已重跑核验（日线成交假设）",
+          "accepted": true
+        },
+        "freshEntry": {
+          "status": "NO_ENTRY",
+          "label": "本期暂不开仓",
+          "reason": "9月30日全A指数低于60日均线，原版大盘条件不允许新买入；当前账户也没有持仓。",
+          "orders": [],
+          "conditionalPlans": []
+        },
+        "accountRebalance": {
+          "status": "NO_ENTRY",
+          "label": "本期暂不开仓",
+          "reason": "9月30日全A指数低于60日均线，原版大盘条件不允许新买入；当前账户也没有持仓。",
+          "orders": [],
+          "conditionalPlans": []
+        },
+        "details": [
+          "2026年从100万元现金、零持仓开始；净值没有继承以前回测。",
+          "最新结果暂不开仓，是策略计算结果，不是用缺失数据代替空仓。",
+          "7%盘中止损仍按日线区间模拟；在线触发执行未接入，不能据此认为能实时自动卖出。",
+          "财报只用首次披露值。原版含修订财报的结果单独保留，不冒充完全相同的收益。"
+        ]
+      },
+      "executionMode": "DAILY_OHLC_RESEARCH",
+      "onlineExecutionAllowed": false,
+      "historyParity": {
+        "status": "PASS",
+        "allowed": true,
+        "reason": "接入代码已从原历史首日重新运行并通过一致性验证。",
+        "certificate": "[本地文件]",
+        "original_window": [
+          "20180102",
+          "20260804"
+        ]
+      },
+      "forwardAllowed": false,
+      "originalName": "小碎步 V43 · 7%止损风险对齐",
+      "displayTitle": "股票｜小碎步支撑重启",
+      "displayParameters": "V43风险对齐·最多5只·每日检查",
+      "assetClass": "股票",
+      "sourceVersion": "V43 aligned"
     }
   ],
   "totalEquity": {

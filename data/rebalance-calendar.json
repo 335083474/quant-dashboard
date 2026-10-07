@@ -325,6 +325,30 @@
       "source": "paper_strategies/bt2e_st_gao_v2c_ma20timing_alla_paper_v1/PAPER_STARTUP_SCHEDULE.json",
       "usesLatestPlan": false,
       "conditional": true
+    },
+    {
+      "id": "shuoshi_v43_aligned_paper_v1:2026-09-30:signal:最新选股／信号",
+      "strategyId": "shuoshi_v43_aligned_paper_v1",
+      "date": "2026-09-30",
+      "kind": "signal",
+      "title": "最新选股／信号",
+      "time": "收盘后",
+      "note": "已发布的最新名单或条件判断；名单不等于实际持仓。",
+      "source": "paper_strategies/shuoshi_v43_aligned_paper_v1/PAPER_STARTUP_SCHEDULE.json",
+      "usesLatestPlan": false,
+      "conditional": false
+    },
+    {
+      "id": "shuoshi_v43_aligned_paper_v1:2026-10-08:execution:执行前检查与计划",
+      "strategyId": "shuoshi_v43_aligned_paper_v1",
+      "date": "2026-10-08",
+      "kind": "execution",
+      "title": "执行前检查与计划",
+      "time": "开盘前检查",
+      "note": "新账户与原模拟账户分别核对；有计划也须等待实际行情与执行前检查。",
+      "source": "paper_strategies/shuoshi_v43_aligned_paper_v1/PAPER_STARTUP_SCHEDULE.json",
+      "usesLatestPlan": true,
+      "conditional": false
     }
   ],
   "rules": [
@@ -382,6 +406,11 @@
       "strategyId": "bt2e_st_gao_v2c_ma20timing_alla_paper_v1",
       "source": "paper_strategies/bt2e_st_gao_v2c_ma20timing_alla_paper_v1/PAPER_STARTUP_SCHEDULE.json",
       "cadence": "周度确认选股；每日检查个股退出与账户回撤。目前暂停放行新买卖单。"
+    },
+    {
+      "strategyId": "shuoshi_v43_aligned_paper_v1",
+      "source": "paper_strategies/shuoshi_v43_aligned_paper_v1/PAPER_STARTUP_SCHEDULE.json",
+      "cadence": "只展示已发布节点；后续日期待策略生成"
     }
   ]
 }
