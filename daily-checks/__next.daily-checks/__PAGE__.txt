@@ -1,6 +1,6 @@
 1:"$Sreact.fragment"
-2:I[24593,["/quant-dashboard/_next/static/chunks/bba68f8e5136bd32.js","/quant-dashboard/_next/static/chunks/7fce8fddefe109f8.js","/quant-dashboard/_next/static/chunks/02f5b81add9634f2.js"],"DailyRoutineChecks"]
+2:I[56502,["/quant-dashboard/_next/static/chunks/84c7279deb77837f.js","/quant-dashboard/_next/static/chunks/8459d7056617bea3.js","/quant-dashboard/_next/static/chunks/89293b7f33de3e94.js"],"DailyRoutineChecks"]
 3:I[89836,["/quant-dashboard/_next/static/chunks/3337476739009024.js","/quant-dashboard/_next/static/chunks/e509297e7dbdea42.js"],"OutletBoundary"]
 4:"$Sreact.suspense"
-0:{"buildId":"daily-account-results-20261008-v6","rsc":["$","$1","c",{"children":[["$","$L2",null,{}],[["$","script","script-0",{"src":"/quant-dashboard/_next/static/chunks/7fce8fddefe109f8.js","async":true}],["$","script","script-1",{"src":"/quant-dashboard/_next/static/chunks/02f5b81add9634f2.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"daily-pnl-66414af0bcb8","rsc":["$","$1","c",{"children":[["$","$L2",null,{}],[["$","script","script-0",{"src":"/quant-dashboard/_next/static/chunks/8459d7056617bea3.js","async":true}],["$","script","script-1",{"src":"/quant-dashboard/_next/static/chunks/89293b7f33de3e94.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
 5:null
