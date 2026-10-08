@@ -1,12 +1,13 @@
 {
-  "version": "743892fe17440f02292f1c35960ef6fc38aad78dc445b3bfe3ac6460d151aec7",
-  "publishedAt": "2026-10-08T13:14:23.798Z",
+  "version": "625bc8265af7691c7497486623b9427b2e1d0c698b51057027d9734d508e7f43",
+  "publishedAt": "2026-10-08T13:27:05.054Z",
   "snapshotGeneratedAt": "2026-10-08T00:12:22+08:00",
   "marketDataThrough": "20260930",
   "strategies": 12,
   "mode": "public-read-only-local-results",
-  "visibleStrategies": 11,
+  "visibleStrategies": 10,
   "hiddenStrategies": [
-    "cb_multifactor_expanded1189_ic5_ir5_r20_paper_v1"
+    "cb_multifactor_expanded1189_ic5_ir5_r20_paper_v1",
+    "bt2e_etf_correlation_trend_paper_v1"
   ]
 }
