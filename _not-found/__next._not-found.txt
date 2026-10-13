@@ -1,4 +1,4 @@
 1:"$Sreact.fragment"
-2:I[42869,["/quant-dashboard/_next/static/chunks/321c44984626811e.js","/quant-dashboard/_next/static/chunks/e509297e7dbdea42.js"],"default"]
-3:I[63587,["/quant-dashboard/_next/static/chunks/321c44984626811e.js","/quant-dashboard/_next/static/chunks/e509297e7dbdea42.js"],"default"]
+2:I[42869,["/quant-dashboard/_next/static/chunks/8d74f231ef146bce.js","/quant-dashboard/_next/static/chunks/e509297e7dbdea42.js"],"default"]
+3:I[63587,["/quant-dashboard/_next/static/chunks/8d74f231ef146bce.js","/quant-dashboard/_next/static/chunks/e509297e7dbdea42.js"],"default"]
 0:{"buildId":"daily-pnl-d2069296f6e2","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"loading":null,"isPartial":false}
