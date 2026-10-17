@@ -1,7 +1,7 @@
 {
   "schemaVersion": "STRATEGY_BENCHMARK_OVERLAYS_V1",
-  "sourceSnapshotSha256": "356d5a220a4447368f92f5b2c57c209608bd4256a69b01617d886d746d28cff2",
-  "accountGeneratedAt": "2026-10-09T00:28:34.821371+08:00",
+  "sourceSnapshotSha256": "34fb1c81ecd8681e4f0845dd461bc36137b1508e28c56e3958578b89648b1775",
+  "accountGeneratedAt": "2026-10-18T00:51:43.143174+08:00",
   "scope": "DISPLAY_ONLY_NO_TIMING_CHANGE",
   "strategies": {
     "bt2e_st_xie_v6_cooldown_paper_v1": {
@@ -13,14 +13,14 @@
         "sourceUrl": "https://tushare.pro/document/2?doc_id=95",
         "description": "全A市场收益对照，包含分红；不是对应风格股票池的等权收益。",
         "source": "paper_dashboard/data/benchmarks/all_a_total_v1/daily_index.parquet",
-        "sourceSha256": "08240f979e2526e8b294c59217833c5a19c95d9cbc2309e76fccbf4c6e34b806",
-        "dataThrough": "2026-10-08",
+        "sourceSha256": "23b08bb814787440b6544aee35060ab8505c88f4c32586fe5b05bb3f60a97a93",
+        "dataThrough": "2026-10-16",
         "paper": {
           "startDate": "2026-01-05",
-          "endDate": "2026-10-08",
+          "endDate": "2026-10-16",
           "anchorDate": "2025-12-31",
-          "expectedDays": 182,
-          "coveredDays": 182,
+          "expectedDays": 188,
+          "coveredDays": 188,
           "missingDates": [],
           "normalization": "PRE_ACCOUNT_CLOSE_100"
         },
@@ -1309,6 +1309,48 @@
           "benchmark": 95.17699662274532,
           "strategyDrawdown": -0.0875794051209311,
           "benchmarkDrawdown": -0.15919963270647108
+        },
+        {
+          "date": "2026-10-09",
+          "strategy": 98.125246749,
+          "benchmark": 95.35439302844665,
+          "strategyDrawdown": -0.07811584770453472,
+          "benchmarkDrawdown": -0.15763250022317332
+        },
+        {
+          "date": "2026-10-12",
+          "strategy": 97.791446749,
+          "benchmark": 94.00165477449643,
+          "strategyDrawdown": -0.08125189006092626,
+          "benchmarkDrawdown": -0.16958268630943552
+        },
+        {
+          "date": "2026-10-13",
+          "strategy": 97.857546749,
+          "benchmark": 94.0060979208067,
+          "strategyDrawdown": -0.08063088227255755,
+          "benchmarkDrawdown": -0.1695434352384606
+        },
+        {
+          "date": "2026-10-14",
+          "strategy": 97.135846749,
+          "benchmark": 92.53313667076714,
+          "strategyDrawdown": -0.08741123508444404,
+          "benchmarkDrawdown": -0.18255567983524412
+        },
+        {
+          "date": "2026-10-15",
+          "strategy": 95.149746749,
+          "benchmark": 90.45065015431322,
+          "strategyDrawdown": -0.10607059315523204,
+          "benchmarkDrawdown": -0.200952514049908
+        },
+        {
+          "date": "2026-10-16",
+          "strategy": 95.945946749,
+          "benchmark": 90.58083421593945,
+          "strategyDrawdown": -0.09859031477249125,
+          "benchmarkDrawdown": -0.1998024587769417
         }
       ],
       "mirror": []
@@ -1322,14 +1364,14 @@
         "sourceUrl": "https://tushare.pro/document/2?doc_id=95",
         "description": "全A市场收益对照，包含分红；不是对应风格股票池的等权收益。",
         "source": "paper_dashboard/data/benchmarks/all_a_total_v1/daily_index.parquet",
-        "sourceSha256": "08240f979e2526e8b294c59217833c5a19c95d9cbc2309e76fccbf4c6e34b806",
-        "dataThrough": "2026-10-08",
+        "sourceSha256": "23b08bb814787440b6544aee35060ab8505c88f4c32586fe5b05bb3f60a97a93",
+        "dataThrough": "2026-10-16",
         "paper": {
           "startDate": "2026-01-05",
-          "endDate": "2026-10-08",
+          "endDate": "2026-10-16",
           "anchorDate": "2025-12-31",
-          "expectedDays": 182,
-          "coveredDays": 182,
+          "expectedDays": 188,
+          "coveredDays": 188,
           "missingDates": [],
           "normalization": "PRE_ACCOUNT_CLOSE_100"
         },
@@ -2626,6 +2668,48 @@
           "benchmark": 95.17699662274532,
           "strategyDrawdown": -0.0899164342180423,
           "benchmarkDrawdown": -0.15919963270647108
+        },
+        {
+          "date": "2026-10-09",
+          "strategy": 97.42442691157353,
+          "benchmark": 95.35439302844665,
+          "strategyDrawdown": -0.08899745002234405,
+          "benchmarkDrawdown": -0.15763250022317332
+        },
+        {
+          "date": "2026-10-12",
+          "strategy": 97.59362991157353,
+          "benchmark": 94.00165477449643,
+          "strategyDrawdown": -0.08741525580934872,
+          "benchmarkDrawdown": -0.16958268630943552
+        },
+        {
+          "date": "2026-10-13",
+          "strategy": 97.10280591157353,
+          "benchmark": 94.0060979208067,
+          "strategyDrawdown": -0.0920048841989114,
+          "benchmarkDrawdown": -0.1695434352384606
+        },
+        {
+          "date": "2026-10-14",
+          "strategy": 95.94130591157354,
+          "benchmark": 92.53313667076714,
+          "strategyDrawdown": -0.1028659125399809,
+          "benchmarkDrawdown": -0.18255567983524412
+        },
+        {
+          "date": "2026-10-15",
+          "strategy": 94.03062491157353,
+          "benchmark": 90.45065015431322,
+          "strategyDrawdown": -0.12073243039770187,
+          "benchmarkDrawdown": -0.200952514049908
+        },
+        {
+          "date": "2026-10-16",
+          "strategy": 95.30154291157353,
+          "benchmark": 90.58083421593945,
+          "strategyDrawdown": -0.10884824923784364,
+          "benchmarkDrawdown": -0.1998024587769417
         }
       ],
       "mirror": [
@@ -12825,14 +12909,14 @@
         "sourceUrl": "https://tushare.pro/document/2?doc_id=95",
         "description": "转债市场走势对照；与策略选债池、调仓和交易费用不同，不代表可直接获得的账户收益。",
         "source": "paper_dashboard/data/benchmarks/csi_cb_000832_v1/daily_index.parquet",
-        "sourceSha256": "ecf9dbb6e5ff6e88f80dca4043db2ac04cfc942470c467b74c1f387aca9c7d40",
-        "dataThrough": "2026-10-08",
+        "sourceSha256": "3740343286f56021aac37ab2a9ef23020b84f06663f9b85aa2aef98cdc060ab2",
+        "dataThrough": "2026-10-16",
         "paper": {
           "startDate": "2026-01-05",
-          "endDate": "2026-10-08",
+          "endDate": "2026-10-16",
           "anchorDate": "2025-12-31",
-          "expectedDays": 182,
-          "coveredDays": 182,
+          "expectedDays": 188,
+          "coveredDays": 188,
           "missingDates": [],
           "normalization": "PRE_ACCOUNT_CLOSE_100"
         },
@@ -14129,6 +14213,48 @@
           "benchmark": 94.46444279415988,
           "strategyDrawdown": -0.02774596478861502,
           "benchmarkDrawdown": -0.13061337053315858
+        },
+        {
+          "date": "2026-10-09",
+          "strategy": 109.33704940698799,
+          "benchmark": 94.63148836444356,
+          "strategyDrawdown": -0.029692852449214935,
+          "benchmarkDrawdown": -0.12907599645863244
+        },
+        {
+          "date": "2026-10-12",
+          "strategy": 107.90575840698797,
+          "benchmark": 93.42244598870059,
+          "strategyDrawdown": -0.04239478555475895,
+          "benchmarkDrawdown": -0.14020320204878434
+        },
+        {
+          "date": "2026-10-13",
+          "strategy": 107.98026240698802,
+          "benchmark": 93.5529192112977,
+          "strategyDrawdown": -0.04173360287136607,
+          "benchmarkDrawdown": -0.13900241504497435
+        },
+        {
+          "date": "2026-10-14",
+          "strategy": 106.843483406988,
+          "benchmark": 92.38449470697093,
+          "strategyDrawdown": -0.051821901347208876,
+          "benchmarkDrawdown": -0.14975580130922828
+        },
+        {
+          "date": "2026-10-15",
+          "strategy": 104.67339940698798,
+          "benchmark": 90.6794385951502,
+          "strategyDrawdown": -0.07108022254213797,
+          "benchmarkDrawdown": -0.16544798073951128
+        },
+        {
+          "date": "2026-10-16",
+          "strategy": 105.748851406988,
+          "benchmark": 91.18466148826076,
+          "strategyDrawdown": -0.06153616800520356,
+          "benchmarkDrawdown": -0.1607982520672322
         }
       ],
       "mirror": [
@@ -24311,11 +24437,18 @@
         "dataThrough": "2026-10-08",
         "paper": {
           "startDate": "2026-01-05",
-          "endDate": "2026-10-08",
+          "endDate": "2026-10-16",
           "anchorDate": "2025-12-31",
-          "expectedDays": 182,
+          "expectedDays": 188,
           "coveredDays": 182,
-          "missingDates": [],
+          "missingDates": [
+            "2026-10-09",
+            "2026-10-12",
+            "2026-10-13",
+            "2026-10-14",
+            "2026-10-15",
+            "2026-10-16"
+          ],
           "normalization": "PRE_ACCOUNT_CLOSE_100"
         },
         "mirror": {
@@ -25611,6 +25744,48 @@
           "benchmark": 88.67726790519087,
           "strategyDrawdown": -0.030543448476089807,
           "benchmarkDrawdown": -0.18909225178956557
+        },
+        {
+          "date": "2026-10-09",
+          "strategy": 104.847325,
+          "benchmark": null,
+          "strategyDrawdown": -0.033269596344214114,
+          "benchmarkDrawdown": null
+        },
+        {
+          "date": "2026-10-12",
+          "strategy": 103.399675,
+          "benchmark": null,
+          "strategyDrawdown": -0.04661745494577885,
+          "benchmarkDrawdown": null
+        },
+        {
+          "date": "2026-10-13",
+          "strategy": 103.84269099999999,
+          "benchmark": null,
+          "strategyDrawdown": -0.04253268657895626,
+          "benchmarkDrawdown": null
+        },
+        {
+          "date": "2026-10-14",
+          "strategy": 103.751391,
+          "benchmark": null,
+          "strategyDrawdown": -0.04337450572745405,
+          "benchmarkDrawdown": null
+        },
+        {
+          "date": "2026-10-15",
+          "strategy": 102.29490399999999,
+          "benchmark": null,
+          "strategyDrawdown": -0.056803844677488446,
+          "benchmarkDrawdown": null
+        },
+        {
+          "date": "2026-10-16",
+          "strategy": 102.57362799999999,
+          "benchmark": null,
+          "strategyDrawdown": -0.05423390820053431,
+          "benchmarkDrawdown": null
         }
       ],
       "mirror": [
@@ -30007,14 +30182,14 @@
         "sourceUrl": "https://tushare.pro/document/2?doc_id=95",
         "description": "转债市场走势对照；与策略选债池、调仓和交易费用不同，不代表可直接获得的账户收益。",
         "source": "paper_dashboard/data/benchmarks/csi_cb_000832_v1/daily_index.parquet",
-        "sourceSha256": "ecf9dbb6e5ff6e88f80dca4043db2ac04cfc942470c467b74c1f387aca9c7d40",
-        "dataThrough": "2026-10-08",
+        "sourceSha256": "3740343286f56021aac37ab2a9ef23020b84f06663f9b85aa2aef98cdc060ab2",
+        "dataThrough": "2026-10-16",
         "paper": {
           "startDate": "2026-01-05",
-          "endDate": "2026-10-08",
+          "endDate": "2026-10-16",
           "anchorDate": "2025-12-31",
-          "expectedDays": 182,
-          "coveredDays": 182,
+          "expectedDays": 188,
+          "coveredDays": 188,
           "missingDates": [],
           "normalization": "PRE_ACCOUNT_CLOSE_100"
         },
@@ -31311,6 +31486,48 @@
           "benchmark": 94.46444279415988,
           "strategyDrawdown": -0.048290535104427934,
           "benchmarkDrawdown": -0.13061337053315858
+        },
+        {
+          "date": "2026-10-09",
+          "strategy": 101.00372998580002,
+          "benchmark": 94.63148836444356,
+          "strategyDrawdown": -0.0462209306165724,
+          "benchmarkDrawdown": -0.12907599645863244
+        },
+        {
+          "date": "2026-10-12",
+          "strategy": 100.72328509280001,
+          "benchmark": 93.42244598870059,
+          "strategyDrawdown": -0.0488691740932885,
+          "benchmarkDrawdown": -0.14020320204878434
+        },
+        {
+          "date": "2026-10-13",
+          "strategy": 100.78539237190004,
+          "benchmark": 93.5529192112977,
+          "strategyDrawdown": -0.04828269453584744,
+          "benchmarkDrawdown": -0.13900241504497435
+        },
+        {
+          "date": "2026-10-14",
+          "strategy": 100.36692637190004,
+          "benchmark": 92.38449470697093,
+          "strategyDrawdown": -0.05223427248356027,
+          "benchmarkDrawdown": -0.14975580130922828
+        },
+        {
+          "date": "2026-10-15",
+          "strategy": 99.34861172310005,
+          "benchmark": 90.6794385951502,
+          "strategyDrawdown": -0.06185022625287662,
+          "benchmarkDrawdown": -0.16544798073951128
+        },
+        {
+          "date": "2026-10-16",
+          "strategy": 100.05638312480004,
+          "benchmark": 91.18466148826076,
+          "strategyDrawdown": -0.0551667349704803,
+          "benchmarkDrawdown": -0.1607982520672322
         }
       ],
       "mirror": [
@@ -33030,11 +33247,18 @@
         "dataThrough": "2026-10-08",
         "paper": {
           "startDate": "2026-01-05",
-          "endDate": "2026-10-08",
+          "endDate": "2026-10-16",
           "anchorDate": "2025-12-31",
-          "expectedDays": 182,
+          "expectedDays": 188,
           "coveredDays": 182,
-          "missingDates": [],
+          "missingDates": [
+            "2026-10-09",
+            "2026-10-12",
+            "2026-10-13",
+            "2026-10-14",
+            "2026-10-15",
+            "2026-10-16"
+          ],
           "normalization": "PRE_ACCOUNT_CLOSE_100"
         },
         "mirror": {
@@ -34330,6 +34554,48 @@
           "benchmark": 94.87449681354,
           "strategyDrawdown": -0.0004790660161748672,
           "benchmarkDrawdown": -0.13843034559663925
+        },
+        {
+          "date": "2026-10-09",
+          "strategy": 100.88808228299999,
+          "benchmark": null,
+          "strategyDrawdown": -0.0004790660161748672,
+          "benchmarkDrawdown": null
+        },
+        {
+          "date": "2026-10-12",
+          "strategy": 100.88808228299999,
+          "benchmark": null,
+          "strategyDrawdown": -0.0004790660161748672,
+          "benchmarkDrawdown": null
+        },
+        {
+          "date": "2026-10-13",
+          "strategy": 100.88808228299999,
+          "benchmark": null,
+          "strategyDrawdown": -0.0004790660161748672,
+          "benchmarkDrawdown": null
+        },
+        {
+          "date": "2026-10-14",
+          "strategy": 100.88808228299999,
+          "benchmark": null,
+          "strategyDrawdown": -0.0004790660161748672,
+          "benchmarkDrawdown": null
+        },
+        {
+          "date": "2026-10-15",
+          "strategy": 100.88808228299999,
+          "benchmark": null,
+          "strategyDrawdown": -0.0004790660161748672,
+          "benchmarkDrawdown": null
+        },
+        {
+          "date": "2026-10-16",
+          "strategy": 100.88808228299999,
+          "benchmark": null,
+          "strategyDrawdown": -0.0004790660161748672,
+          "benchmarkDrawdown": null
         }
       ],
       "mirror": [
@@ -49657,11 +49923,18 @@
         "dataThrough": "2026-10-08",
         "paper": {
           "startDate": "2026-01-05",
-          "endDate": "2026-10-08",
+          "endDate": "2026-10-16",
           "anchorDate": "2025-12-31",
-          "expectedDays": 182,
+          "expectedDays": 188,
           "coveredDays": 182,
-          "missingDates": [],
+          "missingDates": [
+            "2026-10-09",
+            "2026-10-12",
+            "2026-10-13",
+            "2026-10-14",
+            "2026-10-15",
+            "2026-10-16"
+          ],
           "normalization": "PRE_ACCOUNT_CLOSE_100"
         },
         "mirror": {
@@ -50957,6 +51230,48 @@
           "benchmark": 93.93304604152583,
           "strategyDrawdown": -0.07682783235438406,
           "benchmarkDrawdown": -0.16851838641874772
+        },
+        {
+          "date": "2026-10-09",
+          "strategy": 103.95294564282327,
+          "benchmark": null,
+          "strategyDrawdown": -0.07580097364553429,
+          "benchmarkDrawdown": null
+        },
+        {
+          "date": "2026-10-12",
+          "strategy": 103.34335441318328,
+          "benchmark": null,
+          "strategyDrawdown": -0.08122057592254195,
+          "benchmarkDrawdown": null
+        },
+        {
+          "date": "2026-10-13",
+          "strategy": 103.07445441318328,
+          "benchmark": null,
+          "strategyDrawdown": -0.08361124524557018,
+          "benchmarkDrawdown": null
+        },
+        {
+          "date": "2026-10-14",
+          "strategy": 102.36380749558327,
+          "benchmark": null,
+          "strategyDrawdown": -0.08992928833002856,
+          "benchmarkDrawdown": null
+        },
+        {
+          "date": "2026-10-15",
+          "strategy": 100.58720749558327,
+          "benchmark": null,
+          "strategyDrawdown": -0.10572424228797539,
+          "benchmarkDrawdown": null
+        },
+        {
+          "date": "2026-10-16",
+          "strategy": 101.1204074955833,
+          "benchmark": null,
+          "strategyDrawdown": -0.10098380017924113,
+          "benchmarkDrawdown": null
         }
       ],
       "mirror": [
@@ -66273,14 +66588,14 @@
         "sourceUrl": "https://tushare.pro/document/2?doc_id=95",
         "description": "全A市场收益对照，包含分红；不是对应风格股票池的等权收益。",
         "source": "paper_dashboard/data/benchmarks/all_a_total_v1/daily_index.parquet",
-        "sourceSha256": "08240f979e2526e8b294c59217833c5a19c95d9cbc2309e76fccbf4c6e34b806",
-        "dataThrough": "2026-10-08",
+        "sourceSha256": "23b08bb814787440b6544aee35060ab8505c88f4c32586fe5b05bb3f60a97a93",
+        "dataThrough": "2026-10-16",
         "paper": {
           "startDate": "2026-01-05",
-          "endDate": "2026-10-08",
+          "endDate": "2026-10-16",
           "anchorDate": "2025-12-31",
-          "expectedDays": 182,
-          "coveredDays": 182,
+          "expectedDays": 188,
+          "coveredDays": 188,
           "missingDates": [],
           "normalization": "PRE_ACCOUNT_CLOSE_100"
         },
@@ -67577,6 +67892,48 @@
           "benchmark": 95.17699662274532,
           "strategyDrawdown": -0.0895740278659447,
           "benchmarkDrawdown": -0.15919963270647108
+        },
+        {
+          "date": "2026-10-09",
+          "strategy": 100.36430339999995,
+          "benchmark": 95.35439302844665,
+          "strategyDrawdown": -0.09514399997623468,
+          "benchmarkDrawdown": -0.15763250022317332
+        },
+        {
+          "date": "2026-10-12",
+          "strategy": 100.36430339999995,
+          "benchmark": 94.00165477449643,
+          "strategyDrawdown": -0.09514399997623468,
+          "benchmarkDrawdown": -0.16958268630943552
+        },
+        {
+          "date": "2026-10-13",
+          "strategy": 100.36430339999995,
+          "benchmark": 94.0060979208067,
+          "strategyDrawdown": -0.09514399997623468,
+          "benchmarkDrawdown": -0.1695434352384606
+        },
+        {
+          "date": "2026-10-14",
+          "strategy": 100.36430339999995,
+          "benchmark": 92.53313667076714,
+          "strategyDrawdown": -0.09514399997623468,
+          "benchmarkDrawdown": -0.18255567983524412
+        },
+        {
+          "date": "2026-10-15",
+          "strategy": 99.80130339999998,
+          "benchmark": 90.45065015431322,
+          "strategyDrawdown": -0.10021984777027582,
+          "benchmarkDrawdown": -0.200952514049908
+        },
+        {
+          "date": "2026-10-16",
+          "strategy": 98.58530339999999,
+          "benchmark": 90.58083421593945,
+          "strategyDrawdown": -0.11118295774816966,
+          "benchmarkDrawdown": -0.1998024587769417
         }
       ],
       "mirror": [
@@ -77090,14 +77447,14 @@
         "sourceUrl": "https://tushare.pro/document/2?doc_id=95",
         "description": "全A市场收益对照，包含分红；不是对应风格股票池的等权收益。",
         "source": "paper_dashboard/data/benchmarks/all_a_total_v1/daily_index.parquet",
-        "sourceSha256": "08240f979e2526e8b294c59217833c5a19c95d9cbc2309e76fccbf4c6e34b806",
-        "dataThrough": "2026-10-08",
+        "sourceSha256": "23b08bb814787440b6544aee35060ab8505c88f4c32586fe5b05bb3f60a97a93",
+        "dataThrough": "2026-10-16",
         "paper": {
           "startDate": "2026-01-05",
-          "endDate": "2026-10-08",
+          "endDate": "2026-10-16",
           "anchorDate": "2025-12-31",
-          "expectedDays": 182,
-          "coveredDays": 182,
+          "expectedDays": 188,
+          "coveredDays": 188,
           "missingDates": [],
           "normalization": "PRE_ACCOUNT_CLOSE_100"
         },
@@ -78386,6 +78743,48 @@
           "benchmark": 95.17699662274532,
           "strategyDrawdown": -0.030514086970903076,
           "benchmarkDrawdown": -0.15919963270647108
+        },
+        {
+          "date": "2026-10-09",
+          "strategy": 102.38866966199997,
+          "benchmark": 95.35439302844665,
+          "strategyDrawdown": -0.030514086970903076,
+          "benchmarkDrawdown": -0.15763250022317332
+        },
+        {
+          "date": "2026-10-12",
+          "strategy": 102.38866966199997,
+          "benchmark": 94.00165477449643,
+          "strategyDrawdown": -0.030514086970903076,
+          "benchmarkDrawdown": -0.16958268630943552
+        },
+        {
+          "date": "2026-10-13",
+          "strategy": 102.38866966199997,
+          "benchmark": 94.0060979208067,
+          "strategyDrawdown": -0.030514086970903076,
+          "benchmarkDrawdown": -0.1695434352384606
+        },
+        {
+          "date": "2026-10-14",
+          "strategy": 102.38866966199997,
+          "benchmark": 92.53313667076714,
+          "strategyDrawdown": -0.030514086970903076,
+          "benchmarkDrawdown": -0.18255567983524412
+        },
+        {
+          "date": "2026-10-15",
+          "strategy": 102.38866966199997,
+          "benchmark": 90.45065015431322,
+          "strategyDrawdown": -0.030514086970903076,
+          "benchmarkDrawdown": -0.200952514049908
+        },
+        {
+          "date": "2026-10-16",
+          "strategy": 102.38866966199997,
+          "benchmark": 90.58083421593945,
+          "strategyDrawdown": -0.030514086970903076,
+          "benchmarkDrawdown": -0.1998024587769417
         }
       ],
       "mirror": []
