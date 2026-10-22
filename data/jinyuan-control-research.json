@@ -4,12 +4,12 @@
   "sourceCommit": "9963d89494a89f7d5d54c0dd28d4698363891f01",
   "title": "股票｜小市值多因子",
   "parameters": "财务恶化扣分·估值防御·旧股保护20交易日",
-  "status": "BLOCKED_PRELAUNCH",
+  "status": "ACTIVE_ORIGINAL_UNIT_PAPER",
   "historyThrough": "2026-10-12",
   "checkedTarget": "20261021",
-  "accountStarted": false,
-  "includedInAccountTotals": false,
-  "currentSignalReady": false,
+  "accountStarted": true,
+  "includedInAccountTotals": true,
+  "currentSignalReady": true,
   "brokerEnabled": false,
   "initialCash": 1000000,
   "endingAssets": 8622888.580867466,
@@ -22,24 +22,7 @@
   "annualizedReturn": 0.3341893562928029,
   "maxDrawdown": -0.1953636643407214,
   "return2026": 0.021945917134111648,
-  "blockers": [
-    {
-      "code": "CURRENT_GENERATOR_NOT_CERTIFIED",
-      "detail": "普通股计划及估值/H接续生成器尚未认证；冻结状态止于20261012，不能沿用为20261021信号。"
-    },
-    {
-      "code": "RAW_SHARE_ACCOUNT_NOT_CERTIFIED",
-      "detail": "原镜像采用复权合成碎股及按比例扣管理费；未复权整手股数、公司行动、T+1和现金/持仓对账适配尚未认证。"
-    },
-    {
-      "code": "FROZEN_PLAN_EXPIRED",
-      "detail": "冻结普通股计划最后日期20261009，本轮目标20261021；历史持仓不是新建仓名单。"
-    },
-    {
-      "code": "SAFE_INPUTS_NOT_EXTENDED",
-      "detail": "原接入缓存的GC001、511010日线及复权因子均只到2026-10-12；须补齐并核验滞后回购收益和安全资产价格，不能用旧值冒充当天结算。"
-    }
-  ],
+  "blockers": [],
   "model": "原control：B=100%，F仅0或1；F=1是防御股票，不是现金。",
   "execution": "收盘计算，下一交易日开盘；历史使用开盘/收盘×原复权因子的合成单位，非实盘股数。",
   "costs": "每边30bp滑点＋3bp佣金；历史卖出印花税；1.3%年费及原回购费用。",
@@ -48,14 +31,14 @@
     "保留原固定分类器、财务恶化扣分、月度市值分层名额、5交易日退出检查及冷却。",
     "估值防御沿原PB分位与H状态；不启用分批撤防、H_cash80或prospective20。",
     "符合条件的实际旧持仓最多保护20交易日、最多10只；重新入池、风险、到期或资格不合格时取消。",
-    "原100万元连续研究账户2019起跑；历史不拼接进未来新账户，也不计入当前10套总资产。",
+    "2026年100万元空账户独立运行并纳入总览；2019连续研究历史单列，不拼接收益。",
     "未来防御权重大于0须同源CNE5；缺失时阻断，不能用旧因子或CNE6替代。"
   ],
   "limitations": [
     "金元顺安元启复现研究假设，不是基金官方或已知真实未披露策略。",
     "早期分类器训练、财务修订/PIT及已看过2024/2026，不能宣称独立样本外或已证明Alpha。",
     "历史允许合成碎股、按比例扣管理费，并以全日成交额近似容量；不等于真实开盘可成交。",
-    "历史基准尚未接入本页，不据此宣称超额；暂无最新可执行名单，不代表没有买卖信号。"
+    "当前模拟账户使用原复权合成单位，非整手实盘；基准、持仓、交割记录和计划按同批账本核对。"
   ],
   "curve": [
     {
@@ -9473,5 +9456,21 @@
       "netValue": 862.2888580867466,
       "drawdown": -3.3300525146198745
     }
-  ]
+  ],
+  "currentAccount": {
+    "start": "2026-01-05",
+    "through": "20261021",
+    "initialCash": 1000000,
+    "endingAssets": 981941.0320107307,
+    "holdings": 100,
+    "fills": 1504,
+    "dailyPnL": -7133.768524690298,
+    "currentDefense": 0.0,
+    "nextTradeDate": "20261022",
+    "unitBasis": "ORIGINAL_RESEARCH_ADJUSTED_UNITS_NOT_LIVE_SHARES",
+    "rawShareAccountCertified": false,
+    "originalHistoryIdentityPassed": true,
+    "originalGeneratorPrefixUnchanged": true,
+    "realOrdersCreated": false
+  }
 }
