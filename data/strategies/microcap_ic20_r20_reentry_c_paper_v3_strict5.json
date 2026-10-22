@@ -1,6 +1,6 @@
 {
   "schemaVersion": "STRATEGY_AUDIT_V1",
-  "generatedAt": "2026-10-18T00:51:43.143174+08:00",
+  "generatedAt": "2026-10-22T09:23:03.039751+08:00",
   "strategy": {
     "id": "microcap_ic20_r20_reentry_c_paper_v3_strict5",
     "name": "股票｜微盘增强｜IC20·调仓20交易日·最多5只·择时重启重选",
@@ -9,14 +9,14 @@
     "currentValue": 1190771.1611554055,
     "initialValue": 1000000,
     "returnRate": 19.077116115540548,
-    "sharpeRatio": 1.3724200092189291,
+    "sharpeRatio": 1.3615760165910842,
     "maxDrawdown": -14.783733737891936,
-    "volatility": 18.267266927297634,
-    "winRate": 27.659574468085108,
+    "volatility": 18.123547282397897,
+    "winRate": 27.225130890052355,
     "totalTrades": 62,
     "dailyPnL": 0,
     "startDate": "20260105",
-    "asOf": "20261016",
+    "asOf": "20261021",
     "equity": [
       {
         "timestamp": "2026-01-05T00:00:00",
@@ -1704,6 +1704,33 @@
       {
         "date": "2026-10-16",
         "timestamp": "2026-10-16T00:00:00",
+        "value": 1190771.1611554055,
+        "backtestValue": null,
+        "paperValue": 1190771.1611554055,
+        "accountValue": 1190771.1611554055,
+        "phase": "paper"
+      },
+      {
+        "date": "2026-10-19",
+        "timestamp": "2026-10-19T00:00:00",
+        "value": 1190771.1611554055,
+        "backtestValue": null,
+        "paperValue": 1190771.1611554055,
+        "accountValue": 1190771.1611554055,
+        "phase": "paper"
+      },
+      {
+        "date": "2026-10-20",
+        "timestamp": "2026-10-20T00:00:00",
+        "value": 1190771.1611554055,
+        "backtestValue": null,
+        "paperValue": 1190771.1611554055,
+        "accountValue": 1190771.1611554055,
+        "phase": "paper"
+      },
+      {
+        "date": "2026-10-21",
+        "timestamp": "2026-10-21T00:00:00",
         "value": 1190771.1611554055,
         "backtestValue": null,
         "paperValue": 1190771.1611554055,
@@ -20891,6 +20918,33 @@
         "paperValue": 830174.4900000001,
         "accountValue": 1190771.1611554055,
         "phase": "paper"
+      },
+      {
+        "date": "2026-10-19",
+        "timestamp": "2026-10-19T00:00:00",
+        "value": 830174.4900000001,
+        "backtestValue": null,
+        "paperValue": 830174.4900000001,
+        "accountValue": 1190771.1611554055,
+        "phase": "paper"
+      },
+      {
+        "date": "2026-10-20",
+        "timestamp": "2026-10-20T00:00:00",
+        "value": 830174.4900000001,
+        "backtestValue": null,
+        "paperValue": 830174.4900000001,
+        "accountValue": 1190771.1611554055,
+        "phase": "paper"
+      },
+      {
+        "date": "2026-10-21",
+        "timestamp": "2026-10-21T00:00:00",
+        "value": 830174.4900000001,
+        "backtestValue": null,
+        "paperValue": 830174.4900000001,
+        "accountValue": 1190771.1611554055,
+        "phase": "paper"
       }
     ],
     "backtestEndDate": "2025-12-31",
@@ -20916,12 +20970,12 @@
     },
     "paperMetrics": {
       "returnRate": 19.077116115540548,
-      "annualizedReturn": 26.369480521258847,
+      "annualizedReturn": 25.905796808580362,
       "maxDrawdown": -14.783733737891936,
-      "sharpeRatio": 1.3724200092189291,
-      "volatility": 18.267266927297634,
-      "winRate": 27.659574468085108,
-      "tradeDays": 188,
+      "sharpeRatio": 1.3615760165910842,
+      "volatility": 18.123547282397897,
+      "winRate": 27.225130890052355,
+      "tradeDays": 191,
       "monthlyWinRate": 40,
       "positiveMonths": 4,
       "totalMonths": 10,
@@ -20952,15 +21006,15 @@
       "integrationSha256": "1a09b3820a7511d6d04b6ae598e5456198ef565c17dc4f3b3d2d85cc506bcb49",
       "initialCash": 1000000,
       "startDate": "2026-01-05",
-      "asOf": "2026-10-16",
-      "earliestExecutionDate": "2026-10-19",
+      "asOf": "2026-10-21",
+      "earliestExecutionDate": "2026-10-22",
       "history": {
         "status": "PASS",
         "label": "旧完整回测已核对通过"
       },
       "simulation": {
         "status": "PASS",
-        "label": "账户已核对至 2026-10-16 · 188个交易日 · 62笔成交",
+        "label": "账户已核对至 2026-10-21 · 191个交易日 · 62笔成交",
         "actualStart": "20260105",
         "accepted": true,
         "existingResultAvailable": true
@@ -20981,7 +21035,7 @@
         "pendingExits": []
       },
       "details": [
-        "2026-10-16收盘后使用实际行情计算并核对，历史账本前缀未改变。",
+        "2026-10-21收盘后使用实际行情计算并核对，历史账本前缀未改变。",
         "当日盈亏 0.00 元；当前现金 1,190,771.16 元。",
         "待执行计划不计入已成交记录，未连接券商，也没有发出真实委托。"
       ],
@@ -21015,10 +21069,10 @@
     "assetClass": "股票",
     "sourceVersion": "C择时重启重选，严格最多5只",
     "dailyPnLVerified": true,
-    "dailyPnLDate": "20261016"
+    "dailyPnLDate": "20261021"
   },
   "latest": {
-    "tradeDate": "2026-10-16",
+    "tradeDate": "2026-10-21",
     "cash": 1190771.1611554055,
     "positionMarketValue": 0,
     "totalAssets": 1190771.1611554055,
@@ -21029,18 +21083,18 @@
     "timingExposure": 0
   },
   "nextDecision": {
-    "decisionDate": "2026-10-16",
+    "decisionDate": "2026-10-21",
     "decisionTime": "收盘后",
     "decisionExposure": 0,
-    "executionDate": "2026-10-19",
+    "executionDate": "2026-10-22",
     "executionInstruction": "当日原择时重新计算为关闭；持续账户按原规则处理，空仓新账户不买入。",
-    "nextReviewDate": "2026-10-19",
+    "nextReviewDate": "2026-10-22",
     "selectionRefreshDate": "2026-10-26",
     "selectionExecutionDate": "2026-10-27",
     "state": "STAY_CASH",
     "decisionLabel": "不买入（当日重新计算择时仍关闭）",
     "preNodeAction": "保持空仓",
-    "requiredDataThrough": "2026-10-16",
+    "requiredDataThrough": "2026-10-21",
     "scheduleRule": "R20_ANCHORED_20170103_PLUS_DAILY_TIMING_REENTRY_REFRESH",
     "calendarVerifiedThrough": "2026-12-22",
     "calendarSource": "https://www.sse.com.cn/disclosure/announcement/general/c/c_20251222_10802507.shtml"
@@ -21055,7 +21109,7 @@
     "feeAdjustedSource": "[本地文件]",
     "official": false,
     "returnType": "PRICE_INDEX_PROXY",
-    "dataThrough": "2026-10-16",
+    "dataThrough": "2026-10-21",
     "normalization": "PHASE_START_PREVIOUS_CLOSE_100",
     "backtest": {
       "startDate": "2017-01-03",
@@ -40747,12 +40801,12 @@
     },
     "paper": {
       "startDate": "2026-01-05",
-      "endDate": "2026-10-16",
+      "endDate": "2026-10-21",
       "strategyReturn": 19.077116115540548,
-      "benchmarkReturn": 6.931491429335381,
-      "benchmarkFeeAdjustedReturn": 5.52834781792923,
-      "relativeReturn": 11.358323468471852,
-      "relativeFeeAdjustedReturn": 12.838984574066629,
+      "benchmarkReturn": 5.9330508326676465,
+      "benchmarkFeeAdjustedReturn": 4.522772463525612,
+      "relativeReturn": 12.407898365577452,
+      "relativeFeeAdjustedReturn": 13.924567162714553,
       "strategyMaxDrawdown": -14.783733737891936,
       "benchmarkMaxDrawdown": -29.107513834411506,
       "benchmarkFeeAdjustedMaxDrawdown": -29.36106388016333,
@@ -42448,6 +42502,33 @@
           "strategyDrawdown": -0.6217,
           "benchmarkDrawdown": -11.2202,
           "benchmarkFeeAdjustedDrawdown": -11.8732
+        },
+        {
+          "date": "2026-10-19",
+          "strategy": 119.0771,
+          "benchmark": 104.9533,
+          "benchmarkFeeAdjusted": 103.5694,
+          "strategyDrawdown": -0.6217,
+          "benchmarkDrawdown": -12.8626,
+          "benchmarkFeeAdjustedDrawdown": -13.5091
+        },
+        {
+          "date": "2026-10-20",
+          "strategy": 119.0771,
+          "benchmark": 106.4014,
+          "benchmarkFeeAdjusted": 104.9925,
+          "strategyDrawdown": -0.6217,
+          "benchmarkDrawdown": -11.6603,
+          "benchmarkFeeAdjustedDrawdown": -12.3207
+        },
+        {
+          "date": "2026-10-21",
+          "strategy": 119.0771,
+          "benchmark": 105.9331,
+          "benchmarkFeeAdjusted": 104.5228,
+          "strategyDrawdown": -0.6217,
+          "benchmarkDrawdown": -12.0491,
+          "benchmarkFeeAdjustedDrawdown": -12.7129
         }
       ]
     }
@@ -51721,7 +51802,7 @@
   "dataBoundary": {
     "backtestEndDate": "2025-12-31",
     "paperStartDate": "2026-01-05",
-    "dataThrough": "2026-10-16",
+    "dataThrough": "2026-10-21",
     "policy": "DAILY_CHECKPOINT_ACCOUNT; benchmark retains its independently labelled coverage date"
   },
   "sources": [

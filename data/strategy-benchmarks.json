@@ -1,7 +1,7 @@
 {
   "schemaVersion": "STRATEGY_BENCHMARK_OVERLAYS_V1",
-  "sourceSnapshotSha256": "34fb1c81ecd8681e4f0845dd461bc36137b1508e28c56e3958578b89648b1775",
-  "accountGeneratedAt": "2026-10-18T00:51:43.143174+08:00",
+  "sourceSnapshotSha256": "c3284519b5b9822e3f9e5794e78385ae9ffc64c094b075580817ffea80b04ccd",
+  "accountGeneratedAt": "2026-10-22T09:23:03.039751+08:00",
   "scope": "DISPLAY_ONLY_NO_TIMING_CHANGE",
   "strategies": {
     "bt2e_st_xie_v6_cooldown_paper_v1": {
@@ -13,14 +13,14 @@
         "sourceUrl": "https://tushare.pro/document/2?doc_id=95",
         "description": "全A市场收益对照，包含分红；不是对应风格股票池的等权收益。",
         "source": "paper_dashboard/data/benchmarks/all_a_total_v1/daily_index.parquet",
-        "sourceSha256": "23b08bb814787440b6544aee35060ab8505c88f4c32586fe5b05bb3f60a97a93",
-        "dataThrough": "2026-10-16",
+        "sourceSha256": "7aab8501f6907543ed4c4f8ab1e2515da9c1887e2a7decc30b07b0008b21bbba",
+        "dataThrough": "2026-10-21",
         "paper": {
           "startDate": "2026-01-05",
-          "endDate": "2026-10-16",
+          "endDate": "2026-10-21",
           "anchorDate": "2025-12-31",
-          "expectedDays": 188,
-          "coveredDays": 188,
+          "expectedDays": 191,
+          "coveredDays": 191,
           "missingDates": [],
           "normalization": "PRE_ACCOUNT_CLOSE_100"
         },
@@ -1351,6 +1351,27 @@
           "benchmark": 90.58083421593945,
           "strategyDrawdown": -0.09859031477249125,
           "benchmarkDrawdown": -0.1998024587769417
+        },
+        {
+          "date": "2026-10-19",
+          "strategy": 96.452346749,
+          "benchmark": 90.6336158378537,
+          "strategyDrawdown": -0.09383269988550313,
+          "benchmarkDrawdown": -0.1993361821694989
+        },
+        {
+          "date": "2026-10-20",
+          "strategy": 95.834046749,
+          "benchmark": 90.88416569756515,
+          "strategyDrawdown": -0.09964161237488856,
+          "benchmarkDrawdown": -0.1971228068630081
+        },
+        {
+          "date": "2026-10-21",
+          "strategy": 95.066290349,
+          "benchmark": 90.50672624332532,
+          "strategyDrawdown": -0.10685466387216425,
+          "benchmarkDrawdown": -0.20045713388546937
         }
       ],
       "mirror": []
@@ -1364,14 +1385,14 @@
         "sourceUrl": "https://tushare.pro/document/2?doc_id=95",
         "description": "全A市场收益对照，包含分红；不是对应风格股票池的等权收益。",
         "source": "paper_dashboard/data/benchmarks/all_a_total_v1/daily_index.parquet",
-        "sourceSha256": "23b08bb814787440b6544aee35060ab8505c88f4c32586fe5b05bb3f60a97a93",
-        "dataThrough": "2026-10-16",
+        "sourceSha256": "7aab8501f6907543ed4c4f8ab1e2515da9c1887e2a7decc30b07b0008b21bbba",
+        "dataThrough": "2026-10-21",
         "paper": {
           "startDate": "2026-01-05",
-          "endDate": "2026-10-16",
+          "endDate": "2026-10-21",
           "anchorDate": "2025-12-31",
-          "expectedDays": 188,
-          "coveredDays": 188,
+          "expectedDays": 191,
+          "coveredDays": 191,
           "missingDates": [],
           "normalization": "PRE_ACCOUNT_CLOSE_100"
         },
@@ -2710,6 +2731,27 @@
           "benchmark": 90.58083421593945,
           "strategyDrawdown": -0.10884824923784364,
           "benchmarkDrawdown": -0.1998024587769417
+        },
+        {
+          "date": "2026-10-19",
+          "strategy": 95.40798391157352,
+          "benchmark": 90.6336158378537,
+          "strategyDrawdown": -0.1078529339406833,
+          "benchmarkDrawdown": -0.1993361821694989
+        },
+        {
+          "date": "2026-10-20",
+          "strategy": 95.84125591157353,
+          "benchmark": 90.88416569756515,
+          "strategyDrawdown": -0.10380146646638977,
+          "benchmarkDrawdown": -0.1971228068630081
+        },
+        {
+          "date": "2026-10-21",
+          "strategy": 95.37494791157354,
+          "benchmark": 90.50672624332532,
+          "strategyDrawdown": -0.10816184907824289,
+          "benchmarkDrawdown": -0.20045713388546937
         }
       ],
       "mirror": [
@@ -12909,14 +12951,14 @@
         "sourceUrl": "https://tushare.pro/document/2?doc_id=95",
         "description": "转债市场走势对照；与策略选债池、调仓和交易费用不同，不代表可直接获得的账户收益。",
         "source": "paper_dashboard/data/benchmarks/csi_cb_000832_v1/daily_index.parquet",
-        "sourceSha256": "3740343286f56021aac37ab2a9ef23020b84f06663f9b85aa2aef98cdc060ab2",
-        "dataThrough": "2026-10-16",
+        "sourceSha256": "38bdcb9247e5abc50f2930158eb779faaf5dc92223ee6d4e934485eedb83b95e",
+        "dataThrough": "2026-10-21",
         "paper": {
           "startDate": "2026-01-05",
-          "endDate": "2026-10-16",
+          "endDate": "2026-10-21",
           "anchorDate": "2025-12-31",
-          "expectedDays": 188,
-          "coveredDays": 188,
+          "expectedDays": 191,
+          "coveredDays": 191,
           "missingDates": [],
           "normalization": "PRE_ACCOUNT_CLOSE_100"
         },
@@ -14255,6 +14297,27 @@
           "benchmark": 91.18466148826076,
           "strategyDrawdown": -0.06153616800520356,
           "benchmarkDrawdown": -0.1607982520672322
+        },
+        {
+          "date": "2026-10-19",
+          "strategy": 106.50212140698798,
+          "benchmark": 91.8200120064639,
+          "strategyDrawdown": -0.054851304374807563,
+          "benchmarkDrawdown": -0.154950917036058
+        },
+        {
+          "date": "2026-10-20",
+          "strategy": 106.29691640698798,
+          "benchmark": 92.3207421320154,
+          "strategyDrawdown": -0.05667238770651528,
+          "benchmarkDrawdown": -0.15034253674767462
+        },
+        {
+          "date": "2026-10-21",
+          "strategy": 105.54794040698796,
+          "benchmark": 92.14662197752112,
+          "strategyDrawdown": -0.06331914441053854,
+          "benchmarkDrawdown": -0.15194502049457903
         }
       ],
       "mirror": [
@@ -24433,14 +24496,14 @@
         "sourceUrl": "https://tushare.pro/document/2?doc_id=260",
         "description": "同花顺发布的ST板块历史指数，经Tushare取得；价格指数，不是当前ST名单倒推的历史收益，也不是可直接购买的基金。",
         "source": "paper_dashboard/data/benchmarks/st_ths_885699_v1/daily_index.parquet",
-        "sourceSha256": "a83f391813ebb07ea8310cd3d9a45c1c0900bb589fa1652113e44d657af72e49",
-        "dataThrough": "2026-10-16",
+        "sourceSha256": "6c1f73e46f8edf48f05f1e975c019617bc31e6959a6b2cf6f5bdf348008a0e89",
+        "dataThrough": "2026-10-21",
         "paper": {
           "startDate": "2026-01-05",
-          "endDate": "2026-10-16",
+          "endDate": "2026-10-21",
           "anchorDate": "2025-12-31",
-          "expectedDays": 188,
-          "coveredDays": 188,
+          "expectedDays": 191,
+          "coveredDays": 191,
           "missingDates": [],
           "normalization": "PRE_ACCOUNT_CLOSE_100"
         },
@@ -25779,6 +25842,27 @@
           "benchmark": 84.00655602908733,
           "strategyDrawdown": -0.05423390820053431,
           "benchmarkDrawdown": -0.23180349605162687
+        },
+        {
+          "date": "2026-10-19",
+          "strategy": 102.108228,
+          "benchmark": 83.05380275382588,
+          "strategyDrawdown": -0.05852506517436651,
+          "benchmarkDrawdown": -0.24051593195874565
+        },
+        {
+          "date": "2026-10-20",
+          "strategy": 102.171628,
+          "benchmark": 83.37719926143727,
+          "strategyDrawdown": -0.05794049415558489,
+          "benchmarkDrawdown": -0.2375586381678877
+        },
+        {
+          "date": "2026-10-21",
+          "strategy": 102.77632799999998,
+          "benchmark": 83.4293244647072,
+          "strategyDrawdown": -0.052364940605786225,
+          "benchmarkDrawdown": -0.23708198014484383
         }
       ],
       "mirror": [
@@ -30175,14 +30259,14 @@
         "sourceUrl": "https://tushare.pro/document/2?doc_id=95",
         "description": "转债市场走势对照；与策略选债池、调仓和交易费用不同，不代表可直接获得的账户收益。",
         "source": "paper_dashboard/data/benchmarks/csi_cb_000832_v1/daily_index.parquet",
-        "sourceSha256": "3740343286f56021aac37ab2a9ef23020b84f06663f9b85aa2aef98cdc060ab2",
-        "dataThrough": "2026-10-16",
+        "sourceSha256": "38bdcb9247e5abc50f2930158eb779faaf5dc92223ee6d4e934485eedb83b95e",
+        "dataThrough": "2026-10-21",
         "paper": {
           "startDate": "2026-01-05",
-          "endDate": "2026-10-16",
+          "endDate": "2026-10-21",
           "anchorDate": "2025-12-31",
-          "expectedDays": 188,
-          "coveredDays": 188,
+          "expectedDays": 191,
+          "coveredDays": 191,
           "missingDates": [],
           "normalization": "PRE_ACCOUNT_CLOSE_100"
         },
@@ -31521,6 +31605,27 @@
           "benchmark": 91.18466148826076,
           "strategyDrawdown": -0.0551667349704803,
           "benchmarkDrawdown": -0.1607982520672322
+        },
+        {
+          "date": "2026-10-19",
+          "strategy": 100.31333727270002,
+          "benchmark": 91.8200120064639,
+          "strategyDrawdown": -0.052740314796762666,
+          "benchmarkDrawdown": -0.154950917036058
+        },
+        {
+          "date": "2026-10-20",
+          "strategy": 100.48570100310006,
+          "benchmark": 92.3207421320154,
+          "strategyDrawdown": -0.051112682644964824,
+          "benchmarkDrawdown": -0.15034253674767462
+        },
+        {
+          "date": "2026-10-21",
+          "strategy": 100.38641117130003,
+          "benchmark": 92.14662197752112,
+          "strategyDrawdown": -0.05205027735940526,
+          "benchmarkDrawdown": -0.15194502049457903
         }
       ],
       "mirror": [
@@ -33236,14 +33341,14 @@
         "sourceUrl": "https://tushare.pro/document/2?doc_id=95",
         "description": "沿用低估扭亏的市场收益对照，包含分红；不是低估值风格指数。",
         "source": "paper_dashboard/data/benchmarks/csi300_total_v1/daily_index.parquet",
-        "sourceSha256": "07c308ef1e11ce193155a935196797c29d7e063b6a44e562aebdd8203505c2f5",
-        "dataThrough": "2026-10-16",
+        "sourceSha256": "22e65641b1897c66eaca2815d6e369bfaf0a43fd7dc6defaa96ab8287153e00e",
+        "dataThrough": "2026-10-21",
         "paper": {
           "startDate": "2026-01-05",
-          "endDate": "2026-10-16",
+          "endDate": "2026-10-21",
           "anchorDate": "2025-12-31",
-          "expectedDays": 188,
-          "coveredDays": 188,
+          "expectedDays": 191,
+          "coveredDays": 191,
           "missingDates": [],
           "normalization": "PRE_ACCOUNT_CLOSE_100"
         },
@@ -34582,6 +34687,27 @@
           "benchmark": 91.85294566366268,
           "strategyDrawdown": -0.0004790660161748672,
           "benchmarkDrawdown": -0.16586950856873062
+        },
+        {
+          "date": "2026-10-19",
+          "strategy": 100.88808228299999,
+          "benchmark": 91.94533546215663,
+          "strategyDrawdown": -0.0004790660161748672,
+          "benchmarkDrawdown": -0.16503050283555376
+        },
+        {
+          "date": "2026-10-20",
+          "strategy": 100.88808228299999,
+          "benchmark": 91.45340091094867,
+          "strategyDrawdown": -0.0004790660161748672,
+          "benchmarkDrawdown": -0.16949783489536208
+        },
+        {
+          "date": "2026-10-21",
+          "strategy": 100.88808228299999,
+          "benchmark": 90.60325685355689,
+          "strategyDrawdown": -0.0004790660161748672,
+          "benchmarkDrawdown": -0.17721812165650974
         }
       ],
       "mirror": [
@@ -49905,14 +50031,14 @@
         "sourceUrl": "https://tushare.pro/document/2?doc_id=95",
         "description": "沿用高氏策略原有中证全指价格指数对照，不包含分红再投资。",
         "source": "paper_dashboard/data/benchmarks/all_a_price_v1/daily_index.parquet",
-        "sourceSha256": "510fa7de86543f8892aa60fec94942249002e725e9f6aa259130f02cc325e390",
-        "dataThrough": "2026-10-16",
+        "sourceSha256": "113f050b9ce539b16fde68bfe525e620184939e55aa9a8dd75fc15f4650de192",
+        "dataThrough": "2026-10-21",
         "paper": {
           "startDate": "2026-01-05",
-          "endDate": "2026-10-16",
+          "endDate": "2026-10-21",
           "anchorDate": "2025-12-31",
-          "expectedDays": 188,
-          "coveredDays": 188,
+          "expectedDays": 191,
+          "coveredDays": 191,
           "missingDates": [],
           "normalization": "PRE_ACCOUNT_CLOSE_100"
         },
@@ -51251,6 +51377,27 @@
           "benchmark": 89.36087120992556,
           "strategyDrawdown": -0.10098380017924113,
           "benchmarkDrawdown": -0.20899061069724
+        },
+        {
+          "date": "2026-10-19",
+          "strategy": 100.9595074955833,
+          "benchmark": 89.40875843388285,
+          "strategyDrawdown": -0.10241428993035773,
+          "benchmarkDrawdown": -0.20856671998013998
+        },
+        {
+          "date": "2026-10-20",
+          "strategy": 100.34360749558329,
+          "benchmark": 89.65145686552177,
+          "strategyDrawdown": -0.10788998065573163,
+          "benchmarkDrawdown": -0.20641838888627173
+        },
+        {
+          "date": "2026-10-21",
+          "strategy": 100.36090749558329,
+          "benchmark": 89.26171787868365,
+          "strategyDrawdown": -0.10773617411319403,
+          "benchmarkDrawdown": -0.20986830151348934
         }
       ],
       "mirror": [
@@ -66567,14 +66714,14 @@
         "sourceUrl": "https://tushare.pro/document/2?doc_id=95",
         "description": "全A市场收益对照，包含分红；不是对应风格股票池的等权收益。",
         "source": "paper_dashboard/data/benchmarks/all_a_total_v1/daily_index.parquet",
-        "sourceSha256": "23b08bb814787440b6544aee35060ab8505c88f4c32586fe5b05bb3f60a97a93",
-        "dataThrough": "2026-10-16",
+        "sourceSha256": "7aab8501f6907543ed4c4f8ab1e2515da9c1887e2a7decc30b07b0008b21bbba",
+        "dataThrough": "2026-10-21",
         "paper": {
           "startDate": "2026-01-05",
-          "endDate": "2026-10-16",
+          "endDate": "2026-10-21",
           "anchorDate": "2025-12-31",
-          "expectedDays": 188,
-          "coveredDays": 188,
+          "expectedDays": 191,
+          "coveredDays": 191,
           "missingDates": [],
           "normalization": "PRE_ACCOUNT_CLOSE_100"
         },
@@ -67913,6 +68060,27 @@
           "benchmark": 90.58083421593945,
           "strategyDrawdown": -0.11118295774816966,
           "benchmarkDrawdown": -0.1998024587769417
+        },
+        {
+          "date": "2026-10-19",
+          "strategy": 96.54130339999998,
+          "benchmark": 90.6336158378537,
+          "strategyDrawdown": -0.12961108011232658,
+          "benchmarkDrawdown": -0.1993361821694989
+        },
+        {
+          "date": "2026-10-20",
+          "strategy": 96.51171939999996,
+          "benchmark": 90.88416569756515,
+          "strategyDrawdown": -0.12987780103797308,
+          "benchmarkDrawdown": -0.1971228068630081
+        },
+        {
+          "date": "2026-10-21",
+          "strategy": 96.51171939999996,
+          "benchmark": 90.50672624332532,
+          "strategyDrawdown": -0.12987780103797308,
+          "benchmarkDrawdown": -0.20045713388546937
         }
       ],
       "mirror": [
@@ -77426,14 +77594,14 @@
         "sourceUrl": "https://tushare.pro/document/2?doc_id=95",
         "description": "全A市场收益对照，包含分红；不是对应风格股票池的等权收益。",
         "source": "paper_dashboard/data/benchmarks/all_a_total_v1/daily_index.parquet",
-        "sourceSha256": "23b08bb814787440b6544aee35060ab8505c88f4c32586fe5b05bb3f60a97a93",
-        "dataThrough": "2026-10-16",
+        "sourceSha256": "7aab8501f6907543ed4c4f8ab1e2515da9c1887e2a7decc30b07b0008b21bbba",
+        "dataThrough": "2026-10-21",
         "paper": {
           "startDate": "2026-01-05",
-          "endDate": "2026-10-16",
+          "endDate": "2026-10-21",
           "anchorDate": "2025-12-31",
-          "expectedDays": 188,
-          "coveredDays": 188,
+          "expectedDays": 191,
+          "coveredDays": 191,
           "missingDates": [],
           "normalization": "PRE_ACCOUNT_CLOSE_100"
         },
@@ -78764,6 +78932,27 @@
           "benchmark": 90.58083421593945,
           "strategyDrawdown": -0.030514086970903076,
           "benchmarkDrawdown": -0.1998024587769417
+        },
+        {
+          "date": "2026-10-19",
+          "strategy": 102.38866966199997,
+          "benchmark": 90.6336158378537,
+          "strategyDrawdown": -0.030514086970903076,
+          "benchmarkDrawdown": -0.1993361821694989
+        },
+        {
+          "date": "2026-10-20",
+          "strategy": 102.38866966199997,
+          "benchmark": 90.88416569756515,
+          "strategyDrawdown": -0.030514086970903076,
+          "benchmarkDrawdown": -0.1971228068630081
+        },
+        {
+          "date": "2026-10-21",
+          "strategy": 102.38866966199997,
+          "benchmark": 90.50672624332532,
+          "strategyDrawdown": -0.030514086970903076,
+          "benchmarkDrawdown": -0.20045713388546937
         }
       ],
       "mirror": []
