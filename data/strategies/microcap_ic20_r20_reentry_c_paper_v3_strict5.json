@@ -1,6 +1,6 @@
 {
   "schemaVersion": "STRATEGY_AUDIT_V1",
-  "generatedAt": "2026-10-22T13:19:50.283496+08:00",
+  "generatedAt": "2026-10-22T13:25:36.013808+08:00",
   "strategy": {
     "id": "microcap_ic20_r20_reentry_c_paper_v3_strict5",
     "name": "股票｜微盘增强｜IC20·调仓20交易日·最多5只·择时重启重选",

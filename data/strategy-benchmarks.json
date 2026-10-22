@@ -1,7 +1,7 @@
 {
   "schemaVersion": "STRATEGY_BENCHMARK_OVERLAYS_V1",
-  "sourceSnapshotSha256": "76ea244459121b33705e0a91a89bd4652eb6ff453dc4105420e245ee0fc05b22",
-  "accountGeneratedAt": "2026-10-22T13:19:50.283496+08:00",
+  "sourceSnapshotSha256": "29558ff63f199a7ca67cd3958fa45d1bf3531e353bbec8853ff22180d0cba9b5",
+  "accountGeneratedAt": "2026-10-22T13:25:36.013808+08:00",
   "scope": "DISPLAY_ONLY_NO_TIMING_CHANGE",
   "strategies": {
     "bt2e_st_xie_v6_cooldown_paper_v1": {
