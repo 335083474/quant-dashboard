@@ -1,0 +1,55 @@
+归档实现说明
+# S004 Carver 通道动量 v005
+
+原信号及作者参数来源保留。
+
+- 当前价格在包含当前观测的滚动最高/最低通道中的位置乘 40，再按原函数平滑；零宽通道为 NaN。
+
+- Known completed-close equity after native fills/costs; fixed or current-equity cash-risk budget, loss shrinks equity budget, no top-ups.
+- Optional prior-data covariance forecast-book normalization; target16% of sizing budget, max multiplier15; actual lot/buffer risk reported.
+- No broker margin, capacity or live account model; backtesting only.
+
+完整时点、下单/撤单、换月、权益和保证金边界、逐组实际参数与验收见[研究报告]([workspace]/vnpy/validation/carver_capital_study/20261025_175241_435134/固定本金_权益仓位_分散对照报告.md)。信号在完成日线后计算，后续真实K线撮合；沿用原buffer/整数目标，无额外价格止损。非正权益后关闭风险并尝试平仓，不补资金；不启动模拟/实盘。
+
+
+研究笔记（2026-10-25修订）
+# breakout 通道位置动量规则 修订版
+
+修订日期：2026-10-25。依据本地提交 `164328bd76d2937d3dd61491377704c488283bc2`。
+
+## 核心思想
+
+该规则用价格在近期通道中的位置产生连续动量信号。接近通道上缘为正，接近下缘为负，在中线附近接近零。它不要求价格突破“截至昨日”的通道：滚动最高价和最低价**包含当前观测**。
+
+## 公式和默认参数
+
+```text
+H_t = rolling_max(price, lookback)
+L_t = rolling_min(price, lookback)
+M_t = (H_t + L_t) / 2
+B_t = 40 × (price_t - M_t) / (H_t - L_t)
+forecast = EWMA(B, span=smooth)
+```
+
+`lookback=10`；未指定 `smooth` 时取 `max(int(lookback/4), 1)`，默认因此为2。函数断言 `smooth < lookback`。
+
+通道的最少有效样本数为 `int(min(len(price), ceil(lookback/2)))`。当完整输入长度至少为5且 `lookback=10` 时，该值为5。平滑的 `min_periods=ceil(smooth/2)`，默认是1；未显式改变 pandas 的 `adjust=True`。
+
+## 范围与缺失值
+
+在价格和有效通道值有限、通道宽度大于零时，平滑前位置值自然落在 `[-20, +20]`。这来自本规则的乘40，并不是所有原始策略输出都具有的统一范围。
+
+若通道宽度为零，分子也为零时得到 `NaN`；代码没有将其强制转为0。样本不足也可能输出缺失值。原笔记没有写清这些复现边界。
+
+## 从信号到持仓
+
+该函数没有执行系统级预测缩放或封顶。框架后续先乘 `forecast_scalar`，再按配置上下界截断；默认 `forecast_cap=20`，但可以修改。组合权重、风险目标和持仓计算还在后续层。
+
+通道宽度归一化与每日价格变动波动率归一化不是同一个操作。“连续信号”“平滑”可以由源码确认；稳健获利、降低假突破损失等需要在数据上验证。
+
+## 修订依据
+
+- [breakout.py 第20行起]([workspace]/Robert_Carver/source/pysystemtrade/systems/provided/rules/breakout.py:20)：滚动窗口、乘40和平滑。
+- [预测缩放与封顶 第64行起]([workspace]/Robert_Carver/source/pysystemtrade/systems/forecast_scale_cap.py:64)、[缩放 第98行起]([workspace]/Robert_Carver/source/pysystemtrade/systems/forecast_scale_cap.py:98)。
+- [默认配置 第125行起]([workspace]/Robert_Carver/source/pysystemtrade/sysdata/config/defaults.yaml:125)。
+- [旧版原文](../notes_audit_20261025/original_notes/02_breakout_设计思想.md)。本版补全预热和零宽度边界，区分规则自然范围与系统缩放封顶。

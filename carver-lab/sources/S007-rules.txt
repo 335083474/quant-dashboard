@@ -1,0 +1,61 @@
+归档实现说明
+# S007 Carver 波动率均线差 v005
+
+原信号及作者参数来源保留。
+
+- 快慢 EMA 差除价格单位日波动率。支持源码 calc_vol 分支、累计波动率标准化价格和资产类价格输入；资产类变体用额外的原生组合适配类。
+
+- Known completed-close equity after native fills/costs; fixed or current-equity cash-risk budget, loss shrinks equity budget, no top-ups.
+- Optional prior-data covariance forecast-book normalization; target16% of sizing budget, max multiplier15; actual lot/buffer risk reported.
+- No broker margin, capacity or live account model; backtesting only.
+
+完整时点、下单/撤单、换月、权益和保证金边界、逐组实际参数与验收见[研究报告]([workspace]/vnpy/validation/carver_capital_study/20261025_175241_435134/固定本金_权益仓位_分散对照报告.md)。信号在完成日线后计算，后续真实K线撮合；沿用原buffer/整数目标，无额外价格止损。非正权益后关闭风险并尝试平仓，不补资金；不启动模拟/实盘。
+
+
+研究笔记（2026-10-25修订）
+# ewmac 波动率归一化均线差规则 修订版
+
+修订日期：2026-10-25。依据本地提交 `164328bd76d2937d3dd61491377704c488283bc2`。
+
+## 核心思想与公式
+
+EWMAC 用快慢指数均线之差衡量趋势，再除以价格变动波动率。它是连续信号，不仅在均线交叉当天触发一次。
+
+```python
+fast = price.ewm(span=Lfast, min_periods=1).mean()
+slow = price.ewm(span=Lslow, min_periods=1).mean()
+raw_forecast = (fast - slow) / vol.ffill()
+```
+
+在有效正波动率下，快线高于慢线为正，低于慢线为负。两条 EWMA 默认 `adjust=True`；改用 `adjust=False` 会改变数值，不能在复现中默默替换。
+
+## 输入和参数
+
+`vol` 是**每日价格变化的绝对单位波动率**，例如“价格点数/日变化的标准差”，不是百分比波动率。两条输入应日期对齐；`vol` 被前向填充，但函数不会主动估计它或验证其因果时点。
+
+对于期货，源码注释要求使用拼接价格序列，并提醒不要直接用正在交易的单一合约价格替代。不同拼接或复权口径会影响价格变化及波动率。
+
+| 入口 | 参数含义 |
+| --- | --- |
+| `ewmac(price, vol, Lfast, Lslow)` | 快慢周期都必须显式传入，无内置默认 |
+| `ewmac_forecast_with_defaults(price, Lfast=32, Lslow=128)` | 仅用于示例，内部估计波动率 |
+| `ewmac_forecast_with_defaults_no_vol(price, vol, Lfast=16, Lslow=32)` | 仅用于示例，波动率由外部提供 |
+| `ewmac_calc_vol(price, Lfast, Lslow, vol_days=35)` | 对 `price.diff()` 调用 `robust_vol_calc` 再算 EWMAC |
+
+核心 `ewmac` 函数并没有强制慢周期为快周期的4倍；其他规则或配置可以做这种选择。外部提供的 `vol` 也不一定采用示例包装器的估计方法。
+
+## 原始预测不是最终仓位
+
+本函数不做预测缩放或封顶。原始值+5表示该时点均线差约为传入每日价格变动波动率的5倍，不是“5倍仓位”，也不能据此直接比较不同周期规则的预测能力。
+
+框架后续先应用预测缩放，再封顶，并结合多个规则、品种权重、资金与风险目标计算仓位。波动率进入信号分母与仓位层的风险控制是不同步骤。
+
+## 后续研究
+
+需要固定价格拼接、波动率估计、参数组、信号可用时点和执行成本，再判断趋势信号是否有效。波动率归一化解决量纲问题，不能单独证明“稳定运行”“专业级”或成本后盈利。
+
+## 修订依据
+
+- [ewmac.py 第4行起]([workspace]/Robert_Carver/source/pysystemtrade/systems/provided/rules/ewmac.py:4)、[核心实现 第79行起]([workspace]/Robert_Carver/source/pysystemtrade/systems/provided/rules/ewmac.py:79)、[估计波动率入口 第127行起]([workspace]/Robert_Carver/source/pysystemtrade/systems/provided/rules/ewmac.py:127)。
+- [预测缩放 第98行起]([workspace]/Robert_Carver/source/pysystemtrade/systems/forecast_scale_cap.py:98)。
+- [旧版原文](../notes_audit_20261025/original_notes/05_ewmac_设计思想.md)。核心公式保留，补全波动率单位、函数入口和持仓层边界。

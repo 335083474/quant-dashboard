@@ -1,0 +1,16 @@
+{
+  "scope": "8 archived parameter profiles; 4 product charts; full original portfolio metrics; no new backtest",
+  "strategy_ids": [
+    "S003",
+    "S004",
+    "S005",
+    "S006",
+    "S007",
+    "S008",
+    "S009",
+    "S010"
+  ],
+  "price_window": "2023 onward except historical Wings example",
+  "data_identity": "legacy 20261025_v3; NOT RQData",
+  "companion_sources": "provenance-all8.json"
+}

@@ -1,0 +1,769 @@
+{
+  "strategy_count": 8,
+  "strategies": {
+    "S003": {
+      "run": "[workspace]/vnpy\\validation\\carver_capital_study\\20261025_175241_435134\\B\\equity_accel16",
+      "fill_pairs": 44463,
+      "displayed_fills": 1043,
+      "closed_count": 8520,
+      "unclosed_count": 40,
+      "equity_reconciliation_error": 8.009374141693115e-08,
+      "cap_formula_verified": true,
+      "overlay_formula_max_error": null,
+      "overlay_formula_verified_points": 0,
+      "trade_summary": {
+        "closed_count": 8520,
+        "wins": 3315,
+        "losses": 5205,
+        "breakeven": 0,
+        "win_rate_pct": 38.90845070422535,
+        "average_win": 8866.590729713424,
+        "average_loss": 4350.785265321805,
+        "payoff_ratio": 2.0379288310055466,
+        "profit_factor": 1.2979316185943106,
+        "closed_net": 6746910.963000001
+      },
+      "archived_end_equity": 7817303.789999921
+    },
+    "S004": {
+      "run": "[workspace]/vnpy\\validation\\carver_capital_study\\20261025_175241_435134\\B\\equity_breakout20",
+      "fill_pairs": 45013,
+      "displayed_fills": 1133,
+      "closed_count": 10370,
+      "unclosed_count": 43,
+      "equity_reconciliation_error": -7.543712854385376e-08,
+      "cap_formula_verified": true,
+      "overlay_formula_max_error": 5.329070518200751e-15,
+      "overlay_formula_verified_points": 3626,
+      "trade_summary": {
+        "closed_count": 10370,
+        "wins": 3533,
+        "losses": 6837,
+        "breakeven": 0,
+        "win_rate_pct": 34.06943105110897,
+        "average_win": 6972.179090716105,
+        "average_loss": 2627.126112549364,
+        "payoff_ratio": 2.6539186898608,
+        "profit_factor": 1.3714048166269135,
+        "closed_net": 6671047.496
+      },
+      "archived_end_equity": 7770029.965500075
+    },
+    "S005": {
+      "run": "[workspace]/vnpy\\validation\\carver_capital_study\\20261025_175241_435134\\B\\equity_carry60",
+      "fill_pairs": 4755,
+      "displayed_fills": 67,
+      "closed_count": 1629,
+      "unclosed_count": 23,
+      "equity_reconciliation_error": 4.6566128730773926e-09,
+      "cap_formula_verified": true,
+      "overlay_formula_max_error": null,
+      "overlay_formula_verified_points": 0,
+      "trade_summary": {
+        "closed_count": 1629,
+        "wins": 837,
+        "losses": 792,
+        "breakeven": 0,
+        "win_rate_pct": 51.38121546961326,
+        "average_win": 7581.382370967742,
+        "average_loss": 6241.845957070706,
+        "payoff_ratio": 1.2146058110228788,
+        "profit_factor": 1.2836175048309968,
+        "closed_net": 1402075.0465
+      },
+      "archived_end_equity": 2444554.7559999954
+    },
+    "S006": {
+      "run": "[workspace]/vnpy\\validation\\carver_capital_study\\20261025_175241_435134\\B\\equity_mrinasset1000",
+      "fill_pairs": 2591,
+      "displayed_fills": 63,
+      "closed_count": 1081,
+      "unclosed_count": 15,
+      "equity_reconciliation_error": 9.313225746154785e-10,
+      "cap_formula_verified": true,
+      "overlay_formula_max_error": null,
+      "overlay_formula_verified_points": 0,
+      "trade_summary": {
+        "closed_count": 1081,
+        "wins": 534,
+        "losses": 547,
+        "breakeven": 0,
+        "win_rate_pct": 49.39870490286771,
+        "average_win": 5374.248210674157,
+        "average_loss": 4602.355575868373,
+        "payoff_ratio": 1.167716861959355,
+        "profit_factor": 1.1399649072875606,
+        "closed_net": 352360.0445
+      },
+      "archived_end_equity": 1338359.440499999
+    },
+    "S007": {
+      "run": "[workspace]/vnpy\\validation\\carver_capital_study\\20261025_175241_435134\\B\\equity_momentum16",
+      "fill_pairs": 21356,
+      "displayed_fills": 386,
+      "closed_count": 4677,
+      "unclosed_count": 47,
+      "equity_reconciliation_error": 5.587935447692871e-09,
+      "cap_formula_verified": true,
+      "overlay_formula_max_error": 0.0,
+      "overlay_formula_verified_points": 3655,
+      "trade_summary": {
+        "closed_count": 4677,
+        "wins": 1737,
+        "losses": 2940,
+        "breakeven": 0,
+        "win_rate_pct": 37.139191789608724,
+        "average_win": 11026.06879015544,
+        "average_loss": 4395.534532482993,
+        "payoff_ratio": 2.508470519039905,
+        "profit_factor": 1.4820453372694948,
+        "closed_net": 6229409.9629999995
+      },
+      "archived_end_equity": 7352039.923499994
+    },
+    "S008": {
+      "run": "[workspace]/vnpy\\validation\\carver_capital_study\\20261025_175241_435134\\B\\equity_skewabs365",
+      "fill_pairs": 5434,
+      "displayed_fills": 86,
+      "closed_count": 1753,
+      "unclosed_count": 22,
+      "equity_reconciliation_error": -2.3283064365386963e-09,
+      "cap_formula_verified": true,
+      "overlay_formula_max_error": null,
+      "overlay_formula_verified_points": 0,
+      "trade_summary": {
+        "closed_count": 1753,
+        "wins": 898,
+        "losses": 855,
+        "breakeven": 0,
+        "win_rate_pct": 51.226468910439245,
+        "average_win": 5987.418624721605,
+        "average_loss": 5220.049659649123,
+        "payoff_ratio": 1.147004150363593,
+        "profit_factor": 1.2046897392122882,
+        "closed_net": 913559.4660000006
+      },
+      "archived_end_equity": 1919614.0800000029
+    },
+    "S009": {
+      "run": "[workspace]/vnpy\\validation\\carver_capital_study\\20261025_175241_435134\\B\\equity_mr_wings_default_unconfigured",
+      "fill_pairs": 69,
+      "displayed_fills": 30,
+      "closed_count": 26,
+      "unclosed_count": 0,
+      "equity_reconciliation_error": 0.0,
+      "cap_formula_verified": true,
+      "overlay_formula_max_error": null,
+      "overlay_formula_verified_points": 0,
+      "trade_summary": {
+        "closed_count": 26,
+        "wins": 13,
+        "losses": 13,
+        "breakeven": 0,
+        "win_rate_pct": 50.0,
+        "average_win": 2964.240769230769,
+        "average_loss": 7302.232730769231,
+        "payoff_ratio": 0.40593622232011634,
+        "profit_factor": 0.4059362223201164,
+        "closed_net": -56393.8955
+      },
+      "archived_end_equity": 943606.1045
+    },
+    "S010": {
+      "run": "[workspace]/vnpy\\validation\\carver_capital_study\\20261025_175241_435134\\B\\equity_relmomentum80",
+      "fill_pairs": 3574,
+      "displayed_fills": 26,
+      "closed_count": 1299,
+      "unclosed_count": 8,
+      "equity_reconciliation_error": -4.656612873077393e-10,
+      "cap_formula_verified": true,
+      "overlay_formula_max_error": null,
+      "overlay_formula_verified_points": 0,
+      "trade_summary": {
+        "closed_count": 1299,
+        "wins": 575,
+        "losses": 724,
+        "breakeven": 0,
+        "win_rate_pct": 44.26481909160893,
+        "average_win": 4105.2453000000005,
+        "average_loss": 3168.886566298342,
+        "payoff_ratio": 1.2954850904604778,
+        "profit_factor": 1.0288728273684733,
+        "closed_net": 66242.17350000022
+      },
+      "archived_end_equity": 1068011.5870000008
+    }
+  },
+  "sources": [
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_accel16/run.json",
+      "sha256": "01affa0324e8f751c1315f508d22dc433576c5a6392217e1ce186dcac7ba593d"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_accel16/metrics.json",
+      "sha256": "5439f54937d2565e483e4f880071716f4e76b718653dcfb5ede285628634a34c"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_accel16/decisions.json.gz",
+      "sha256": "f5dfec92a6a031660e9f99d5951ffbd7eb64374352f884d509223e5b5961a8c7"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_accel16/account_fills.json.gz",
+      "sha256": "f84f6ef329bd57d904bdfda703645af22fc0d723aecceffa9df348dc09c14f80"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_accel16/trades.json.gz",
+      "sha256": "82a5c2c9b6355ef8cfe12a0594f0e053610a0a72751b640617967865c58af5d8"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_accel16/orders.json.gz",
+      "sha256": "7cfacaaebf8ea62bc80d9e7cd4c218ca3d560f1931e33987807939f77a41468a"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_accel16/rolls.json.gz",
+      "sha256": "cec63adab491bb14555b699c535034936c144eea2ba4fb7bfdaa62df2252d616"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_accel16/account_daily.json.gz",
+      "sha256": "52e986d6028b0bfd1e825d0d7f0b5b604b6459cd1d4c9558ecf026f934da73c0"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/CF2701.CZCE.parquet",
+      "sha256": "ba6b31265ddccb673e000502ceeecba683092834da983281fd008bb94757950b"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/CJ2701.CZCE.parquet",
+      "sha256": "0d881e9c76cec3ae5c0572fdae1bff5fcc5dd006363376db39988820621f48d1"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/rr2611.DCE.parquet",
+      "sha256": "98e09c1372925a58cf379c41cab7029ede9874ad2e19e13323a3594d14695962"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/RS2701.CZCE.parquet",
+      "sha256": "7bff3872ef3189e97a4b0f007abfca34a9c8892c2a825abbe8286c81299eeafe"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/b2611.DCE.parquet",
+      "sha256": "2a94848cd3ff3ac8a7a5afbd187fa2dfd2dec4941b7c5c8acad3d5853d200605"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/hc2701.SHFE.parquet",
+      "sha256": "87c8f050bcd65804b95da4ea751501098f720ad22a798990249497c68ada5304"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/jm2701.DCE.parquet",
+      "sha256": "3fce10541865f05bd3ce083b028fad441aba5f3cac55874b05cbc019071f2353"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/AP2701.CZCE.parquet",
+      "sha256": "5d5ec52161bc6f8e2053793321d246a2a58125037541cd716765d4286eb0a043"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/y2701.DCE.parquet",
+      "sha256": "a92b0764614ac58febfbedfd12776605cbb928c6c2b46b71c1c09ac7fee26c3f"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/m2701.DCE.parquet",
+      "sha256": "7f7a36532d989f8e13c7af9285be671c610cecc293b050c8c474a6412a9beeef"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/p2701.DCE.parquet",
+      "sha256": "baffa1ebc31a5fe46f403594276e94350a77f895478c83d7e84c512f80c5b744"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/RM2701.CZCE.parquet",
+      "sha256": "bfd0cc6008f53a071bf1bf340f65bbeade2cf1da58e1d8b24097d43cac30de54"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/l2701.DCE.parquet",
+      "sha256": "a3147a3230fbc23cac3745840bc136b4e6e27bb6bd37bf6df0938f54e540d35f"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/SA2701.CZCE.parquet",
+      "sha256": "e78b515fc37e0e1101b6ca026b6f9b66b5919b80eb59d9d3ac9193f2e6d64902"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/FG2701.CZCE.parquet",
+      "sha256": "c6730f3691c6791d7ae6e4847157a55a0e8e968ac224ae330b99d7df7a917f17"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/i2701.DCE.parquet",
+      "sha256": "c4c054623ecd12c307c214901b0554eadf737474d087152bce8d6f76bb73fc2d"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/rb2701.SHFE.parquet",
+      "sha256": "6318b6c49cf920a0ac1e8cadca8fdc84a95a0e63cf2fc87b23a5c320dc7812a9"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/UR2701.CZCE.parquet",
+      "sha256": "a17e47a89fba4298790d3c9d3dfaea9c7d34c4ba067cbf580be00c5e4fd5c3c2"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/a2701.DCE.parquet",
+      "sha256": "578115da30c6bcdc9f18f103893bf64df0b993fa98940fa65f98342c7f20bf94"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/c2701.DCE.parquet",
+      "sha256": "85afa8a4d9e87ba0bbfd52cbdeda68a693b70e8cc4101a93481d34d1a5f61335"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/jd2612.DCE.parquet",
+      "sha256": "00e2600e248178af080fdc6fcbcff888e0719b38084cea7d99774e15926bda58"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/sp2701.SHFE.parquet",
+      "sha256": "5ca8066009ef72b1f065e8b0a5f392e01c87313f2d9ea3267daeaa4a9b2463fe"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/ad2612.SHFE.parquet",
+      "sha256": "d4f4635a0f1683b35d8080d83f01e0ca0ddce77fd26e27bd28937117535e89e0"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/bu2701.SHFE.parquet",
+      "sha256": "4b3e220ca125316fc4801549779ec5dc6a0b324a345dec88334c10d4926397dd"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/fu2701.SHFE.parquet",
+      "sha256": "32c2ec4d6da38e902d04252a644b8cc2926255220d02e8c8530f065027316976"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/lh2701.DCE.parquet",
+      "sha256": "49f7d8ac758204c8ca0d141b344c7fa4d9c176fb8d896db1c455d30e825489b4"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/MA2701.CZCE.parquet",
+      "sha256": "9c79d59b5ad23518b70634285c6b6414bd54d9bae5e7405a24549633ca621b75"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/PF2612.CZCE.parquet",
+      "sha256": "f0577b24458e06b31de8dd53f2b2024d6e20de8d9cd309432a6a578eb6f0f51b"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/SF2701.CZCE.parquet",
+      "sha256": "81188e715680047b2d831eed08cc77dd7539f9c193a6381aafeb6ec271d3116c"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/TS2612.CFFEX.parquet",
+      "sha256": "0cedc91c1d2e8ae46cbcdafb90a1994938bc1ff6964c916c0b25ff051ee0eb2b"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/zn2612.SHFE.parquet",
+      "sha256": "3f2ffd22b53496cc9226c339f737c6e63458dd12f470d02481e9d2f846d7a99a"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/lg2701.DCE.parquet",
+      "sha256": "3cad20d1f7411de3d62d16770e5c4133f57a9b1e55606f6c7f3b25a70fea2a52"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/al2612.SHFE.parquet",
+      "sha256": "e39a3946e47edb11d8d40a0c771a290f09d4bf021a70d01a94608d576ff971a5"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/op2612.SHFE.parquet",
+      "sha256": "1a0b825553681dfc877fda716746793fb047828a8ed1be69cb3da917b3189742"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/br2612.SHFE.parquet",
+      "sha256": "3cacb2073812cbc56818b5c6c3d1b057334f2e9ffccc93535bb1dc3b7764cd1d"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/SR2701.CZCE.parquet",
+      "sha256": "90e951a3c2f049baa669003cd92d524937053575d6f1bdbb75228775c275148c"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/TF2612.CFFEX.parquet",
+      "sha256": "a0edfce9b95f2df19dcf35f379f5c794a28e61e43c364a05cbb90297f9728cf8"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/ao2701.SHFE.parquet",
+      "sha256": "2c6af4275570b6da4686de9dd0adffc9ad5cd0515fbb842f80db95794db8bbc2"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/fb2612.DCE.parquet",
+      "sha256": "cb65f362dcda01c03fd71dc7a56453dde086a4a1e2d743e0749376c5d0277d7f"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/v2701.DCE.parquet",
+      "sha256": "bf9a479f92a7acb041c52522125f8a419f204365039d312464a72cf35919f21a"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/RB_roll.parquet",
+      "sha256": "7dc849c953b0c72a5a2943ba41bd6ee7c2a0dcecf6f0e967d6a2c1abcc5326db"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/HC_roll.parquet",
+      "sha256": "70c33c79c4ceac8205c2af5dd1c2f07aab6b24010d8a65d99ba04231c4e84356"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/M_roll.parquet",
+      "sha256": "d4424cad28ed5db568adee8108d0d05c4370fd79fe6e89abaa07f0205cbf3fc2"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/TA_roll.parquet",
+      "sha256": "dcd142c7c01d55a8af01d0697b08998bc017e71989e4914ad6a2c04a4286e3ab"
+    },
+    {
+      "path": "vnpy/strategy_library/strategies/S003_carver_accel/v005/规则说明.md",
+      "sha256": "6c57e79fff3758110d12240668bc013fb2f105880054e258c1c06c65d3c2fdeb"
+    },
+    {
+      "path": "Robert_Carver/research/strategy_notes_v2_20261025/01_accel_设计思想.md",
+      "sha256": "7dac7c0b255b75ce72e1d892037597ffac5f74a7d307b5a82dc94d8ed13a5bbd"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_breakout20/run.json",
+      "sha256": "6164128d3b1aa235d379e5d6904957fce2ea9c01f1de6ff0b96b3fddbd934644"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_breakout20/metrics.json",
+      "sha256": "a9193664fcd66eb2c0a5ca012a24b8c9893523a0070bb0fde13cc0bb9e205fc3"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_breakout20/decisions.json.gz",
+      "sha256": "276e94d0d24fec9a8b694dbb848b731767ef4cd5d9ea340f62c823a6360dc2a9"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_breakout20/account_fills.json.gz",
+      "sha256": "e332d10bc4b4c0c361f7caa1db00f8cfd04dac15bcd80a84ea83ead72c6a9bb3"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_breakout20/trades.json.gz",
+      "sha256": "9fd3513cacc97f82eb606b3f80b51f70950ac8d49804ec47e4852c5bded4fa93"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_breakout20/orders.json.gz",
+      "sha256": "e3c8242f4e7fcf46f8f9a874f949c4128a7ceda6caa913ed7d120c7cda53b333"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_breakout20/rolls.json.gz",
+      "sha256": "94fc23c76371b360654906c2f87e451c35fb844d32b55526e96fc64a3eec1c09"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_breakout20/account_daily.json.gz",
+      "sha256": "603f7d91923ef5629ce44263ded680b0c1e621fbd8dde161f00d60e8b2700898"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/eb2611.DCE.parquet",
+      "sha256": "37a9ead5e5d3aea7e9874d6ae0c05f2cc540b26118b5527e12ee94cb4e5c2145"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/lu2612.INE.parquet",
+      "sha256": "10da561d8a46ce64f79686b5a437f03f7eaf135e8b42805bf8d2d579bc117c20"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/pp2701.DCE.parquet",
+      "sha256": "cb38d1ab9deb8a541567c5767e68124351dfee2acd4e52ffaac6e60f88b0f309"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/wr2701.SHFE.parquet",
+      "sha256": "0d76f56dff83aa0d3ada16663c906105a3833772f69b874e0dcfb040d7aec5da"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/T2612.CFFEX.parquet",
+      "sha256": "e8502c451953a74f9dd4ef9dad153c56cde4552bac78ce4314a000f43b59faa9"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/pb2612.SHFE.parquet",
+      "sha256": "f27550913e8b6e2b48691092dd2c5782ada717172031c7defc68aa0a17aac34b"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/PK2612.CZCE.parquet",
+      "sha256": "990a4b5855240ed011e45c9dc44b07c5d8e22a2677708e0ec19397beee2becb5"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/si2612.GFEX.parquet",
+      "sha256": "51d0ef055470c089971f3f0bc309b769970fd912bf6fa7ebd7e85ea6f65771d9"
+    },
+    {
+      "path": "vnpy/strategy_library/strategies/S004_carver_breakout/v005/规则说明.md",
+      "sha256": "8b4d94ab76c71c1baac74880d1b5243c9bd72b29b5b4217ed2562c7acde8c35f"
+    },
+    {
+      "path": "Robert_Carver/research/strategy_notes_v2_20261025/02_breakout_设计思想.md",
+      "sha256": "5ea545eb616aef0425c1648833b6bbf396e93d92df93a5d7f756113c36502109"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_carry60/run.json",
+      "sha256": "7a197feda41cf94fbe47f9375413bb85959708402e4b16212903b201120916fc"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_carry60/metrics.json",
+      "sha256": "95884c87fc00e1db47a18226b0791e2d344b0039fe9e54d6cfa79470c763d908"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_carry60/decisions.json.gz",
+      "sha256": "ac16ce2ed6e63a060d02de8c649d81bd14e352f63ba608becf9b1bd909a6c21a"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_carry60/account_fills.json.gz",
+      "sha256": "60f4c371a5a1cc583a25e3b26b958833a38e9fd1d898bb953301a51078105790"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_carry60/trades.json.gz",
+      "sha256": "3a43be8c3682d0f26390461af291d11eddb78470398bb944f6d38acda223bd16"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_carry60/orders.json.gz",
+      "sha256": "f386d7422555c84add45fad4bef3616f09d3ec1e47ab54a3f4266a601983479f"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_carry60/rolls.json.gz",
+      "sha256": "406f1a5e718208cddbca309ae3a16c9b6da47f8039e8913c7147a4a08fb58abc"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_carry60/account_daily.json.gz",
+      "sha256": "ff9a63531ed72a10411db16568b878e392187796eb94449285240acbcefbfb13"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/TA2701.CZCE.parquet",
+      "sha256": "fa2e842d63ceb7a50bb221791287414332f0c660b29b24ccf712a72d860b8f0c"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/eg2701.DCE.parquet",
+      "sha256": "f908bc3052715569aa197d856daf69769d20d20b08367cc472ee7b75691d52c7"
+    },
+    {
+      "path": "vnpy/strategy_library/strategies/S005_carver_carry/v005/规则说明.md",
+      "sha256": "f5be467071e49609ad24db4a88ff973afc10ba016ebfd2a41a53b1fb5f5b9874"
+    },
+    {
+      "path": "Robert_Carver/research/strategy_notes_v2_20261025/03_carry_设计思想.md",
+      "sha256": "bd3d8dbe0e4b7b63a5c472e30ae3a97262bf863236e69aa170e2ae7feb9f2bae"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_mrinasset1000/run.json",
+      "sha256": "e0c23ea78547a2ad89992d3bd3212afa3bf529b50d8edd8241c1cfaf32f8aa05"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_mrinasset1000/metrics.json",
+      "sha256": "d766237b2329348c9f04d514d044bc5d17573a09a78ffbb73bfdc66cbd99f7f9"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_mrinasset1000/decisions.json.gz",
+      "sha256": "b4041d925b7eefb1fcb4c8a94ed39f85cebe2877066f8caf10df0debb35af261"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_mrinasset1000/account_fills.json.gz",
+      "sha256": "349993e5aadf8e72474412afa219f810f2ef82f0fedf9c9fcb35efbec029453c"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_mrinasset1000/trades.json.gz",
+      "sha256": "431b33739893c8bbf4ec1fa0861bce7e0e87469cf73c4ea9ed49df5ea35bdf5a"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_mrinasset1000/orders.json.gz",
+      "sha256": "a5b6bf4e636bb4a6921a0f2d44b495548ca142fa70ef5157c9a406282eafdb19"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_mrinasset1000/rolls.json.gz",
+      "sha256": "c8d81dc44424dd668f19e381d9485c06100305ed71448a5bc258914fffab1cf9"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_mrinasset1000/account_daily.json.gz",
+      "sha256": "f5d352cff66a41a7abda21459d93fd82371629a580f87d5876c6a9419d9c07d3"
+    },
+    {
+      "path": "vnpy/strategy_library/strategies/S006_carver_cs_mr/v005/规则说明.md",
+      "sha256": "dbc56e62f76f269eb47c4ebf65e02586ec17a07d871d41e564740f56edab6619"
+    },
+    {
+      "path": "Robert_Carver/research/strategy_notes_v2_20261025/04_cs_mr_设计思想.md",
+      "sha256": "b987467851a75a851adf6e13f430299297aa50845a7d4ac17540fe4fb8ccbaf9"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_momentum16/run.json",
+      "sha256": "7c30c682ccdda175e6c917316f8f61e4b41e5bafdc0c64639c5116244ce1c6d0"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_momentum16/metrics.json",
+      "sha256": "eef104d3ab3bd92334390d5a8b4008724ab753fd3a4fa9e9bb69f16a2cacadd3"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_momentum16/decisions.json.gz",
+      "sha256": "3e4e549558d1a7fa4526d060e9b55dad65d711a7eeab39a8daa0fadd0ba68d82"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_momentum16/account_fills.json.gz",
+      "sha256": "effd8ea70996c71244a2a81284f8ab0a64b25e732093b0943e1ca6057ea2a5c4"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_momentum16/trades.json.gz",
+      "sha256": "33ff5ad0e0eecbf9b026439cb00d3a2da4e42b0ca9a2669edb03a64d679b589a"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_momentum16/orders.json.gz",
+      "sha256": "6f1a9e8c0bbebd7354ead44a24b2d974e4f45d0cbc3c560a1ff72487bb7cbf08"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_momentum16/rolls.json.gz",
+      "sha256": "13c77d91bd314ef9abbf55549c9910e8455dff78f8331fb1c9c01b535cdf5b6b"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_momentum16/account_daily.json.gz",
+      "sha256": "18b28380a4043ed67c72b71aefc9f0eb3099513c91e5767b19d987e45bb482aa"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/OI2701.CZCE.parquet",
+      "sha256": "9e80215d27281025ad81120e305db95ffac02a830a7eb82bc7d25d979ead85cf"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/ni2612.SHFE.parquet",
+      "sha256": "8008439c05a765a6725debe869902580593b529e77bc18376ff6b89ebd00641c"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/ss2612.SHFE.parquet",
+      "sha256": "5a318c4b712e176aa204fc79af4df669541a195cf72a9a78aa7430c4f9afd085"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/pg2612.DCE.parquet",
+      "sha256": "d402f04964b5c714337e3fd7aa97eee355b975a9f72fb6e0cce07f7dffaaa986"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/PL2612.CZCE.parquet",
+      "sha256": "ceaea688a3624a6f6feafcb2d310eafbb99c64d2c116b982b038c98a6f9a4a04"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/PX2612.CZCE.parquet",
+      "sha256": "04cc0f302277abeed315c5a67b36ccde97a371d5bc80e034d1b8decb5b353940"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/cs2701.DCE.parquet",
+      "sha256": "d9c3348d75f6b0057d64fff5c5f72f84045f7a41092529174350ad97a558408d"
+    },
+    {
+      "path": "vnpy/strategy_library/strategies/S007_carver_ewmac/v005/规则说明.md",
+      "sha256": "e34d67477aea550555c9968754b56935788c828f83db2712287cd51d2b7aff4a"
+    },
+    {
+      "path": "Robert_Carver/research/strategy_notes_v2_20261025/05_ewmac_设计思想.md",
+      "sha256": "7d1e5ccfdf1abf7825a04ee6d6ff8e24e94af0bbcb71c18a7f71146a137fc955"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_skewabs365/run.json",
+      "sha256": "7b590be0c0d35992e5d8dec7e442320849d6ce40b7c78610c7bd52e0168c4d23"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_skewabs365/metrics.json",
+      "sha256": "4caf16ca72b2bd19feddd0b72a4000f6ad0b5756b40b8bf0523c8d96cf26afe4"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_skewabs365/decisions.json.gz",
+      "sha256": "d11ab852128ba2679fb3636586c92e6174b72a2f4c7fbadf471aebfb4a944243"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_skewabs365/account_fills.json.gz",
+      "sha256": "f3d576de6750d03cec9268b554a096e163c72dd5e0e24b614d1cb722024e8f9d"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_skewabs365/trades.json.gz",
+      "sha256": "156678109d14d4eba41e0806d611074066874e48efec907113630d74c980057a"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_skewabs365/orders.json.gz",
+      "sha256": "28d4f17297f744ed67020268ef967ff56c448ec105f7be79bc9b23629cd61aab"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_skewabs365/rolls.json.gz",
+      "sha256": "ca1ee664616d2dd3205ec0bf9abb21a8e673a54db78c9e2a7d1f04a3bd6a0879"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_skewabs365/account_daily.json.gz",
+      "sha256": "02a3ff0121e1f3e13f8e4ce4f243fa7d614de0c4894f298748a6c8ac510ff42a"
+    },
+    {
+      "path": "vnpy/validation/carver_domestic_v003/inputs_20261025_165740_446956/data/d/CY2701.CZCE.parquet",
+      "sha256": "918f3b96ced9693c7bafa8264d6bc6528890f2bbaa5c46388e01023aeb96b111"
+    },
+    {
+      "path": "vnpy/strategy_library/strategies/S008_carver_factors/v005/规则说明.md",
+      "sha256": "541c17cc4d1a548bf4f953e09bf9fd0af6541249d7355b67fd47815059a264c4"
+    },
+    {
+      "path": "Robert_Carver/research/strategy_notes_v2_20261025/06_factors_设计思想.md",
+      "sha256": "f5cc64a1caf72647ecd63c7cd2517d4c038b55d07dda59d239349c63d15171c5"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_mr_wings_default_unconfigured/run.json",
+      "sha256": "68dec80801f06341d3e16acef1854cb6d64ab8d968a3afc7dbfde00e8bf2ac1a"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_mr_wings_default_unconfigured/metrics.json",
+      "sha256": "e6de7d4dd421593706317bbf252a443d2095ff93d98209c7fda202bdd1b499d2"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_mr_wings_default_unconfigured/decisions.json.gz",
+      "sha256": "999d8f81098034861b957bd44fb0da1a75a5c82686e2c7522b93a0e967e0e375"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_mr_wings_default_unconfigured/account_fills.json.gz",
+      "sha256": "635eaa939b5f801027c5af83d60a27626d2f6e55dc9d8f6b9e394d34a48e66d8"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_mr_wings_default_unconfigured/trades.json.gz",
+      "sha256": "1c41a96bafb26d9ee636c646e780f635e49507bda3a4e0dabe65e7d7e739e0ec"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_mr_wings_default_unconfigured/orders.json.gz",
+      "sha256": "e737d6060679c1f2fb114ea1c7975ee6d513f0c9cf921aaef83f3f2631849501"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_mr_wings_default_unconfigured/rolls.json.gz",
+      "sha256": "96ddf2786664944d361e4c5fd41a7eec271f65f3a56690c323e742c38c52409c"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_mr_wings_default_unconfigured/account_daily.json.gz",
+      "sha256": "72532481ac3d4a4fdfd079533715dca56a5df13efc00ea5964316f5e2c77e6cb"
+    },
+    {
+      "path": "vnpy/strategy_library/strategies/S009_carver_mr_wings/v005/规则说明.md",
+      "sha256": "dedd3c4f0ecf49db181f065f6422182b2906ee2d6759b2c1768fcdfee408f06c"
+    },
+    {
+      "path": "Robert_Carver/research/strategy_notes_v2_20261025/07_mr_wings_设计思想.md",
+      "sha256": "83afb17b49b3a389ef4700a32333466047983951bf8082d4c1ed70059dbb7f4c"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_relmomentum80/run.json",
+      "sha256": "0bdb3a444d4e68a243447085d11baf6a91a1cfe633f9a235d08b6015a02846d6"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_relmomentum80/metrics.json",
+      "sha256": "d2693a8183b170722f25515ebfb5fa8e835fd8a5b9ff7e9d8731adc11724ad61"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_relmomentum80/decisions.json.gz",
+      "sha256": "38021df496c00e43dab5050e30be808d00597fdc1e379283494ebef24b3333e5"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_relmomentum80/account_fills.json.gz",
+      "sha256": "7d6c796aad240681bcfc3052624325ebd3953a340b884449278fce044c8016b3"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_relmomentum80/trades.json.gz",
+      "sha256": "554d3d855ca7207cb94be3d622b3a47845da3c9fb5fecfa5298f93c60eed2b50"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_relmomentum80/orders.json.gz",
+      "sha256": "42f24e2ce334b8441538cb8430929b1b2b94f01af5f419369cbf5ee3f37aabec"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_relmomentum80/rolls.json.gz",
+      "sha256": "c0e271a6ad35436866531602517253c642a76d3fb9596f0cc013b062e34daeb3"
+    },
+    {
+      "path": "vnpy/validation/carver_capital_study/20261025_175241_435134/B/equity_relmomentum80/account_daily.json.gz",
+      "sha256": "a0f41cecf2b03c6b34d150981244655a572228e659ad51ead92c347a76d0d8cf"
+    },
+    {
+      "path": "vnpy/strategy_library/strategies/S010_carver_rel_mom/v005/规则说明.md",
+      "sha256": "2c3a1531d21af43bc18f67e7c6802a08c5a244e3b27939c7bba40fbf82344656"
+    },
+    {
+      "path": "Robert_Carver/research/strategy_notes_v2_20261025/08_rel_mom_设计思想.md",
+      "sha256": "796cc369b1eb4f8a8e87ca1d717daf6f0744d90d148b3408987c9dad02d47424"
+    }
+  ],
+  "new_backtest": false,
+  "trade_stats_code_sha256": "f8f8e4d13b5d26a04b524b9f5d7f062217fca20b839d071d371d74fe0656e204"
+}

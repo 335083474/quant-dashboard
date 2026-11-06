@@ -1,0 +1,69 @@
+归档实现说明
+# S008 Carver 因子规则 v005
+
+原信号及作者参数来源保留。
+
+- 按原 RawData 计算偏度/负偏度/峰度并按指定基准去均值，除因子自身 robust 波动率后平滑；conditioned 分支乘条件因子符号，负条件翻转方向。
+
+- Known completed-close equity after native fills/costs; fixed or current-equity cash-risk budget, loss shrinks equity budget, no top-ups.
+- Optional prior-data covariance forecast-book normalization; target16% of sizing budget, max multiplier15; actual lot/buffer risk reported.
+- No broker margin, capacity or live account model; backtesting only.
+
+完整时点、下单/撤单、换月、权益和保证金边界、逐组实际参数与验收见[研究报告]([workspace]/vnpy/validation/carver_capital_study/20261025_175241_435134/固定本金_权益仓位_分散对照报告.md)。信号在完成日线后计算，后续真实K线撮合；沿用原buffer/整数目标，无额外价格止损。非正权益后关闭风险并尝试平仓，不补资金；不启动模拟/实盘。
+
+
+研究笔记（2026-10-25修订）
+# factors 因子预测与符号调制框架 修订版
+
+修订日期：2026-10-25。依据本地提交 `164328bd76d2937d3dd61491377704c488283bc2`。
+
+## 输入约定
+
+这个模块提供因子到原始预测的转换函数，不提供一个已验证有效的选股因子。输入名 `demean_factor_value` 表示预期由上游准备去均值后的因子；函数本身**不执行去均值、截面排序或经济方向判断**。
+
+输入的正负必须由研究者定义。若“便宜”应为正，不能把未经反向处理的正 P/E 偏离度直接解释为便宜。
+
+## 标准单因子框架
+
+```text
+v = robust_vol_calc(因子水平序列)
+z = 因子水平序列 / v
+forecast = z.ewm(span=smooth).mean()
+```
+
+默认 `smooth=90`，这里是明确的 **span=90**，与 Carry 模块的 `ewm(90)` 不同。
+
+`robust_vol_calc` 直接处理因子水平，不是因子的 `diff()`。默认采用 span=35 的指数加权标准差，最少10个有效观测，附加绝对波动率下限及滚动分位数下限；默认不向历史回填。它也不会自动验证或修复所有因子缺失值。
+
+## 条件因子框架
+
+```python
+z = demean_factor_value / robust_vol_calc(demean_factor_value)
+s = condition_demean_factor_value.apply(np.sign)
+s = s.reindex(z.index).ffill()
+forecast = (z * s).ewm(span=smooth).mean()
+```
+
+条件因子只贡献符号。先在目标索引上 `reindex` 再前向填充；不会保留只存在于被丢弃时间戳上的全部条件更新。复现时应检查两组因子的频率和日期对齐。
+
+| 主因子标准化值 | 条件因子符号 | 当期平滑前输入 |
+| --- | --- | --- |
+| 正 | +1 | 正 |
+| 正 | −1 | 负 |
+| 负 | +1 | 负 |
+| 负 | −1 | 正 |
+| 有效有限值 | 0 | 0 |
+
+这是**方向翻转或符号调制**，不是“条件不满足就不交易”的过滤器。条件为0时也只将当期平滑前输入归零，历史 EMA 可能仍使最终预测非零；缺失输入与0同样不能混为一谈。
+
+旧笔记的“只买便宜且上涨的股票”不符合该实现。若希望这种准入逻辑，需要另外设计条件门槛，而不是将乘 `sign(condition)` 当成布尔过滤；那将是新增策略假设，不是本源码的原始行为。
+
+## 研究边界
+
+上述标准化和平滑不保证任意因子有效，也不自动建立股票多空中性组合。后续需检查因子可用时间、方向、截面处理、缺失值、缩放、换手与成本。
+
+## 修订依据
+
+- [factors.py 第6行起]([workspace]/Robert_Carver/source/pysystemtrade/systems/provided/rules/factors.py:6)：单因子与条件函数。
+- [vol.py 第17行起]([workspace]/Robert_Carver/source/pysystemtrade/sysquant/estimators/vol.py:17)、[下限 第90行起]([workspace]/Robert_Carver/source/pysystemtrade/sysquant/estimators/vol.py:90)。
+- [旧版原文](../notes_audit_20261025/original_notes/06_factors_设计思想.md)。本版替换错误的条件过滤案例，明确符号调制、平滑余效与输入方向责任。

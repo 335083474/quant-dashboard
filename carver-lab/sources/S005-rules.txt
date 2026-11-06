@@ -1,0 +1,77 @@
+归档实现说明
+# S005 Carver 持有收益 v005
+
+原信号及作者参数来源保留。
+
+- 绝对 carry：真实 PRICE-CARRY 价差除按 YYYYMM00 年化的合约月距，再除价格单位日波动率×16；ewm(smooth_days) 的参数是 com。相对 carry 减同类资产平滑 carry 中位数。
+
+- Known completed-close equity after native fills/costs; fixed or current-equity cash-risk budget, loss shrinks equity budget, no top-ups.
+- Optional prior-data covariance forecast-book normalization; target16% of sizing budget, max multiplier15; actual lot/buffer risk reported.
+- No broker margin, capacity or live account model; backtesting only.
+
+完整时点、下单/撤单、换月、权益和保证金边界、逐组实际参数与验收见[研究报告]([workspace]/vnpy/validation/carver_capital_study/20261025_175241_435134/固定本金_权益仓位_分散对照报告.md)。信号在完成日线后计算，后续真实K线撮合；沿用原buffer/整数目标，无额外价格止损。非正权益后关闭风险并尝试平仓，不补资金；不启动模拟/实盘。
+
+
+研究笔记（2026-10-25修订）
+# carry 持有收益预测规则 修订版
+
+修订日期：2026-10-25。依据本地提交 `164328bd76d2937d3dd61491377704c488283bc2`。
+
+## 核心思想和输入口径
+
+本模块提供绝对 Carry 与相对 Carry 两个规则。它们使用期限结构信息形成预测，不是已经实现的展期利润，也不构成无风险套利。
+
+框架中的 `raw_carry` 是**年化期限价差除以年化价格变动波动率**，近似一个风险调整后的持有收益指标。它不是简单价差，也不是价差除以合约价格的百分比收益率。
+
+上游处理链为：
+
+```text
+raw_roll = PRICE - CARRY
+annualised_roll = raw_roll / 合约日期间隔（年单位）
+daily_annualised_roll = 将年化价差按营业日取均值
+raw_carry = daily_annualised_roll / (每日价格变动波动率 × 年化系数)
+```
+
+合约日期间隔由 Carry 合约日期减去 Price 合约日期构造，并有最小绝对间隔保护；不能默认所有数据的两条合约总是按同一近远月顺序存放。上游 `raw_roll` 恰为0时还会被置为缺失值。
+
+商品反向市场可能对应正持有收益，但“供应紧张所以必然上涨”是经济解释，不是此函数的判断条件，不能直接推广到所有资产。
+
+## 绝对 Carry 的公式
+
+```python
+forecast = raw_carry.ewm(smooth_days).mean()
+```
+
+默认 `smooth_days=90`。这里位置参数传给的是 **com**，不是 span：
+
+```text
+com=90 → alpha=1/91 → 等价span=181
+```
+
+它不是 `span=90`，也不是只看过去90天的固定窗口。pandas 默认使用 `adjust=True`。源码没有“正负必须持续若干天才能交易”的门槛。
+
+`rawdata.smoothed_carry` 同样使用 `ewm(smooth_days)`。复现相对 Carry 时应保持两侧平滑口径一致。
+
+## 相对 Carry 的公式
+
+```text
+relative_forecast = 本品种已平滑Carry - 所属资产类别已平滑Carry的横截面中位数
+```
+
+同类基准先分别平滑各品种的 `raw_carry`，再按日期取中位数；基准计算中不预先前向填充。最后再对齐到目标品种日期并前向填充。
+
+正值表示本品种 Carry 高于同类中位数，负值表示低于中位数。这是相对预测，并不自动保证最终组合资金中性、风险中性或宏观敞口为零。
+
+## 函数默认与示例配置
+
+提供的 `rob_system/config.yaml` 配置了 `carry10/30/60/125`，分别显式传入 `smooth_days=10/30/60/125`；在上述实现中等价 span 为21/61/121/251。不能把默认90当成所有运行变体。
+
+这些信号还需要系统级缩放、组合和仓位处理。能否预测后续收益、实际换手与成本，仍属于后续研究。
+
+## 修订依据
+
+- [carry.py 第1行起]([workspace]/Robert_Carver/source/pysystemtrade/systems/provided/rules/carry.py:1)：绝对与相对 Carry。
+- [rawdata.py 第564行起]([workspace]/Robert_Carver/source/pysystemtrade/systems/rawdata.py:564)、[第601行起]([workspace]/Robert_Carver/source/pysystemtrade/systems/rawdata.py:601)、[第638行起]([workspace]/Robert_Carver/source/pysystemtrade/systems/rawdata.py:638)：年化、风险归一化与同类中位数。
+- [carry_data.py 第23行起]([workspace]/Robert_Carver/source/pysystemtrade/sysobjects/carry_data.py:23)：日期间隔和原始价差。
+- [示例配置 第131行起]([workspace]/Robert_Carver/source/pysystemtrade/systems/provided/rob_system/config.yaml:131)。
+- [旧版原文](../notes_audit_20261025/original_notes/03_carry_设计思想.md)。本版纠正 EMA 参数和套利表述，移除持续性门槛及收益保证。

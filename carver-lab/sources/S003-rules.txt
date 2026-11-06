@@ -1,0 +1,57 @@
+归档实现说明
+# S003 Carver 加速动量 v005
+
+原信号及作者参数来源保留。
+
+- EWMAC(price, vol, Lfast, 4×Lfast) 减去其 Lfast 个观测前的值；保留方向。
+
+- Known completed-close equity after native fills/costs; fixed or current-equity cash-risk budget, loss shrinks equity budget, no top-ups.
+- Optional prior-data covariance forecast-book normalization; target16% of sizing budget, max multiplier15; actual lot/buffer risk reported.
+- No broker margin, capacity or live account model; backtesting only.
+
+完整时点、下单/撤单、换月、权益和保证金边界、逐组实际参数与验收见[研究报告]([workspace]/vnpy/validation/carver_capital_study/20261025_175241_435134/固定本金_权益仓位_分散对照报告.md)。信号在完成日线后计算，后续真实K线撮合；沿用原buffer/整数目标，无额外价格止损。非正权益后关闭风险并尝试平仓，不补资金；不启动模拟/实盘。
+
+
+研究笔记（2026-10-25修订）
+# accel 加速动量规则 修订版
+
+修订日期：2026-10-25。依据本地 `pysystemtrade` 提交 `164328bd76d2937d3dd61491377704c488283bc2`，不是实时上游版本。
+
+## 核心思想
+
+`accel` 衡量**有符号趋势信号的变化**。它先计算经过波动率归一化的 EWMAC，再减去若干观测期前的 EWMAC。它不是趋势绝对强度的变化，也不使用成交量。
+
+## 输入和公式
+
+输入 `price` 为价格序列，`vol` 为与价格对齐的每日价格变动波动率，单位是价格点数而非百分比。EWMAC 内部对 `vol` 前向填充。
+
+```text
+Lslow = 4 × Lfast
+E_t = [EWMA(price, span=Lfast) - EWMA(price, span=Lslow)] / ffill(vol)_t
+A_t = E_t - E_(t-Lfast)
+```
+
+函数默认 `Lfast=4`，因此 `Lslow=16`。`shift(Lfast)` 移动的是观测行数；函数不会检查数据是否真为日频，也不把缺失交易日自动补齐。
+
+## 信号方向
+
+| EWMAC 的变化 | accel 符号 | 含义 |
+| --- | --- | --- |
+| +1 → +3 | 正 | 上涨趋势信号增强 |
+| +3 → +1 | 负 | 上涨趋势信号减弱 |
+| −1 → −3 | 负 | 下跌趋势信号增强 |
+| −3 → −1 | 正 | 下跌趋势信号减弱 |
+
+因此，旧笔记“负值意味着趋势减速”不成立。正负表示有符号 EWMAC 的增减，不能直接等同于趋势强弱的增减。
+
+## 实现边界和研究方向
+
+滞后项不足时输出为缺失值。该函数没有独立的平滑、预测缩放、封顶或仓位分配；返回的是原始预测序列。
+
+“比趋势策略更早入场”“收益更高”“适合放量市场”都不是函数能证明的结论。后续可研究它相对 EWMAC 的增量信息、换手和成本，需分别固定参数、波动率口径及交易时点。
+
+## 修订依据
+
+- [accel.py 第4行起]([workspace]/Robert_Carver/source/pysystemtrade/systems/provided/rules/accel.py:4)：慢周期、差分和返回值。
+- [ewmac.py 第79行起]([workspace]/Robert_Carver/source/pysystemtrade/systems/provided/rules/ewmac.py:79)：输入单位及 EWMAC 实现。
+- [旧版原文](../notes_audit_20261025/original_notes/01_accel_设计思想.md)。本版修正方向解释，移除没有数据支持的效果判断。

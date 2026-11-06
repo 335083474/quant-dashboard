@@ -1,0 +1,65 @@
+归档实现说明
+# S006 Carver 截面反转 v005
+
+原信号及作者参数来源保留。
+
+- 每日价格差除前一观测的日波动率后累计；与同类资产标准化价格之差的日变动取 horizon 滚动均值，取负并 EMA 平滑。
+
+- Known completed-close equity after native fills/costs; fixed or current-equity cash-risk budget, loss shrinks equity budget, no top-ups.
+- Optional prior-data covariance forecast-book normalization; target16% of sizing budget, max multiplier15; actual lot/buffer risk reported.
+- No broker margin, capacity or live account model; backtesting only.
+
+完整时点、下单/撤单、换月、权益和保证金边界、逐组实际参数与验收见[研究报告]([workspace]/vnpy/validation/carver_capital_study/20261025_175241_435134/固定本金_权益仓位_分散对照报告.md)。信号在完成日线后计算，后续真实K线撮合；沿用原buffer/整数目标，无额外价格止损。非正权益后关闭风险并尝试平仓，不补资金；不启动模拟/实盘。
+
+
+研究笔记（2026-10-25修订）
+# cs_mr 截面相对表现反转规则 修订版
+
+修订日期：2026-10-25。依据本地提交 `164328bd76d2937d3dd61491377704c488283bc2`。
+
+## 核心思想
+
+`cross_sectional_mean_reversion` 对品种相对同类基准的近期平均表现取反。相对走强产生负向原始预测，相对走弱产生正向原始预测；这是反转假设，不是获利保证。
+
+## 标准化价格与同类基准
+
+提供的 `rawdata` 数据链为：
+
+```text
+u_i,t = 每日价格变化_i,t / 前一观测期的价格变动波动率_i,t-1
+N_i,t = 累计求和(u_i,t)
+u_class,t = 同类品种u_i,t的横截面中位数
+N_class,t = 累计求和(u_class,t)
+```
+
+这里的“标准化价格”是标准化价格变化的累计序列，不是百分比收益净值。同类基准不是直接对各品种标准化价格取算术平均。上游取中位数前不做前向填充；对齐到目标品种时再填充。
+
+## 规则公式
+
+```text
+D = ffill(N_i) - ffill(N_class)
+r = D.diff()
+m = r.rolling(horizon).mean()
+forecast = -m.ewm(span=ewma_span).mean()
+```
+
+必须先对相对价格水平 `D` 做差分，再求平均，不能直接对 `D` 的水平求滚动均值。
+
+默认 `horizon=250`。`ewma_span` 未指定时为 `max(int(horizon/4), 2)`，默认因此为62。滚动均值默认要求完整的 horizon 个有效变化值；前段可能缺失。`horizon` 表示观测数，日频有效输入下才可按交易日理解。
+
+## 实际参数与 rel_mom 的关系
+
+该快照提供的 Rob 系统示例配置使用 `mrinasset1000`，显式设定 `horizon=1000`。函数默认250不等于实际配置。
+
+在有限、完整、无零值屏蔽影响的相对价格输入下，窗口内差分均值等于 `(D_t-D_(t-horizon))/horizon`。参数相同时，本规则与 `rel_mom` 可互为相反数。但 `rel_mom` 会先将 `D==0` 置为缺失，本规则不会，所以不能说两份实现只有一个负号的区别。
+
+## 研究边界
+
+减去同类基准并不自动使最终组合中性；风险敞口还取决于缩放、品种权重和仓位层。与趋势策略的相关性、反转有效的时间尺度、成本后的收益，需要在指定数据和组合中验证。
+
+## 修订依据
+
+- [cs_mr.py 第1行起]([workspace]/Robert_Carver/source/pysystemtrade/systems/provided/rules/cs_mr.py:1)：完整公式与默认参数。
+- [rawdata.py 第300行起]([workspace]/Robert_Carver/source/pysystemtrade/systems/rawdata.py:300)、[第340行起]([workspace]/Robert_Carver/source/pysystemtrade/systems/rawdata.py:340)：标准化收益和中位数基准。
+- [示例配置 第124行起]([workspace]/Robert_Carver/source/pysystemtrade/systems/provided/rob_system/config.yaml:124)。
+- [旧版原文](../notes_audit_20261025/original_notes/04_cs_mr_设计思想.md)。本版修正基准定义、明确先差分后平均，并补充配置区别。

@@ -1,0 +1,61 @@
+归档实现说明
+# S010 Carver 相对动量 v005
+
+原信号及作者参数来源保留。
+
+- 累计标准化自身价格与资产类价格之差 D，原实现将 D==0 替换为 NaN，取 (D-D.shift(horizon))/horizon，再正向 EMA 平滑。
+
+- Known completed-close equity after native fills/costs; fixed or current-equity cash-risk budget, loss shrinks equity budget, no top-ups.
+- Optional prior-data covariance forecast-book normalization; target16% of sizing budget, max multiplier15; actual lot/buffer risk reported.
+- No broker margin, capacity or live account model; backtesting only.
+
+完整时点、下单/撤单、换月、权益和保证金边界、逐组实际参数与验收见[研究报告]([workspace]/vnpy/validation/carver_capital_study/20261025_175241_435134/固定本金_权益仓位_分散对照报告.md)。信号在完成日线后计算，后续真实K线撮合；沿用原buffer/整数目标，无额外价格止损。非正权益后关闭风险并尝试平仓，不补资金；不启动模拟/实盘。
+
+
+研究笔记（2026-10-25修订）
+# rel_mom 同类相对动量规则 修订版
+
+修订日期：2026-10-25。依据本地提交 `164328bd76d2937d3dd61491377704c488283bc2`。
+
+## 核心思想与基准
+
+`relative_momentum` 对品种相对同类基准的平均每日变化做顺势预测。相对走强为正，相对走弱为负。它不是截面排名后固定买最强、卖最弱的一套完整组合策略。
+
+与 `cs_mr` 的推荐输入相同：个品种标准化价格是“每日价格变化除以前一观测期价格变动波动率”的累计和；同类标准化价格是先取这些标准化每日变化的横截面**中位数**，再累计求和。不是直接对品种价格求平均。
+
+## 公式与默认参数
+
+```python
+D = normalised_price_this_instrument.ffill() - normalised_price_for_asset_class.ffill()
+D[D == 0] = np.nan
+m = (D - D.shift(horizon)) / horizon
+forecast = m.ewm(span=ewma_span).mean()
+```
+
+默认 `horizon=250`；未指定平滑周期时，`ewma_span=max(int(horizon/4), 2)`，默认为62。
+
+`m` 是窗口总相对变化**除以 horizon**后的平均每观测期相对变化，不是总相对收益，也不是百分比收益。若250期累计相对变化为250，平滑前均值为1，而非250。观测数只有在日频输入下才可按交易日理解。
+
+## 与 cs_mr 的区别
+
+完整有限输入下，差分序列的滚动均值可写成窗口首尾差除以窗口长度，因此两者在相同参数和无零值屏蔽影响时可代数对应为相反数。
+
+但两份源码不只是差一个负号：本函数将相对价格水平恰为0的位置先置为 `NaN`，再做窗口首尾差；`cs_mr` 不屏蔽0，而是对 `D.diff()` 做滚动均值。0值屏蔽可以改变结果和预热，甚至让相对水平的起始基准选择影响早期有效值。
+
+普通内部缺失值在双方输入层已被前向填充，不能笼统说所有缺失值都会使两者不同。EWM 平滑也可能在当期输入缺失时仍输出已有历史状态，应与“当期没有信号”区别开。
+
+源码 docstring 虽写着 mean reversion，但实际函数体没有负号，行为是正向动量；应以执行逻辑为准。
+
+## 实际配置与研究边界
+
+该快照 `rob_system/config.yaml` 使用 `relmomentum10/20/40/80`，显式设定 horizon 为10/20/40/80。默认250不代表示例系统只做一年动量。
+
+同类相对信号不会自动保证资金中性或风险中性。收益有效性、动量反转风险、参数期限与交易成本仍需后续实证；不能从正向公式直接推出这些性质。
+
+## 修订依据
+
+- [rel_mom.py 第4行起]([workspace]/Robert_Carver/source/pysystemtrade/systems/provided/rules/rel_mom.py:4)：0值屏蔽、除以 horizon 与平滑。
+- [cs_mr.py 第20行起]([workspace]/Robert_Carver/source/pysystemtrade/systems/provided/rules/cs_mr.py:20)：差分均值及负号。
+- [rawdata.py 第300行起]([workspace]/Robert_Carver/source/pysystemtrade/systems/rawdata.py:300)、[第340行起]([workspace]/Robert_Carver/source/pysystemtrade/systems/rawdata.py:340)：输入构造。
+- [示例配置 第96行起]([workspace]/Robert_Carver/source/pysystemtrade/systems/provided/rob_system/config.yaml:96)。
+- [旧版原文](../notes_audit_20261025/original_notes/08_rel_mom_设计思想.md)。本版修正总收益口径及“只有负号不同”的说法，补全0值边界和实际参数。

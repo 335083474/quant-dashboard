@@ -1,0 +1,60 @@
+归档实现说明
+# S009 Carver 极端反向 v005
+
+原信号及作者参数来源保留。
+
+- EWMAC 的绝对值小于滚动 5000、min_periods=3 标准差的三倍时置零，否则取负；等号保留，早期 NaN 比较遵循原 pandas 语义。
+
+- Known completed-close equity after native fills/costs; fixed or current-equity cash-risk budget, loss shrinks equity budget, no top-ups.
+- Optional prior-data covariance forecast-book normalization; target16% of sizing budget, max multiplier15; actual lot/buffer risk reported.
+- No broker margin, capacity or live account model; backtesting only.
+
+完整时点、下单/撤单、换月、权益和保证金边界、逐组实际参数与验收见[研究报告]([workspace]/vnpy/validation/carver_capital_study/20261025_175241_435134/固定本金_权益仓位_分散对照报告.md)。信号在完成日线后计算，后续真实K线撮合；沿用原buffer/整数目标，无额外价格止损。非正权益后关闭风险并尝试平仓，不补资金；不启动模拟/实盘。
+
+
+研究笔记（2026-10-25修订）
+# mr_wings 极端 EWMAC 反向规则 修订版
+
+修订日期：2026-10-25。依据本地提交 `164328bd76d2937d3dd61491377704c488283bc2`。
+
+## 核心思想
+
+该规则反向交易幅度达到阈值的波动率归一化 EWMAC，将较小幅度的信号归零。这里“极端”指的是 **EWMAC 相对于其历史标准差的绝对幅度**，不等于单日价格跳跃或黑天鹅事件。
+
+## 实现公式
+
+```python
+Lslow = Lfast * 4
+E = ewmac(price, vol, Lfast, Lslow)
+std = E.rolling(5000, min_periods=3).std()
+E[E.abs() < std * 3] = 0.0
+forecast = -E
+```
+
+默认 `Lfast=4`、`Lslow=16`。窗口5000与差分周期都是观测数；实际时间跨度依赖输入频率。
+
+## 阈值和预热
+
+- `min_periods=3`：取得3个有效观测即可估计标准差，不需要等待5000点。
+- 滚动窗口包含当前观测，使用 pandas 默认样本标准差 `ddof=1`。
+- 清零条件是严格小于；`abs(E)==3*std` 时仍保留并反向。
+- 不计算 `E - rolling_mean(E)`，所以不是相对于滚动均值居中的 z-score。
+- 当标准差仍为 `NaN` 时，小于比较为假，不会因此自动清零；如果当期 EWMAC 有效，早期仍可能返回它的相反数。
+
+在阈值有效时，正向极端 EWMAC 变成负向预测，负向极端 EWMAC 变成正向预测。
+
+## 频率与仓位解释
+
+不能把“三倍标准差”直接换算成正态独立事件概率。EWMAC 有自相关，阈值包含当前观测，而且比较对象没有去滚动均值；触发比例必须从具体数据计算。
+
+“大部分时间空仓”“胜率高”“与趋势天然负相关”在旧笔记中说得过强。规则预测为0也不等于组合仓位为0，其他规则与仓位处理可能仍产生敞口。
+
+## 后续研究
+
+可分别研究预热样本、触发频率、趋势持续时的反向损失以及与其他规则的组合关系。若改为满5000点预热、使用滞后阈值或居中 z-score，应记录为新增变体，不应当作原实现。
+
+## 修订依据
+
+- [mr_wings.py 第4行起]([workspace]/Robert_Carver/source/pysystemtrade/systems/provided/rules/mr_wings.py:4)：完整阈值逻辑。
+- [ewmac.py 第120行起]([workspace]/Robert_Carver/source/pysystemtrade/systems/provided/rules/ewmac.py:120)：被反向的基础信号。
+- [旧版原文](../notes_audit_20261025/original_notes/07_mr_wings_设计思想.md)。本版补全预热、等号和缺失值行为，移除未验证的频率及胜率判断。
