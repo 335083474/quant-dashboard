@@ -1,0 +1,67 @@
+{
+  "source_ema_max_absolute_error": 0.0,
+  "fill_trade_pairs_verified": 21356,
+  "displayed_event_count": 386,
+  "products": [
+    "RB",
+    "HC",
+    "M",
+    "TA"
+  ],
+  "read_only_archive": true,
+  "new_backtest": false,
+  "sources": [
+    {
+      "path": "run.json",
+      "sha256": "7c30c682ccdda175e6c917316f8f61e4b41e5bafdc0c64639c5116244ce1c6d0"
+    },
+    {
+      "path": "metrics.json",
+      "sha256": "eef104d3ab3bd92334390d5a8b4008724ab753fd3a4fa9e9bb69f16a2cacadd3"
+    },
+    {
+      "path": "decisions.json.gz",
+      "sha256": "3e4e549558d1a7fa4526d060e9b55dad65d711a7eeab39a8daa0fadd0ba68d82"
+    },
+    {
+      "path": "account_fills.json.gz",
+      "sha256": "effd8ea70996c71244a2a81284f8ab0a64b25e732093b0943e1ca6057ea2a5c4"
+    },
+    {
+      "path": "trades.json.gz",
+      "sha256": "33ff5ad0e0eecbf9b026439cb00d3a2da4e42b0ca9a2669edb03a64d679b589a"
+    },
+    {
+      "path": "orders.json.gz",
+      "sha256": "6f1a9e8c0bbebd7354ead44a24b2d974e4f45d0cbc3c560a1ff72487bb7cbf08"
+    },
+    {
+      "path": "rolls.json.gz",
+      "sha256": "13c77d91bd314ef9abbf55549c9910e8455dff78f8331fb1c9c01b535cdf5b6b"
+    },
+    {
+      "path": "account_daily.json.gz",
+      "sha256": "18b28380a4043ed67c72b71aefc9f0eb3099513c91e5767b19d987e45bb482aa"
+    },
+    {
+      "path": "momentum16_features.parquet",
+      "sha256": "a3ab82dd0cd696c477aed310564d63625672735e8f69ab9b8555f27f70b89be4"
+    },
+    {
+      "path": "RB_roll.parquet",
+      "sha256": "7dc849c953b0c72a5a2943ba41bd6ee7c2a0dcecf6f0e967d6a2c1abcc5326db"
+    },
+    {
+      "path": "HC_roll.parquet",
+      "sha256": "70c33c79c4ceac8205c2af5dd1c2f07aab6b24010d8a65d99ba04231c4e84356"
+    },
+    {
+      "path": "M_roll.parquet",
+      "sha256": "d4424cad28ed5db568adee8108d0d05c4370fd79fe6e89abaa07f0205cbf3fc2"
+    },
+    {
+      "path": "TA_roll.parquet",
+      "sha256": "dcd142c7c01d55a8af01d0697b08998bc017e71989e4914ad6a2c04a4286e3ab"
+    }
+  ]
+}

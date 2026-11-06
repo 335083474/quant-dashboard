@@ -1,0 +1,11 @@
+# S007 Carver 波动率均线差 v005
+
+原信号及作者参数来源保留。
+
+- 快慢 EMA 差除价格单位日波动率。支持源码 calc_vol 分支、累计波动率标准化价格和资产类价格输入；资产类变体用额外的原生组合适配类。
+
+- Known completed-close equity after native fills/costs; fixed or current-equity cash-risk budget, loss shrinks equity budget, no top-ups.
+- Optional prior-data covariance forecast-book normalization; target16% of sizing budget, max multiplier15; actual lot/buffer risk reported.
+- No broker margin, capacity or live account model; backtesting only.
+
+完整时点、下单/撤单、换月、权益和保证金边界、逐组实际参数与验收见[研究报告]([workspace]/vnpy/validation/carver_capital_study/20261025_175241_435134/固定本金_权益仓位_分散对照报告.md)。信号在完成日线后计算，后续真实K线撮合；沿用原buffer/整数目标，无额外价格止损。非正权益后关闭风险并尝试平仓，不补资金；不启动模拟/实盘。
