@@ -10,6 +10,21 @@
   ],
   "read_only_archive": true,
   "new_backtest": false,
+  "trade_summary": {
+    "closed_count": 4677,
+    "wins": 1737,
+    "losses": 2940,
+    "breakeven": 0,
+    "win_rate_pct": 37.139191789608724,
+    "average_win": 11026.06879015544,
+    "average_loss": 4395.534532482993,
+    "payoff_ratio": 2.508470519039905,
+    "profit_factor": 1.4820453372694948,
+    "closed_net": 6229409.9629999995
+  },
+  "unclosed_count": 47,
+  "episode_cost_allocation_and_end_positions_verified": true,
+  "trade_stats_code_sha256": "f8f8e4d13b5d26a04b524b9f5d7f062217fca20b839d071d371d74fe0656e204",
   "sources": [
     {
       "path": "run.json",
@@ -44,6 +59,194 @@
       "sha256": "18b28380a4043ed67c72b71aefc9f0eb3099513c91e5767b19d987e45bb482aa"
     },
     {
+      "path": "CJ2701.CZCE.parquet",
+      "sha256": "0d881e9c76cec3ae5c0572fdae1bff5fcc5dd006363376db39988820621f48d1"
+    },
+    {
+      "path": "m2701.DCE.parquet",
+      "sha256": "7f7a36532d989f8e13c7af9285be671c610cecc293b050c8c474a6412a9beeef"
+    },
+    {
+      "path": "b2611.DCE.parquet",
+      "sha256": "2a94848cd3ff3ac8a7a5afbd187fa2dfd2dec4941b7c5c8acad3d5853d200605"
+    },
+    {
+      "path": "SA2701.CZCE.parquet",
+      "sha256": "e78b515fc37e0e1101b6ca026b6f9b66b5919b80eb59d9d3ac9193f2e6d64902"
+    },
+    {
+      "path": "FG2701.CZCE.parquet",
+      "sha256": "c6730f3691c6791d7ae6e4847157a55a0e8e968ac224ae330b99d7df7a917f17"
+    },
+    {
+      "path": "l2701.DCE.parquet",
+      "sha256": "a3147a3230fbc23cac3745840bc136b4e6e27bb6bd37bf6df0938f54e540d35f"
+    },
+    {
+      "path": "pp2701.DCE.parquet",
+      "sha256": "cb38d1ab9deb8a541567c5767e68124351dfee2acd4e52ffaac6e60f88b0f309"
+    },
+    {
+      "path": "y2701.DCE.parquet",
+      "sha256": "a92b0764614ac58febfbedfd12776605cbb928c6c2b46b71c1c09ac7fee26c3f"
+    },
+    {
+      "path": "OI2701.CZCE.parquet",
+      "sha256": "9e80215d27281025ad81120e305db95ffac02a830a7eb82bc7d25d979ead85cf"
+    },
+    {
+      "path": "TA2701.CZCE.parquet",
+      "sha256": "fa2e842d63ceb7a50bb221791287414332f0c660b29b24ccf712a72d860b8f0c"
+    },
+    {
+      "path": "MA2701.CZCE.parquet",
+      "sha256": "9c79d59b5ad23518b70634285c6b6414bd54d9bae5e7405a24549633ca621b75"
+    },
+    {
+      "path": "eb2611.DCE.parquet",
+      "sha256": "37a9ead5e5d3aea7e9874d6ae0c05f2cc540b26118b5527e12ee94cb4e5c2145"
+    },
+    {
+      "path": "CF2701.CZCE.parquet",
+      "sha256": "ba6b31265ddccb673e000502ceeecba683092834da983281fd008bb94757950b"
+    },
+    {
+      "path": "RM2701.CZCE.parquet",
+      "sha256": "bfd0cc6008f53a071bf1bf340f65bbeade2cf1da58e1d8b24097d43cac30de54"
+    },
+    {
+      "path": "rr2611.DCE.parquet",
+      "sha256": "98e09c1372925a58cf379c41cab7029ede9874ad2e19e13323a3594d14695962"
+    },
+    {
+      "path": "RS2701.CZCE.parquet",
+      "sha256": "7bff3872ef3189e97a4b0f007abfca34a9c8892c2a825abbe8286c81299eeafe"
+    },
+    {
+      "path": "wr2701.SHFE.parquet",
+      "sha256": "0d76f56dff83aa0d3ada16663c906105a3833772f69b874e0dcfb040d7aec5da"
+    },
+    {
+      "path": "AP2701.CZCE.parquet",
+      "sha256": "5d5ec52161bc6f8e2053793321d246a2a58125037541cd716765d4286eb0a043"
+    },
+    {
+      "path": "fb2612.DCE.parquet",
+      "sha256": "cb65f362dcda01c03fd71dc7a56453dde086a4a1e2d743e0749376c5d0277d7f"
+    },
+    {
+      "path": "hc2701.SHFE.parquet",
+      "sha256": "87c8f050bcd65804b95da4ea751501098f720ad22a798990249497c68ada5304"
+    },
+    {
+      "path": "jd2612.DCE.parquet",
+      "sha256": "00e2600e248178af080fdc6fcbcff888e0719b38084cea7d99774e15926bda58"
+    },
+    {
+      "path": "lu2612.INE.parquet",
+      "sha256": "10da561d8a46ce64f79686b5a437f03f7eaf135e8b42805bf8d2d579bc117c20"
+    },
+    {
+      "path": "br2612.SHFE.parquet",
+      "sha256": "3cacb2073812cbc56818b5c6c3d1b057334f2e9ffccc93535bb1dc3b7764cd1d"
+    },
+    {
+      "path": "UR2701.CZCE.parquet",
+      "sha256": "a17e47a89fba4298790d3c9d3dfaea9c7d34c4ba067cbf580be00c5e4fd5c3c2"
+    },
+    {
+      "path": "i2701.DCE.parquet",
+      "sha256": "c4c054623ecd12c307c214901b0554eadf737474d087152bce8d6f76bb73fc2d"
+    },
+    {
+      "path": "lh2701.DCE.parquet",
+      "sha256": "49f7d8ac758204c8ca0d141b344c7fa4d9c176fb8d896db1c455d30e825489b4"
+    },
+    {
+      "path": "a2701.DCE.parquet",
+      "sha256": "578115da30c6bcdc9f18f103893bf64df0b993fa98940fa65f98342c7f20bf94"
+    },
+    {
+      "path": "c2701.DCE.parquet",
+      "sha256": "85afa8a4d9e87ba0bbfd52cbdeda68a693b70e8cc4101a93481d34d1a5f61335"
+    },
+    {
+      "path": "op2612.SHFE.parquet",
+      "sha256": "1a0b825553681dfc877fda716746793fb047828a8ed1be69cb3da917b3189742"
+    },
+    {
+      "path": "PF2612.CZCE.parquet",
+      "sha256": "f0577b24458e06b31de8dd53f2b2024d6e20de8d9cd309432a6a578eb6f0f51b"
+    },
+    {
+      "path": "rb2701.SHFE.parquet",
+      "sha256": "6318b6c49cf920a0ac1e8cadca8fdc84a95a0e63cf2fc87b23a5c320dc7812a9"
+    },
+    {
+      "path": "ao2701.SHFE.parquet",
+      "sha256": "2c6af4275570b6da4686de9dd0adffc9ad5cd0515fbb842f80db95794db8bbc2"
+    },
+    {
+      "path": "bu2701.SHFE.parquet",
+      "sha256": "4b3e220ca125316fc4801549779ec5dc6a0b324a345dec88334c10d4926397dd"
+    },
+    {
+      "path": "fu2701.SHFE.parquet",
+      "sha256": "32c2ec4d6da38e902d04252a644b8cc2926255220d02e8c8530f065027316976"
+    },
+    {
+      "path": "sp2701.SHFE.parquet",
+      "sha256": "5ca8066009ef72b1f065e8b0a5f392e01c87313f2d9ea3267daeaa4a9b2463fe"
+    },
+    {
+      "path": "ni2612.SHFE.parquet",
+      "sha256": "8008439c05a765a6725debe869902580593b529e77bc18376ff6b89ebd00641c"
+    },
+    {
+      "path": "ss2612.SHFE.parquet",
+      "sha256": "5a318c4b712e176aa204fc79af4df669541a195cf72a9a78aa7430c4f9afd085"
+    },
+    {
+      "path": "pg2612.DCE.parquet",
+      "sha256": "d402f04964b5c714337e3fd7aa97eee355b975a9f72fb6e0cce07f7dffaaa986"
+    },
+    {
+      "path": "PK2612.CZCE.parquet",
+      "sha256": "990a4b5855240ed011e45c9dc44b07c5d8e22a2677708e0ec19397beee2becb5"
+    },
+    {
+      "path": "PL2612.CZCE.parquet",
+      "sha256": "ceaea688a3624a6f6feafcb2d310eafbb99c64d2c116b982b038c98a6f9a4a04"
+    },
+    {
+      "path": "PX2612.CZCE.parquet",
+      "sha256": "04cc0f302277abeed315c5a67b36ccde97a371d5bc80e034d1b8decb5b353940"
+    },
+    {
+      "path": "al2612.SHFE.parquet",
+      "sha256": "e39a3946e47edb11d8d40a0c771a290f09d4bf021a70d01a94608d576ff971a5"
+    },
+    {
+      "path": "TF2612.CFFEX.parquet",
+      "sha256": "a0edfce9b95f2df19dcf35f379f5c794a28e61e43c364a05cbb90297f9728cf8"
+    },
+    {
+      "path": "cs2701.DCE.parquet",
+      "sha256": "d9c3348d75f6b0057d64fff5c5f72f84045f7a41092529174350ad97a558408d"
+    },
+    {
+      "path": "lg2701.DCE.parquet",
+      "sha256": "3cad20d1f7411de3d62d16770e5c4133f57a9b1e55606f6c7f3b25a70fea2a52"
+    },
+    {
+      "path": "T2612.CFFEX.parquet",
+      "sha256": "e8502c451953a74f9dd4ef9dad153c56cde4552bac78ce4314a000f43b59faa9"
+    },
+    {
+      "path": "v2701.DCE.parquet",
+      "sha256": "bf9a479f92a7acb041c52522125f8a419f204365039d312464a72cf35919f21a"
+    },
+    {
       "path": "momentum16_features.parquet",
       "sha256": "a3ab82dd0cd696c477aed310564d63625672735e8f69ab9b8555f27f70b89be4"
     },
@@ -63,5 +266,12 @@
       "path": "TA_roll.parquet",
       "sha256": "dcd142c7c01d55a8af01d0697b08998bc017e71989e4914ad6a2c04a4286e3ab"
     }
-  ]
+  ],
+  "episode_equity_reconciliation": {
+    "closed_net": 6229409.9629999995,
+    "open_positions_net_mark_to_market": 122629.9605,
+    "reconstructed_equity": 7352039.9235,
+    "archived_equity": 7352039.923499994,
+    "difference": 5.587935447692871e-09
+  }
 }

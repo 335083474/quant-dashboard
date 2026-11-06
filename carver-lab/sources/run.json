@@ -60,5 +60,18 @@
     "risk_multiplier_cap_days": 0,
     "bankrupt": false
   },
+  "trade_summary": {
+    "closed_count": 4677,
+    "wins": 1737,
+    "losses": 2940,
+    "breakeven": 0,
+    "win_rate_pct": 37.139191789608724,
+    "average_win": 11026.06879015544,
+    "average_loss": 4395.534532482993,
+    "payoff_ratio": 2.508470519039905,
+    "profit_factor": 1.4820453372694948,
+    "closed_net": 6229409.9629999995
+  },
+  "trade_statistics_basis": "Same real contract flat-to-flat episode, additions and partial exits merged, fees plus slippage deducted; reversal splits; roll ends old contract episode; unfinished positions excluded.",
   "note": "Public read-only subset. Local filesystem paths omitted. Original run and hashes retained locally."
 }
